@@ -8,8 +8,8 @@
 // We deliberately interleave: after each card is rated, we re-query so a
 // just-lapsed card naturally comes back inside the session.
 
-import * as db from '../db.js';
-import { applyRating, freshCard } from '../scheduler.js';
+import * as db from './db.js';
+import { applyRating, freshCard } from './scheduler.js';
 
 const DEFAULT_NEW_PER_DAY = 10;
 
