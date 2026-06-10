@@ -4,11 +4,13 @@ import { Session, seedNewWords } from './session.js';
 import { mountLearnView }    from './views/learn.js';
 import { mountStatsView }    from './views/stats.js';
 import { mountSettingsView } from './views/settings.js';
+import { mountVerbsView }    from './views/verbs.js';
 
 const views = {
   learn:    { el: document.getElementById('view-learn'),    mounted: null },
   stats:    { el: document.getElementById('view-stats'),    mounted: null },
   settings: { el: document.getElementById('view-settings'), mounted: null },
+  verbs:    { el: document.getElementById('view-verbs'),    mounted: null },
 };
 
 const session = new Session();
@@ -49,6 +51,7 @@ function switchTab(name) {
     if (name === 'learn')    v.mounted = mountLearnView(v.el, session);
     if (name === 'stats')    v.mounted = mountStatsView(v.el);
     if (name === 'settings') v.mounted = mountSettingsView(v.el, { onReset: resetAndReload });
+    if (name === 'verbs')    v.mounted = mountVerbsView(v.el);
   } else {
     v.mounted.reload?.();
   }

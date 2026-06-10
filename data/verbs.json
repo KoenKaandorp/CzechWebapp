@@ -1,0 +1,142 @@
+[
+  {
+    "infinitive": "být",
+    "en": "to be",
+    "present":    ["jsem", "jsi", "je", "jsme", "jste", "jsou"],
+    "past":       ["byl jsem / byla jsem", "byl jsi / byla jsi", "byl / byla / bylo", "byli jsme / byly jsme", "byli jste / byly jste", "byli / byly"],
+    "imperative": [null, "buď", null, "buďme", "buďte", null]
+  },
+  {
+    "infinitive": "mít",
+    "en": "to have",
+    "present":    ["mám", "máš", "má", "máme", "máte", "mají"],
+    "past":       ["měl jsem / měla jsem", "měl jsi / měla jsi", "měl / měla / mělo", "měli jsme / měly jsme", "měli jste / měly jste", "měli / měly"],
+    "imperative": [null, "měj", null, "mějme", "mějte", null]
+  },
+  {
+    "infinitive": "moci",
+    "en": "to be able to",
+    "present":    ["mohu / můžu", "můžeš", "může", "můžeme", "můžete", "mohou / můžou"],
+    "past":       ["mohl jsem / mohla jsem", "mohl jsi / mohla jsi", "mohl / mohla / mohlo", "mohli jsme / mohly jsme", "mohli jste / mohly jste", "mohli / mohly"],
+    "imperative": [null, null, null, null, null, null]
+  },
+  {
+    "infinitive": "chtít",
+    "en": "to want",
+    "present":    ["chci", "chceš", "chce", "chceme", "chcete", "chtějí"],
+    "past":       ["chtěl jsem / chtěla jsem", "chtěl jsi / chtěla jsi", "chtěl / chtěla / chtělo", "chtěli jsme / chtěly jsme", "chtěli jste / chtěly jste", "chtěli / chtěly"],
+    "imperative": [null, "chtěj", null, "chtějme", "chtějte", null]
+  },
+  {
+    "infinitive": "jít",
+    "en": "to go",
+    "present":    ["jdu", "jdeš", "jde", "jdeme", "jdete", "jdou"],
+    "past":       ["šel jsem / šla jsem", "šel jsi / šla jsi", "šel / šla / šlo", "šli jsme / šly jsme", "šli jste / šly jste", "šli / šly"],
+    "imperative": [null, "jdi", null, "jděme", "jděte", null]
+  },
+  {
+    "infinitive": "přijít",
+    "en": "to come / arrive",
+    "present":    ["přijdu", "přijdeš", "přijde", "přijdeme", "přijdete", "přijdou"],
+    "past":       ["přišel jsem / přišla jsem", "přišel jsi / přišla jsi", "přišel / přišla / přišlo", "přišli jsme / přišly jsme", "přišli jste / přišly jste", "přišli / přišly"],
+    "imperative": [null, "přijď", null, "přijďme", "přijďte", null]
+  },
+  {
+    "infinitive": "říkat",
+    "en": "to say",
+    "present":    ["říkám", "říkáš", "říká", "říkáme", "říkáte", "říkají"],
+    "past":       ["říkal jsem / říkala jsem", "říkal jsi / říkala jsi", "říkal / říkala / říkalo", "říkali jsme / říkaly jsme", "říkali jste / říkaly jste", "říkali / říkaly"],
+    "imperative": [null, "říkej", null, "říkejme", "říkejte", null]
+  },
+  {
+    "infinitive": "vidět",
+    "en": "to see",
+    "present":    ["vidím", "vidíš", "vidí", "vidíme", "vidíte", "vidí"],
+    "past":       ["viděl jsem / viděla jsem", "viděl jsi / viděla jsi", "viděl / viděla / vidělo", "viděli jsme / viděly jsme", "viděli jste / viděly jste", "viděli / viděly"],
+    "imperative": [null, "viz", null, null, "vizte", null]
+  },
+  {
+    "infinitive": "vědět",
+    "en": "to know (a fact)",
+    "present":    ["vím", "víš", "ví", "víme", "víte", "vědí"],
+    "past":       ["věděl jsem / věděla jsem", "věděl jsi / věděla jsi", "věděl / věděla / vědělo", "věděli jsme / věděly jsme", "věděli jste / věděly jste", "věděli / věděly"],
+    "imperative": [null, "věz", null, null, "vězte", null]
+  },
+  {
+    "infinitive": "dělat",
+    "en": "to do / make",
+    "present":    ["dělám", "děláš", "dělá", "děláme", "děláte", "dělají"],
+    "past":       ["dělal jsem / dělala jsem", "dělal jsi / dělala jsi", "dělal / dělala / dělalo", "dělali jsme / dělaly jsme", "dělali jste / dělaly jste", "dělali / dělaly"],
+    "imperative": [null, "dělej", null, "dělejme", "dělejte", null]
+  },
+  {
+    "infinitive": "dát",
+    "en": "to give",
+    "present":    ["dám", "dáš", "dá", "dáme", "dáte", "dají"],
+    "past":       ["dal jsem / dala jsem", "dal jsi / dala jsi", "dal / dala / dalo", "dali jsme / daly jsme", "dali jste / daly jste", "dali / daly"],
+    "imperative": [null, "dej", null, "dejme", "dejte", null]
+  },
+  {
+    "infinitive": "vzít",
+    "en": "to take",
+    "present":    ["vezmu", "vezmeš", "vezme", "vezmeme", "vezmete", "vezmou"],
+    "past":       ["vzal jsem / vzala jsem", "vzal jsi / vzala jsi", "vzal / vzala / vzalo", "vzali jsme / vzaly jsme", "vzali jste / vzaly jste", "vzali / vzaly"],
+    "imperative": [null, "vezmi", null, "vezměme", "vezměte", null]
+  },
+  {
+    "infinitive": "mluvit",
+    "en": "to speak",
+    "present":    ["mluvím", "mluvíš", "mluví", "mluvíme", "mluvíte", "mluví"],
+    "past":       ["mluvil jsem / mluvila jsem", "mluvil jsi / mluvila jsi", "mluvil / mluvila / mluvilo", "mluvili jsme / mluvily jsme", "mluvili jste / mluvily jste", "mluvili / mluvily"],
+    "imperative": [null, "mluv", null, "mluvme", "mluvte", null]
+  },
+  {
+    "infinitive": "znát",
+    "en": "to know (sb/sth)",
+    "present":    ["znám", "znáš", "zná", "známe", "znáte", "znají"],
+    "past":       ["znal jsem / znala jsem", "znal jsi / znala jsi", "znal / znala / znalo", "znali jsme / znaly jsme", "znali jste / znaly jste", "znali / znaly"],
+    "imperative": [null, "znej", null, "znejme", "znejte", null]
+  },
+  {
+    "infinitive": "myslet",
+    "en": "to think",
+    "present":    ["myslím", "myslíš", "myslí", "myslíme", "myslíte", "myslí"],
+    "past":       ["myslel jsem / myslela jsem", "myslel jsi / myslela jsi", "myslel / myslela / myslelo", "mysleli jsme / myslely jsme", "mysleli jste / myslely jste", "mysleli / myslely"],
+    "imperative": [null, "mysli", null, "mysleme", "myslete", null]
+  },
+  {
+    "infinitive": "pracovat",
+    "en": "to work",
+    "present":    ["pracuji / pracuju", "pracuješ", "pracuje", "pracujeme", "pracujete", "pracují / pracujou"],
+    "past":       ["pracoval jsem / pracovala jsem", "pracoval jsi / pracovala jsi", "pracoval / pracovala / pracovalo", "pracovali jsme / pracovaly jsme", "pracovali jste / pracovaly jste", "pracovali / pracovaly"],
+    "imperative": [null, "pracuj", null, "pracujme", "pracujte", null]
+  },
+  {
+    "infinitive": "číst",
+    "en": "to read",
+    "present":    ["čtu", "čteš", "čte", "čteme", "čtete", "čtou"],
+    "past":       ["četl jsem / četla jsem", "četl jsi / četla jsi", "četl / četla / četlo", "četli jsme / četly jsme", "četli jste / četly jste", "četli / četly"],
+    "imperative": [null, "čti", null, "čtěme", "čtěte", null]
+  },
+  {
+    "infinitive": "psát",
+    "en": "to write",
+    "present":    ["píšu / píši", "píšeš", "píše", "píšeme", "píšete", "píšou / píší"],
+    "past":       ["psal jsem / psala jsem", "psal jsi / psala jsi", "psal / psala / psalo", "psali jsme / psaly jsme", "psali jste / psaly jste", "psali / psaly"],
+    "imperative": [null, "piš", null, "pišme", "pište", null]
+  },
+  {
+    "infinitive": "potřebovat",
+    "en": "to need",
+    "present":    ["potřebuji / potřebuju", "potřebuješ", "potřebuje", "potřebujeme", "potřebujete", "potřebují / potřebujou"],
+    "past":       ["potřeboval jsem / potřebovala jsem", "potřeboval jsi / potřebovala jsi", "potřeboval / potřebovala / potřebovalo", "potřebovali jsme / potřebovaly jsme", "potřebovali jste / potřebovaly jste", "potřebovali / potřebovaly"],
+    "imperative": [null, "potřebuj", null, "potřebujme", "potřebujte", null]
+  },
+  {
+    "infinitive": "jíst",
+    "en": "to eat",
+    "present":    ["jím", "jíš", "jí", "jíme", "jíte", "jedí"],
+    "past":       ["jedl jsem / jedla jsem", "jedl jsi / jedla jsi", "jedl / jedla / jedlo", "jedli jsme / jedly jsme", "jedli jste / jedly jste", "jedli / jedly"],
+    "imperative": [null, "jez", null, "jezme", "jezte", null]
+  }
+]

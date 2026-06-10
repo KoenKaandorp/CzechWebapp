@@ -105,17 +105,20 @@ export async function getDueWords(now = Date.now(), limit = 50) {
   });
 }
 
-// Already-learned words not yet due, ordered by soonest due first.
+// Already-learned words not yet due, ordered by hardest first (lowest ef, then most lapses).
 export async function getSoonDueWords(from = Date.now(), limit = 20) {
   const db = await openDB();
   const idx = tx(db, ['words']).objectStore('words').index('by-due');
   const range = IDBKeyRange.lowerBound(from, true);
-  const out = [];
+  const candidates = [];
   return new Promise((resolve) => {
     idx.openCursor(range).onsuccess = (e) => {
       const cur = e.target.result;
-      if (!cur || out.length >= limit) return resolve(out);
-      if (cur.value.repetitions > 0) out.push(cur.value);
+      if (!cur || candidates.length >= limit * 5) {
+        candidates.sort((a, b) => a.ef - b.ef || b.lapses - a.lapses);
+        return resolve(candidates.slice(0, limit));
+      }
+      if (cur.value.repetitions > 0) candidates.push(cur.value);
       cur.continue();
     };
   });
