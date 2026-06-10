@@ -1,6 +1,6 @@
 // app.js — bootstrap, tab routing, lifecycle.
 
-import { Session, seedIfEmpty } from './session.js';
+import { Session, seedIfEmpty } from './views/session.js';
 import { mountLearnView }    from './views/learn.js';
 import { mountStatsView }    from './views/stats.js';
 import { mountSettingsView } from './views/settings.js';
