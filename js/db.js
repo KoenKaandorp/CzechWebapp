@@ -110,19 +110,26 @@ export async function getSoonDueWords(from = Date.now(), limit = 20) {
   });
 }
 
-// New words (never reviewed) ordered by frequency rank ascending.
+// New words (never reviewed), frequency-prioritised but shuffled to avoid alphabetical runs.
+// Collects a pool 4× the limit in rank order, shuffles it, then returns the first `limit`.
 export async function getNewWords(limit = 10) {
   const db = await openDB();
   const idx = tx(db, ['words']).objectStore('words').index('by-rank');
-  const out = [];
-  return new Promise((resolve) => {
+  const poolSize = Math.max(limit * 4, 40);
+  const pool = [];
+  await new Promise((resolve) => {
     idx.openCursor().onsuccess = (e) => {
       const cur = e.target.result;
-      if (!cur || out.length >= limit) return resolve(out);
-      if (cur.value.repetitions === 0 && !cur.value.lastReviewedAt) out.push(cur.value);
+      if (!cur || pool.length >= poolSize) return resolve();
+      if (cur.value.repetitions === 0 && !cur.value.lastReviewedAt) pool.push(cur.value);
       cur.continue();
     };
   });
+  for (let i = pool.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [pool[i], pool[j]] = [pool[j], pool[i]];
+  }
+  return pool.slice(0, limit);
 }
 
 // ---------- reviews ----------
