@@ -47,7 +47,7 @@ function tx(db, stores, mode = 'readonly') {
 function wrap(req) {
   return new Promise((resolve, reject) => {
     req.onsuccess = () => resolve(req.result);
-    req.onerror  = () => reject(req.error);
+    req.onerror = () => reject(req.error);
   });
 }
 
@@ -88,8 +88,19 @@ export async function getDueWords(now = Date.now(), limit = 50) {
   return new Promise((resolve, reject) => {
     idx.openCursor(range).onsuccess = (e) => {
       const cur = e.target.result;
-      if (cur && out.length < limit) { out.push(cur.value); cur.continue(); }
-      else resolve(out);
+      if (
+        cur &&
+        out.length < limit &&
+        cur.value.repetitions > 0
+      ) {
+        out.push(cur.value);
+      }
+
+      if (cur) {
+        cur.continue();
+      } else {
+        resolve(out);
+      }
     };
   });
 }
