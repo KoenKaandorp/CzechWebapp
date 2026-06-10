@@ -1,91 +1,4466 @@
 [
-  { "rank": 1,  "cz": "být",      "en": "to be",            "pos": "verb" },
-  { "rank": 2,  "cz": "a",        "en": "and",              "pos": "conj" },
-  { "rank": 3,  "cz": "v",        "en": "in",               "pos": "prep" },
-  { "rank": 4,  "cz": "se",       "en": "oneself (reflex.)","pos": "pron" },
-  { "rank": 5,  "cz": "na",       "en": "on, at",           "pos": "prep" },
-  { "rank": 6,  "cz": "ten",      "en": "this, that",       "pos": "det" },
-  { "rank": 7,  "cz": "že",       "en": "that (conj.)",     "pos": "conj" },
-  { "rank": 8,  "cz": "s",        "en": "with",             "pos": "prep" },
-  { "rank": 9,  "cz": "z",        "en": "from",             "pos": "prep" },
-  { "rank": 10, "cz": "který",    "en": "which, who",       "pos": "pron" },
-  { "rank": 11, "cz": "mít",      "en": "to have",          "pos": "verb" },
-  { "rank": 12, "cz": "do",       "en": "into, to",         "pos": "prep" },
-  { "rank": 13, "cz": "ale",      "en": "but",              "pos": "conj" },
-  { "rank": 14, "cz": "já",       "en": "I",                "pos": "pron" },
-  { "rank": 15, "cz": "ne",       "en": "no, not",          "pos": "adv" },
-  { "rank": 16, "cz": "moci",     "en": "to be able to",    "pos": "verb" },
-  { "rank": 17, "cz": "po",       "en": "after",            "pos": "prep" },
-  { "rank": 18, "cz": "tak",      "en": "so",               "pos": "adv" },
-  { "rank": 19, "cz": "o",        "en": "about",            "pos": "prep" },
-  { "rank": 20, "cz": "jako",     "en": "like, as",         "pos": "conj" },
-  { "rank": 21, "cz": "rok",      "en": "year",             "pos": "noun" },
-  { "rank": 22, "cz": "říct",     "en": "to say",           "pos": "verb" },
-  { "rank": 23, "cz": "už",       "en": "already",          "pos": "adv" },
-  { "rank": 24, "cz": "také",     "en": "also",             "pos": "adv" },
-  { "rank": 25, "cz": "když",     "en": "when",             "pos": "conj" },
-  { "rank": 26, "cz": "co",       "en": "what",             "pos": "pron" },
-  { "rank": 27, "cz": "ano",      "en": "yes",              "pos": "adv" },
-  { "rank": 28, "cz": "muset",    "en": "must, have to",    "pos": "verb" },
-  { "rank": 29, "cz": "vědět",    "en": "to know",          "pos": "verb" },
-  { "rank": 30, "cz": "ještě",    "en": "still, yet",       "pos": "adv" },
-  { "rank": 31, "cz": "jenž",     "en": "which (relative)", "pos": "pron" },
-  { "rank": 32, "cz": "stát",     "en": "to stand; state",  "pos": "verb" },
-  { "rank": 33, "cz": "chtít",    "en": "to want",          "pos": "verb" },
-  { "rank": 34, "cz": "jen",      "en": "only, just",       "pos": "adv" },
-  { "rank": 35, "cz": "velký",    "en": "big",              "pos": "adj" },
-  { "rank": 36, "cz": "od",       "en": "from",             "pos": "prep" },
-  { "rank": 37, "cz": "ona",      "en": "she",              "pos": "pron" },
-  { "rank": 38, "cz": "jít",      "en": "to go",            "pos": "verb" },
-  { "rank": 39, "cz": "nový",     "en": "new",              "pos": "adj" },
-  { "rank": 40, "cz": "den",      "en": "day",              "pos": "noun" },
-  { "rank": 41, "cz": "vidět",    "en": "to see",           "pos": "verb" },
-  { "rank": 42, "cz": "doba",     "en": "time, period",     "pos": "noun" },
-  { "rank": 43, "cz": "dva",      "en": "two",              "pos": "num" },
-  { "rank": 44, "cz": "u",        "en": "by, at",           "pos": "prep" },
-  { "rank": 45, "cz": "první",    "en": "first",            "pos": "num" },
-  { "rank": 46, "cz": "člověk",   "en": "person, human",    "pos": "noun" },
-  { "rank": 47, "cz": "dělat",    "en": "to do, to make",   "pos": "verb" },
-  { "rank": 48, "cz": "kde",      "en": "where",            "pos": "adv" },
-  { "rank": 49, "cz": "celý",     "en": "whole, entire",    "pos": "adj" },
-  { "rank": 50, "cz": "dobrý",    "en": "good",             "pos": "adj" },
-  { "rank": 60, "cz": "myslet",   "en": "to think",         "pos": "verb" },
-  { "rank": 70, "cz": "práce",    "en": "work",             "pos": "noun" },
-  { "rank": 75, "cz": "voda",     "en": "water",            "pos": "noun" },
-  { "rank": 80, "cz": "dům",      "en": "house",            "pos": "noun" },
-  { "rank": 85, "cz": "město",    "en": "city, town",       "pos": "noun" },
-  { "rank": 90, "cz": "ruka",     "en": "hand",             "pos": "noun" },
-  { "rank": 95, "cz": "škola",    "en": "school",           "pos": "noun" },
-  { "rank": 100, "cz": "matka",   "en": "mother",           "pos": "noun" },
-  { "rank": 110, "cz": "otec",    "en": "father",           "pos": "noun" },
-  { "rank": 120, "cz": "dítě",    "en": "child",            "pos": "noun" },
-  { "rank": 130, "cz": "kniha",   "en": "book",             "pos": "noun" },
-  { "rank": 140, "cz": "auto",    "en": "car",              "pos": "noun" },
-  { "rank": 150, "cz": "okno",    "en": "window",           "pos": "noun" },
-  { "rank": 160, "cz": "dveře",   "en": "door",             "pos": "noun" },
-  { "rank": 170, "cz": "stůl",    "en": "table",            "pos": "noun" },
-  { "rank": 180, "cz": "pes",     "en": "dog",              "pos": "noun" },
-  { "rank": 190, "cz": "kočka",   "en": "cat",              "pos": "noun" },
-  { "rank": 200, "cz": "chléb",   "en": "bread",            "pos": "noun" },
-  { "rank": 220, "cz": "ahoj",    "en": "hi, hello",        "pos": "interj" },
-  { "rank": 240, "cz": "děkuji",  "en": "thank you",        "pos": "interj" },
-  { "rank": 260, "cz": "prosím",  "en": "please",           "pos": "interj" },
-  { "rank": 280, "cz": "promiňte","en": "excuse me",        "pos": "interj" },
-  { "rank": 300, "cz": "číst",    "en": "to read",          "pos": "verb" },
-  { "rank": 320, "cz": "psát",    "en": "to write",         "pos": "verb" },
-  { "rank": 340, "cz": "pít",     "en": "to drink",         "pos": "verb" },
-  { "rank": 360, "cz": "jíst",    "en": "to eat",           "pos": "verb" },
-  { "rank": 380, "cz": "spát",    "en": "to sleep",         "pos": "verb" },
-  { "rank": 400, "cz": "milovat", "en": "to love",          "pos": "verb" },
-  { "rank": 450, "cz": "krásný",  "en": "beautiful",        "pos": "adj" },
-  { "rank": 500, "cz": "malý",    "en": "small",            "pos": "adj" },
-  { "rank": 600, "cz": "starý",   "en": "old",              "pos": "adj" },
-  { "rank": 700, "cz": "mladý",   "en": "young",            "pos": "adj" },
-  { "rank": 800, "cz": "rychlý",  "en": "fast",             "pos": "adj" },
-  { "rank": 900, "cz": "pomalý",  "en": "slow",             "pos": "adj" },
-  { "rank": 1000, "cz": "pivo",   "en": "beer",             "pos": "noun" },
-  { "rank": 1200, "cz": "káva",   "en": "coffee",           "pos": "noun" },
-  { "rank": 1500, "cz": "ulice",  "en": "street",           "pos": "noun" },
-  { "rank": 1800, "cz": "obloha", "en": "sky",              "pos": "noun" },
-  { "rank": 2100, "cz": "zítra",  "en": "tomorrow",         "pos": "adv" }
+  {
+    "rank": 1,
+    "cz": "být",
+    "en": "to be",
+    "pos": "verb"
+  },
+  {
+    "rank": 2,
+    "cz": "a",
+    "en": "and",
+    "pos": "conj"
+  },
+  {
+    "rank": 3,
+    "cz": "v",
+    "en": "in",
+    "pos": "prep"
+  },
+  {
+    "rank": 4,
+    "cz": "se",
+    "en": "oneself (reflex.)",
+    "pos": "pron"
+  },
+  {
+    "rank": 5,
+    "cz": "na",
+    "en": "on, at",
+    "pos": "prep"
+  },
+  {
+    "rank": 6,
+    "cz": "ten",
+    "en": "this, that",
+    "pos": "det"
+  },
+  {
+    "rank": 7,
+    "cz": "že",
+    "en": "that (conj.)",
+    "pos": "conj"
+  },
+  {
+    "rank": 8,
+    "cz": "s",
+    "en": "with",
+    "pos": "prep"
+  },
+  {
+    "rank": 9,
+    "cz": "z",
+    "en": "from",
+    "pos": "prep"
+  },
+  {
+    "rank": 10,
+    "cz": "který",
+    "en": "which, who",
+    "pos": "pron"
+  },
+  {
+    "rank": 11,
+    "cz": "mít",
+    "en": "to have",
+    "pos": "verb"
+  },
+  {
+    "rank": 12,
+    "cz": "do",
+    "en": "into, to",
+    "pos": "prep"
+  },
+  {
+    "rank": 13,
+    "cz": "ale",
+    "en": "but",
+    "pos": "conj"
+  },
+  {
+    "rank": 14,
+    "cz": "já",
+    "en": "I",
+    "pos": "pron"
+  },
+  {
+    "rank": 15,
+    "cz": "ne",
+    "en": "no, not",
+    "pos": "adv"
+  },
+  {
+    "rank": 16,
+    "cz": "moci",
+    "en": "to be able to",
+    "pos": "verb"
+  },
+  {
+    "rank": 17,
+    "cz": "po",
+    "en": "after",
+    "pos": "prep"
+  },
+  {
+    "rank": 18,
+    "cz": "tak",
+    "en": "so",
+    "pos": "adv"
+  },
+  {
+    "rank": 19,
+    "cz": "o",
+    "en": "about",
+    "pos": "prep"
+  },
+  {
+    "rank": 20,
+    "cz": "jako",
+    "en": "like, as",
+    "pos": "conj"
+  },
+  {
+    "rank": 21,
+    "cz": "rok",
+    "en": "year",
+    "pos": "noun"
+  },
+  {
+    "rank": 22,
+    "cz": "říct",
+    "en": "to say",
+    "pos": "verb"
+  },
+  {
+    "rank": 23,
+    "cz": "už",
+    "en": "already",
+    "pos": "adv"
+  },
+  {
+    "rank": 24,
+    "cz": "také",
+    "en": "also",
+    "pos": "adv"
+  },
+  {
+    "rank": 25,
+    "cz": "když",
+    "en": "when",
+    "pos": "conj"
+  },
+  {
+    "rank": 26,
+    "cz": "co",
+    "en": "what",
+    "pos": "pron"
+  },
+  {
+    "rank": 27,
+    "cz": "ano",
+    "en": "yes",
+    "pos": "adv"
+  },
+  {
+    "rank": 28,
+    "cz": "muset",
+    "en": "must, have to",
+    "pos": "verb"
+  },
+  {
+    "rank": 29,
+    "cz": "vědět",
+    "en": "to know",
+    "pos": "verb"
+  },
+  {
+    "rank": 30,
+    "cz": "ještě",
+    "en": "still, yet",
+    "pos": "adv"
+  },
+  {
+    "rank": 31,
+    "cz": "jenž",
+    "en": "which (relative)",
+    "pos": "pron"
+  },
+  {
+    "rank": 32,
+    "cz": "stát",
+    "en": "to stand; state",
+    "pos": "verb"
+  },
+  {
+    "rank": 33,
+    "cz": "chtít",
+    "en": "to want",
+    "pos": "verb"
+  },
+  {
+    "rank": 34,
+    "cz": "jen",
+    "en": "only, just",
+    "pos": "adv"
+  },
+  {
+    "rank": 35,
+    "cz": "velký",
+    "en": "big",
+    "pos": "adj"
+  },
+  {
+    "rank": 36,
+    "cz": "od",
+    "en": "from",
+    "pos": "prep"
+  },
+  {
+    "rank": 37,
+    "cz": "ona",
+    "en": "she",
+    "pos": "pron"
+  },
+  {
+    "rank": 38,
+    "cz": "jít",
+    "en": "to go",
+    "pos": "verb"
+  },
+  {
+    "rank": 39,
+    "cz": "nový",
+    "en": "new",
+    "pos": "adj"
+  },
+  {
+    "rank": 40,
+    "cz": "den",
+    "en": "day",
+    "pos": "noun"
+  },
+  {
+    "rank": 41,
+    "cz": "vidět",
+    "en": "to see",
+    "pos": "verb"
+  },
+  {
+    "rank": 42,
+    "cz": "doba",
+    "en": "time, period",
+    "pos": "noun"
+  },
+  {
+    "rank": 43,
+    "cz": "dva",
+    "en": "two",
+    "pos": "num"
+  },
+  {
+    "rank": 44,
+    "cz": "u",
+    "en": "by, at",
+    "pos": "prep"
+  },
+  {
+    "rank": 45,
+    "cz": "první",
+    "en": "first",
+    "pos": "num"
+  },
+  {
+    "rank": 46,
+    "cz": "člověk",
+    "en": "person, human",
+    "pos": "noun"
+  },
+  {
+    "rank": 47,
+    "cz": "dělat",
+    "en": "to do, to make",
+    "pos": "verb"
+  },
+  {
+    "rank": 48,
+    "cz": "kde",
+    "en": "where",
+    "pos": "adv"
+  },
+  {
+    "rank": 49,
+    "cz": "celý",
+    "en": "whole, entire",
+    "pos": "adj"
+  },
+  {
+    "rank": 50,
+    "cz": "dobrý",
+    "en": "good",
+    "pos": "adj"
+  },
+  {
+    "rank": 51,
+    "cz": "ty",
+    "en": "you (informal sg.)",
+    "pos": "pron"
+  },
+  {
+    "rank": 52,
+    "cz": "on",
+    "en": "he, it",
+    "pos": "pron"
+  },
+  {
+    "rank": 53,
+    "cz": "my",
+    "en": "we",
+    "pos": "pron"
+  },
+  {
+    "rank": 54,
+    "cz": "vy",
+    "en": "you (formal / pl.)",
+    "pos": "pron"
+  },
+  {
+    "rank": 55,
+    "cz": "oni",
+    "en": "they (m. anim.)",
+    "pos": "pron"
+  },
+  {
+    "rank": 56,
+    "cz": "to",
+    "en": "it, this/that (neut.)",
+    "pos": "pron"
+  },
+  {
+    "rank": 57,
+    "cz": "můj",
+    "en": "my",
+    "pos": "det"
+  },
+  {
+    "rank": 58,
+    "cz": "jeho",
+    "en": "his, its",
+    "pos": "det"
+  },
+  {
+    "rank": 59,
+    "cz": "tento",
+    "en": "this (here)",
+    "pos": "det"
+  },
+  {
+    "rank": 60,
+    "cz": "myslet",
+    "en": "to think",
+    "pos": "verb"
+  },
+  {
+    "rank": 61,
+    "cz": "její",
+    "en": "her",
+    "pos": "det"
+  },
+  {
+    "rank": 62,
+    "cz": "náš",
+    "en": "our",
+    "pos": "det"
+  },
+  {
+    "rank": 63,
+    "cz": "jejich",
+    "en": "their",
+    "pos": "det"
+  },
+  {
+    "rank": 64,
+    "cz": "váš",
+    "en": "your (formal / pl.)",
+    "pos": "det"
+  },
+  {
+    "rank": 65,
+    "cz": "tvůj",
+    "en": "your (informal sg.)",
+    "pos": "det"
+  },
+  {
+    "rank": 66,
+    "cz": "každý",
+    "en": "every, each",
+    "pos": "det"
+  },
+  {
+    "rank": 67,
+    "cz": "sám",
+    "en": "self, alone",
+    "pos": "pron"
+  },
+  {
+    "rank": 68,
+    "cz": "něco",
+    "en": "something",
+    "pos": "pron"
+  },
+  {
+    "rank": 69,
+    "cz": "nic",
+    "en": "nothing",
+    "pos": "pron"
+  },
+  {
+    "rank": 70,
+    "cz": "práce",
+    "en": "work",
+    "pos": "noun"
+  },
+  {
+    "rank": 71,
+    "cz": "všechno",
+    "en": "everything",
+    "pos": "pron"
+  },
+  {
+    "rank": 72,
+    "cz": "někdo",
+    "en": "someone",
+    "pos": "pron"
+  },
+  {
+    "rank": 73,
+    "cz": "nikdo",
+    "en": "no one",
+    "pos": "pron"
+  },
+  {
+    "rank": 74,
+    "cz": "všichni",
+    "en": "everyone (m. pl.)",
+    "pos": "pron"
+  },
+  {
+    "rank": 75,
+    "cz": "voda",
+    "en": "water",
+    "pos": "noun"
+  },
+  {
+    "rank": 76,
+    "cz": "žádný",
+    "en": "no, none of",
+    "pos": "det"
+  },
+  {
+    "rank": 77,
+    "cz": "takový",
+    "en": "such, that kind of",
+    "pos": "det"
+  },
+  {
+    "rank": 78,
+    "cz": "moc",
+    "en": "a lot, much",
+    "pos": "adv"
+  },
+  {
+    "rank": 79,
+    "cz": "víc",
+    "en": "more",
+    "pos": "adv"
+  },
+  {
+    "rank": 80,
+    "cz": "dům",
+    "en": "house",
+    "pos": "noun"
+  },
+  {
+    "rank": 81,
+    "cz": "mnoho",
+    "en": "many, much",
+    "pos": "det"
+  },
+  {
+    "rank": 82,
+    "cz": "několik",
+    "en": "several",
+    "pos": "det"
+  },
+  {
+    "rank": 83,
+    "cz": "kdo",
+    "en": "who",
+    "pos": "pron"
+  },
+  {
+    "rank": 84,
+    "cz": "jaký",
+    "en": "what kind of",
+    "pos": "pron"
+  },
+  {
+    "rank": 85,
+    "cz": "město",
+    "en": "city, town",
+    "pos": "noun"
+  },
+  {
+    "rank": 86,
+    "cz": "kdy",
+    "en": "when (interrog.)",
+    "pos": "adv"
+  },
+  {
+    "rank": 87,
+    "cz": "proč",
+    "en": "why",
+    "pos": "adv"
+  },
+  {
+    "rank": 88,
+    "cz": "jak",
+    "en": "how",
+    "pos": "adv"
+  },
+  {
+    "rank": 89,
+    "cz": "tady",
+    "en": "here",
+    "pos": "adv"
+  },
+  {
+    "rank": 90,
+    "cz": "ruka",
+    "en": "hand",
+    "pos": "noun"
+  },
+  {
+    "rank": 91,
+    "cz": "tam",
+    "en": "there",
+    "pos": "adv"
+  },
+  {
+    "rank": 92,
+    "cz": "teď",
+    "en": "now",
+    "pos": "adv"
+  },
+  {
+    "rank": 95,
+    "cz": "věc",
+    "en": "thing",
+    "pos": "noun"
+  },
+  {
+    "rank": 95,
+    "cz": "škola",
+    "en": "school",
+    "pos": "noun"
+  },
+  {
+    "rank": 96,
+    "cz": "jeden",
+    "en": "one",
+    "pos": "num"
+  },
+  {
+    "rank": 97,
+    "cz": "tři",
+    "en": "three",
+    "pos": "num"
+  },
+  {
+    "rank": 98,
+    "cz": "čtyři",
+    "en": "four",
+    "pos": "num"
+  },
+  {
+    "rank": 99,
+    "cz": "pět",
+    "en": "five",
+    "pos": "num"
+  },
+  {
+    "rank": 100,
+    "cz": "matka",
+    "en": "mother",
+    "pos": "noun"
+  },
+  {
+    "rank": 101,
+    "cz": "šest",
+    "en": "six",
+    "pos": "num"
+  },
+  {
+    "rank": 102,
+    "cz": "sedm",
+    "en": "seven",
+    "pos": "num"
+  },
+  {
+    "rank": 103,
+    "cz": "osm",
+    "en": "eight",
+    "pos": "num"
+  },
+  {
+    "rank": 104,
+    "cz": "devět",
+    "en": "nine",
+    "pos": "num"
+  },
+  {
+    "rank": 105,
+    "cz": "deset",
+    "en": "ten",
+    "pos": "num"
+  },
+  {
+    "rank": 105,
+    "cz": "část",
+    "en": "part",
+    "pos": "noun"
+  },
+  {
+    "rank": 106,
+    "cz": "jedenáct",
+    "en": "eleven",
+    "pos": "num"
+  },
+  {
+    "rank": 107,
+    "cz": "dvanáct",
+    "en": "twelve",
+    "pos": "num"
+  },
+  {
+    "rank": 108,
+    "cz": "dvacet",
+    "en": "twenty",
+    "pos": "num"
+  },
+  {
+    "rank": 109,
+    "cz": "třicet",
+    "en": "thirty",
+    "pos": "num"
+  },
+  {
+    "rank": 110,
+    "cz": "otec",
+    "en": "father",
+    "pos": "noun"
+  },
+  {
+    "rank": 110,
+    "cz": "země",
+    "en": "country, earth",
+    "pos": "noun"
+  },
+  {
+    "rank": 113,
+    "cz": "vysoký",
+    "en": "tall, high",
+    "pos": "adj"
+  },
+  {
+    "rank": 115,
+    "cz": "byt",
+    "en": "flat, apartment",
+    "pos": "noun"
+  },
+  {
+    "rank": 115,
+    "cz": "padesát",
+    "en": "fifty",
+    "pos": "num"
+  },
+  {
+    "rank": 115,
+    "cz": "přijít",
+    "en": "to come",
+    "pos": "verb"
+  },
+  {
+    "rank": 115,
+    "cz": "čas",
+    "en": "time",
+    "pos": "noun"
+  },
+  {
+    "rank": 118,
+    "cz": "hodina",
+    "en": "hour",
+    "pos": "noun"
+  },
+  {
+    "rank": 120,
+    "cz": "dítě",
+    "en": "child",
+    "pos": "noun"
+  },
+  {
+    "rank": 125,
+    "cz": "dát",
+    "en": "to give",
+    "pos": "verb"
+  },
+  {
+    "rank": 125,
+    "cz": "sto",
+    "en": "hundred",
+    "pos": "num"
+  },
+  {
+    "rank": 128,
+    "cz": "minuta",
+    "en": "minute",
+    "pos": "noun"
+  },
+  {
+    "rank": 130,
+    "cz": "kniha",
+    "en": "book",
+    "pos": "noun"
+  },
+  {
+    "rank": 135,
+    "cz": "pokoj",
+    "en": "room",
+    "pos": "noun"
+  },
+  {
+    "rank": 135,
+    "cz": "tisíc",
+    "en": "thousand",
+    "pos": "num"
+  },
+  {
+    "rank": 135,
+    "cz": "vzít",
+    "en": "to take",
+    "pos": "verb"
+  },
+  {
+    "rank": 138,
+    "cz": "sekunda",
+    "en": "second (time)",
+    "pos": "noun"
+  },
+  {
+    "rank": 140,
+    "cz": "auto",
+    "en": "car",
+    "pos": "noun"
+  },
+  {
+    "rank": 143,
+    "cz": "nízký",
+    "en": "low, short (height)",
+    "pos": "adj"
+  },
+  {
+    "rank": 145,
+    "cz": "milion",
+    "en": "million",
+    "pos": "num"
+  },
+  {
+    "rank": 148,
+    "cz": "týden",
+    "en": "week",
+    "pos": "noun"
+  },
+  {
+    "rank": 150,
+    "cz": "okno",
+    "en": "window",
+    "pos": "noun"
+  },
+  {
+    "rank": 155,
+    "cz": "druhý",
+    "en": "second (ordinal)",
+    "pos": "num"
+  },
+  {
+    "rank": 155,
+    "cz": "konec",
+    "en": "end",
+    "pos": "noun"
+  },
+  {
+    "rank": 155,
+    "cz": "kuchyně",
+    "en": "kitchen",
+    "pos": "noun"
+  },
+  {
+    "rank": 155,
+    "cz": "potřebovat",
+    "en": "to need",
+    "pos": "verb"
+  },
+  {
+    "rank": 158,
+    "cz": "měsíc",
+    "en": "month, moon",
+    "pos": "noun"
+  },
+  {
+    "rank": 160,
+    "cz": "dveře",
+    "en": "door",
+    "pos": "noun"
+  },
+  {
+    "rank": 160,
+    "cz": "velmi",
+    "en": "very",
+    "pos": "adv"
+  },
+  {
+    "rank": 165,
+    "cz": "třetí",
+    "en": "third",
+    "pos": "num"
+  },
+  {
+    "rank": 165,
+    "cz": "začátek",
+    "en": "beginning",
+    "pos": "noun"
+  },
+  {
+    "rank": 168,
+    "cz": "ráno",
+    "en": "morning",
+    "pos": "noun"
+  },
+  {
+    "rank": 170,
+    "cz": "stůl",
+    "en": "table",
+    "pos": "noun"
+  },
+  {
+    "rank": 173,
+    "cz": "dlouhý",
+    "en": "long",
+    "pos": "adj"
+  },
+  {
+    "rank": 175,
+    "cz": "dostat",
+    "en": "to get, receive",
+    "pos": "verb"
+  },
+  {
+    "rank": 175,
+    "cz": "ložnice",
+    "en": "bedroom",
+    "pos": "noun"
+  },
+  {
+    "rank": 175,
+    "cz": "poslední",
+    "en": "last",
+    "pos": "adj"
+  },
+  {
+    "rank": 178,
+    "cz": "večer",
+    "en": "evening",
+    "pos": "noun"
+  },
+  {
+    "rank": 180,
+    "cz": "hodně",
+    "en": "a lot",
+    "pos": "adv"
+  },
+  {
+    "rank": 180,
+    "cz": "pes",
+    "en": "dog",
+    "pos": "noun"
+  },
+  {
+    "rank": 185,
+    "cz": "láska",
+    "en": "love",
+    "pos": "noun"
+  },
+  {
+    "rank": 185,
+    "cz": "půl",
+    "en": "half",
+    "pos": "noun"
+  },
+  {
+    "rank": 188,
+    "cz": "noc",
+    "en": "night",
+    "pos": "noun"
+  },
+  {
+    "rank": 190,
+    "cz": "kočka",
+    "en": "cat",
+    "pos": "noun"
+  },
+  {
+    "rank": 190,
+    "cz": "místo",
+    "en": "place",
+    "pos": "noun"
+  },
+  {
+    "rank": 195,
+    "cz": "koupelna",
+    "en": "bathroom",
+    "pos": "noun"
+  },
+  {
+    "rank": 195,
+    "cz": "mluvit",
+    "en": "to speak",
+    "pos": "verb"
+  },
+  {
+    "rank": 195,
+    "cz": "nula",
+    "en": "zero",
+    "pos": "num"
+  },
+  {
+    "rank": 195,
+    "cz": "číslo",
+    "en": "number",
+    "pos": "noun"
+  },
+  {
+    "rank": 198,
+    "cz": "poledne",
+    "en": "noon",
+    "pos": "noun"
+  },
+  {
+    "rank": 200,
+    "cz": "chléb",
+    "en": "bread",
+    "pos": "noun"
+  },
+  {
+    "rank": 200,
+    "cz": "trochu",
+    "en": "a little",
+    "pos": "adv"
+  },
+  {
+    "rank": 203,
+    "cz": "krátký",
+    "en": "short",
+    "pos": "adj"
+  },
+  {
+    "rank": 208,
+    "cz": "půlnoc",
+    "en": "midnight",
+    "pos": "noun"
+  },
+  {
+    "rank": 210,
+    "cz": "rodina",
+    "en": "family",
+    "pos": "noun"
+  },
+  {
+    "rank": 213,
+    "cz": "lepší",
+    "en": "better",
+    "pos": "adj"
+  },
+  {
+    "rank": 215,
+    "cz": "obývák",
+    "en": "living room",
+    "pos": "noun"
+  },
+  {
+    "rank": 215,
+    "cz": "počasí",
+    "en": "weather",
+    "pos": "noun"
+  },
+  {
+    "rank": 215,
+    "cz": "strom",
+    "en": "tree",
+    "pos": "noun"
+  },
+  {
+    "rank": 218,
+    "cz": "dnes",
+    "en": "today",
+    "pos": "adv"
+  },
+  {
+    "rank": 220,
+    "cz": "ahoj",
+    "en": "hi, hello",
+    "pos": "interj"
+  },
+  {
+    "rank": 220,
+    "cz": "cesta",
+    "en": "road, journey",
+    "pos": "noun"
+  },
+  {
+    "rank": 225,
+    "cz": "slovo",
+    "en": "word",
+    "pos": "noun"
+  },
+  {
+    "rank": 225,
+    "cz": "slyšet",
+    "en": "to hear",
+    "pos": "verb"
+  },
+  {
+    "rank": 225,
+    "cz": "život",
+    "en": "life",
+    "pos": "noun"
+  },
+  {
+    "rank": 228,
+    "cz": "včera",
+    "en": "yesterday",
+    "pos": "adv"
+  },
+  {
+    "rank": 233,
+    "cz": "široký",
+    "en": "wide",
+    "pos": "adj"
+  },
+  {
+    "rank": 235,
+    "cz": "les",
+    "en": "forest",
+    "pos": "noun"
+  },
+  {
+    "rank": 235,
+    "cz": "syn",
+    "en": "son",
+    "pos": "noun"
+  },
+  {
+    "rank": 235,
+    "cz": "záchod",
+    "en": "toilet",
+    "pos": "noun"
+  },
+  {
+    "rank": 238,
+    "cz": "vždy",
+    "en": "always",
+    "pos": "adv"
+  },
+  {
+    "rank": 240,
+    "cz": "děkuji",
+    "en": "thank you",
+    "pos": "interj"
+  },
+  {
+    "rank": 240,
+    "cz": "peníze",
+    "en": "money",
+    "pos": "noun"
+  },
+  {
+    "rank": 243,
+    "cz": "důležitý",
+    "en": "important",
+    "pos": "adj"
+  },
+  {
+    "rank": 245,
+    "cz": "barva",
+    "en": "colour",
+    "pos": "noun"
+  },
+  {
+    "rank": 245,
+    "cz": "dcera",
+    "en": "daughter",
+    "pos": "noun"
+  },
+  {
+    "rank": 245,
+    "cz": "slunce",
+    "en": "sun",
+    "pos": "noun"
+  },
+  {
+    "rank": 248,
+    "cz": "nikdy",
+    "en": "never",
+    "pos": "adv"
+  },
+  {
+    "rank": 250,
+    "cz": "restaurace",
+    "en": "restaurant",
+    "pos": "noun"
+  },
+  {
+    "rank": 255,
+    "cz": "bratr",
+    "en": "brother",
+    "pos": "noun"
+  },
+  {
+    "rank": 255,
+    "cz": "hora",
+    "en": "mountain",
+    "pos": "noun"
+  },
+  {
+    "rank": 255,
+    "cz": "věta",
+    "en": "sentence",
+    "pos": "noun"
+  },
+  {
+    "rank": 255,
+    "cz": "zahrada",
+    "en": "garden",
+    "pos": "noun"
+  },
+  {
+    "rank": 258,
+    "cz": "někdy",
+    "en": "sometimes",
+    "pos": "adv"
+  },
+  {
+    "rank": 260,
+    "cz": "prosím",
+    "en": "please",
+    "pos": "interj"
+  },
+  {
+    "rank": 263,
+    "cz": "úzký",
+    "en": "narrow",
+    "pos": "adj"
+  },
+  {
+    "rank": 265,
+    "cz": "poslouchat",
+    "en": "to listen",
+    "pos": "verb"
+  },
+  {
+    "rank": 265,
+    "cz": "sestra",
+    "en": "sister",
+    "pos": "noun"
+  },
+  {
+    "rank": 265,
+    "cz": "smrt",
+    "en": "death",
+    "pos": "noun"
+  },
+  {
+    "rank": 268,
+    "cz": "často",
+    "en": "often",
+    "pos": "adv"
+  },
+  {
+    "rank": 270,
+    "cz": "obchod",
+    "en": "shop, business",
+    "pos": "noun"
+  },
+  {
+    "rank": 270,
+    "cz": "svět",
+    "en": "world",
+    "pos": "noun"
+  },
+  {
+    "rank": 273,
+    "cz": "známý",
+    "en": "known, familiar",
+    "pos": "adj"
+  },
+  {
+    "rank": 275,
+    "cz": "balkón",
+    "en": "balcony",
+    "pos": "noun"
+  },
+  {
+    "rank": 275,
+    "cz": "manžel",
+    "en": "husband",
+    "pos": "noun"
+  },
+  {
+    "rank": 275,
+    "cz": "řeka",
+    "en": "river",
+    "pos": "noun"
+  },
+  {
+    "rank": 278,
+    "cz": "brzy",
+    "en": "soon, early",
+    "pos": "adv"
+  },
+  {
+    "rank": 280,
+    "cz": "cena",
+    "en": "price",
+    "pos": "noun"
+  },
+  {
+    "rank": 280,
+    "cz": "promiňte",
+    "en": "excuse me",
+    "pos": "interj"
+  },
+  {
+    "rank": 285,
+    "cz": "dopis",
+    "en": "letter (mail)",
+    "pos": "noun"
+  },
+  {
+    "rank": 285,
+    "cz": "manželka",
+    "en": "wife",
+    "pos": "noun"
+  },
+  {
+    "rank": 288,
+    "cz": "pozdě",
+    "en": "late",
+    "pos": "adv"
+  },
+  {
+    "rank": 290,
+    "cz": "nebo",
+    "en": "or",
+    "pos": "conj"
+  },
+  {
+    "rank": 290,
+    "cz": "před",
+    "en": "before, in front of",
+    "pos": "prep"
+  },
+  {
+    "rank": 290,
+    "cz": "vlak",
+    "en": "train",
+    "pos": "noun"
+  },
+  {
+    "rank": 293,
+    "cz": "těžký",
+    "en": "heavy, difficult",
+    "pos": "adj"
+  },
+  {
+    "rank": 295,
+    "cz": "rodič",
+    "en": "parent",
+    "pos": "noun"
+  },
+  {
+    "rank": 298,
+    "cz": "hned",
+    "en": "right now, immediately",
+    "pos": "adv"
+  },
+  {
+    "rank": 300,
+    "cz": "příliš",
+    "en": "too (much)",
+    "pos": "adv"
+  },
+  {
+    "rank": 300,
+    "cz": "číst",
+    "en": "to read",
+    "pos": "verb"
+  },
+  {
+    "rank": 305,
+    "cz": "dědeček",
+    "en": "grandfather",
+    "pos": "noun"
+  },
+  {
+    "rank": 305,
+    "cz": "rozumět",
+    "en": "to understand",
+    "pos": "verb"
+  },
+  {
+    "rank": 308,
+    "cz": "potom",
+    "en": "then, afterwards",
+    "pos": "adv"
+  },
+  {
+    "rank": 310,
+    "cz": "autobus",
+    "en": "bus",
+    "pos": "noun"
+  },
+  {
+    "rank": 310,
+    "cz": "banka",
+    "en": "bank",
+    "pos": "noun"
+  },
+  {
+    "rank": 315,
+    "cz": "babička",
+    "en": "grandmother",
+    "pos": "noun"
+  },
+  {
+    "rank": 315,
+    "cz": "oheň",
+    "en": "fire",
+    "pos": "noun"
+  },
+  {
+    "rank": 315,
+    "cz": "postel",
+    "en": "bed",
+    "pos": "noun"
+  },
+  {
+    "rank": 315,
+    "cz": "pravda",
+    "en": "truth",
+    "pos": "noun"
+  },
+  {
+    "rank": 318,
+    "cz": "předtím",
+    "en": "before that",
+    "pos": "adv"
+  },
+  {
+    "rank": 320,
+    "cz": "dost",
+    "en": "enough",
+    "pos": "adv"
+  },
+  {
+    "rank": 320,
+    "cz": "psát",
+    "en": "to write",
+    "pos": "verb"
+  },
+  {
+    "rank": 323,
+    "cz": "lehký",
+    "en": "light (weight), easy",
+    "pos": "adj"
+  },
+  {
+    "rank": 325,
+    "cz": "vnuk",
+    "en": "grandson",
+    "pos": "noun"
+  },
+  {
+    "rank": 328,
+    "cz": "dlouho",
+    "en": "for a long time",
+    "pos": "adv"
+  },
+  {
+    "rank": 330,
+    "cz": "letadlo",
+    "en": "airplane",
+    "pos": "noun"
+  },
+  {
+    "rank": 330,
+    "cz": "za",
+    "en": "behind, for",
+    "pos": "prep"
+  },
+  {
+    "rank": 335,
+    "cz": "papír",
+    "en": "paper",
+    "pos": "noun"
+  },
+  {
+    "rank": 335,
+    "cz": "vnučka",
+    "en": "granddaughter",
+    "pos": "noun"
+  },
+  {
+    "rank": 335,
+    "cz": "vítr",
+    "en": "wind",
+    "pos": "noun"
+  },
+  {
+    "rank": 338,
+    "cz": "krátce",
+    "en": "briefly",
+    "pos": "adv"
+  },
+  {
+    "rank": 340,
+    "cz": "pít",
+    "en": "to drink",
+    "pos": "verb"
+  },
+  {
+    "rank": 340,
+    "cz": "skoro",
+    "en": "almost",
+    "pos": "adv"
+  },
+  {
+    "rank": 340,
+    "cz": "učitel",
+    "en": "teacher (m.)",
+    "pos": "noun"
+  },
+  {
+    "rank": 343,
+    "cz": "horší",
+    "en": "worse",
+    "pos": "adj"
+  },
+  {
+    "rank": 345,
+    "cz": "strýc",
+    "en": "uncle",
+    "pos": "noun"
+  },
+  {
+    "rank": 345,
+    "cz": "znát",
+    "en": "to know (acquainted)",
+    "pos": "verb"
+  },
+  {
+    "rank": 350,
+    "cz": "loď",
+    "en": "boat, ship",
+    "pos": "noun"
+  },
+  {
+    "rank": 350,
+    "cz": "pondělí",
+    "en": "Monday",
+    "pos": "noun"
+  },
+  {
+    "rank": 351,
+    "cz": "úterý",
+    "en": "Tuesday",
+    "pos": "noun"
+  },
+  {
+    "rank": 352,
+    "cz": "středa",
+    "en": "Wednesday",
+    "pos": "noun"
+  },
+  {
+    "rank": 353,
+    "cz": "silný",
+    "en": "strong",
+    "pos": "adj"
+  },
+  {
+    "rank": 353,
+    "cz": "čtvrtek",
+    "en": "Thursday",
+    "pos": "noun"
+  },
+  {
+    "rank": 354,
+    "cz": "pátek",
+    "en": "Friday",
+    "pos": "noun"
+  },
+  {
+    "rank": 355,
+    "cz": "déšť",
+    "en": "rain",
+    "pos": "noun"
+  },
+  {
+    "rank": 355,
+    "cz": "sobota",
+    "en": "Saturday",
+    "pos": "noun"
+  },
+  {
+    "rank": 356,
+    "cz": "neděle",
+    "en": "Sunday",
+    "pos": "noun"
+  },
+  {
+    "rank": 360,
+    "cz": "jíst",
+    "en": "to eat",
+    "pos": "verb"
+  },
+  {
+    "rank": 365,
+    "cz": "lež",
+    "en": "lie",
+    "pos": "noun"
+  },
+  {
+    "rank": 365,
+    "cz": "teta",
+    "en": "aunt",
+    "pos": "noun"
+  },
+  {
+    "rank": 365,
+    "cz": "tužka",
+    "en": "pencil",
+    "pos": "noun"
+  },
+  {
+    "rank": 370,
+    "cz": "kostel",
+    "en": "church",
+    "pos": "noun"
+  },
+  {
+    "rank": 370,
+    "cz": "leden",
+    "en": "January",
+    "pos": "noun"
+  },
+  {
+    "rank": 370,
+    "cz": "nad",
+    "en": "above",
+    "pos": "prep"
+  },
+  {
+    "rank": 371,
+    "cz": "únor",
+    "en": "February",
+    "pos": "noun"
+  },
+  {
+    "rank": 372,
+    "cz": "březen",
+    "en": "March",
+    "pos": "noun"
+  },
+  {
+    "rank": 373,
+    "cz": "duben",
+    "en": "April",
+    "pos": "noun"
+  },
+  {
+    "rank": 374,
+    "cz": "květen",
+    "en": "May",
+    "pos": "noun"
+  },
+  {
+    "rank": 375,
+    "cz": "červen",
+    "en": "June",
+    "pos": "noun"
+  },
+  {
+    "rank": 375,
+    "cz": "židle",
+    "en": "chair",
+    "pos": "noun"
+  },
+  {
+    "rank": 376,
+    "cz": "červenec",
+    "en": "July",
+    "pos": "noun"
+  },
+  {
+    "rank": 377,
+    "cz": "srpen",
+    "en": "August",
+    "pos": "noun"
+  },
+  {
+    "rank": 378,
+    "cz": "září",
+    "en": "September",
+    "pos": "noun"
+  },
+  {
+    "rank": 379,
+    "cz": "říjen",
+    "en": "October",
+    "pos": "noun"
+  },
+  {
+    "rank": 380,
+    "cz": "asi",
+    "en": "approximately, probably",
+    "pos": "adv"
+  },
+  {
+    "rank": 380,
+    "cz": "spát",
+    "en": "to sleep",
+    "pos": "verb"
+  },
+  {
+    "rank": 381,
+    "cz": "listopad",
+    "en": "November",
+    "pos": "noun"
+  },
+  {
+    "rank": 382,
+    "cz": "prosinec",
+    "en": "December",
+    "pos": "noun"
+  },
+  {
+    "rank": 383,
+    "cz": "slabý",
+    "en": "weak",
+    "pos": "adj"
+  },
+  {
+    "rank": 385,
+    "cz": "bratranec",
+    "en": "male cousin",
+    "pos": "noun"
+  },
+  {
+    "rank": 385,
+    "cz": "jaro",
+    "en": "spring",
+    "pos": "noun"
+  },
+  {
+    "rank": 386,
+    "cz": "léto",
+    "en": "summer",
+    "pos": "noun"
+  },
+  {
+    "rank": 387,
+    "cz": "podzim",
+    "en": "autumn",
+    "pos": "noun"
+  },
+  {
+    "rank": 388,
+    "cz": "zima",
+    "en": "winter, cold",
+    "pos": "noun"
+  },
+  {
+    "rank": 390,
+    "cz": "hlava",
+    "en": "head",
+    "pos": "noun"
+  },
+  {
+    "rank": 390,
+    "cz": "protože",
+    "en": "because",
+    "pos": "conj"
+  },
+  {
+    "rank": 395,
+    "cz": "pero",
+    "en": "pen",
+    "pos": "noun"
+  },
+  {
+    "rank": 395,
+    "cz": "sestřenice",
+    "en": "female cousin",
+    "pos": "noun"
+  },
+  {
+    "rank": 395,
+    "cz": "učit se",
+    "en": "to learn",
+    "pos": "verb"
+  },
+  {
+    "rank": 400,
+    "cz": "milovat",
+    "en": "to love",
+    "pos": "verb"
+  },
+  {
+    "rank": 400,
+    "cz": "snad",
+    "en": "perhaps, hopefully",
+    "pos": "adv"
+  },
+  {
+    "rank": 400,
+    "cz": "učitelka",
+    "en": "teacher (f.)",
+    "pos": "noun"
+  },
+  {
+    "rank": 405,
+    "cz": "důvod",
+    "en": "reason",
+    "pos": "noun"
+  },
+  {
+    "rank": 405,
+    "cz": "přítel",
+    "en": "friend (m.) / boyfriend",
+    "pos": "noun"
+  },
+  {
+    "rank": 410,
+    "cz": "oko",
+    "en": "eye",
+    "pos": "noun"
+  },
+  {
+    "rank": 410,
+    "cz": "pod",
+    "en": "under",
+    "pos": "prep"
+  },
+  {
+    "rank": 413,
+    "cz": "bohatý",
+    "en": "rich",
+    "pos": "adj"
+  },
+  {
+    "rank": 415,
+    "cz": "přítelkyně",
+    "en": "friend (f.) / girlfriend",
+    "pos": "noun"
+  },
+  {
+    "rank": 415,
+    "cz": "sníh",
+    "en": "snow",
+    "pos": "noun"
+  },
+  {
+    "rank": 420,
+    "cz": "opravdu",
+    "en": "really, truly",
+    "pos": "adv"
+  },
+  {
+    "rank": 420,
+    "cz": "ucho",
+    "en": "ear",
+    "pos": "noun"
+  },
+  {
+    "rank": 425,
+    "cz": "kamarád",
+    "en": "friend (informal)",
+    "pos": "noun"
+  },
+  {
+    "rank": 425,
+    "cz": "naučit",
+    "en": "to teach",
+    "pos": "verb"
+  },
+  {
+    "rank": 425,
+    "cz": "skříň",
+    "en": "wardrobe",
+    "pos": "noun"
+  },
+  {
+    "rank": 430,
+    "cz": "nos",
+    "en": "nose",
+    "pos": "noun"
+  },
+  {
+    "rank": 435,
+    "cz": "mrak",
+    "en": "cloud",
+    "pos": "noun"
+  },
+  {
+    "rank": 435,
+    "cz": "soused",
+    "en": "neighbour",
+    "pos": "noun"
+  },
+  {
+    "rank": 440,
+    "cz": "oblečení",
+    "en": "clothing",
+    "pos": "noun"
+  },
+  {
+    "rank": 440,
+    "cz": "vůbec",
+    "en": "at all",
+    "pos": "adv"
+  },
+  {
+    "rank": 440,
+    "cz": "ústa",
+    "en": "mouth",
+    "pos": "noun"
+  },
+  {
+    "rank": 443,
+    "cz": "chudý",
+    "en": "poor",
+    "pos": "adj"
+  },
+  {
+    "rank": 445,
+    "cz": "dospělý",
+    "en": "adult",
+    "pos": "noun"
+  },
+  {
+    "rank": 445,
+    "cz": "myšlenka",
+    "en": "thought, idea",
+    "pos": "noun"
+  },
+  {
+    "rank": 450,
+    "cz": "krásný",
+    "en": "beautiful",
+    "pos": "adj"
+  },
+  {
+    "rank": 450,
+    "cz": "mezi",
+    "en": "between",
+    "pos": "prep"
+  },
+  {
+    "rank": 455,
+    "cz": "bílý",
+    "en": "white",
+    "pos": "adj"
+  },
+  {
+    "rank": 455,
+    "cz": "chlapec",
+    "en": "boy",
+    "pos": "noun"
+  },
+  {
+    "rank": 455,
+    "cz": "noviny",
+    "en": "newspaper",
+    "pos": "noun"
+  },
+  {
+    "rank": 460,
+    "cz": "samozřejmě",
+    "en": "of course",
+    "pos": "adv"
+  },
+  {
+    "rank": 460,
+    "cz": "student",
+    "en": "student (m.)",
+    "pos": "noun"
+  },
+  {
+    "rank": 460,
+    "cz": "zub",
+    "en": "tooth",
+    "pos": "noun"
+  },
+  {
+    "rank": 465,
+    "cz": "dívka",
+    "en": "girl",
+    "pos": "noun"
+  },
+  {
+    "rank": 465,
+    "cz": "černý",
+    "en": "black",
+    "pos": "adj"
+  },
+  {
+    "rank": 470,
+    "cz": "jazyk",
+    "en": "tongue, language",
+    "pos": "noun"
+  },
+  {
+    "rank": 470,
+    "cz": "kolo",
+    "en": "bicycle, wheel",
+    "pos": "noun"
+  },
+  {
+    "rank": 470,
+    "cz": "park",
+    "en": "park",
+    "pos": "noun"
+  },
+  {
+    "rank": 470,
+    "cz": "zdraví",
+    "en": "health",
+    "pos": "noun"
+  },
+  {
+    "rank": 473,
+    "cz": "šťastný",
+    "en": "happy",
+    "pos": "adj"
+  },
+  {
+    "rank": 475,
+    "cz": "muž",
+    "en": "man",
+    "pos": "noun"
+  },
+  {
+    "rank": 475,
+    "cz": "pracovat",
+    "en": "to work",
+    "pos": "verb"
+  },
+  {
+    "rank": 475,
+    "cz": "červený",
+    "en": "red",
+    "pos": "adj"
+  },
+  {
+    "rank": 480,
+    "cz": "studentka",
+    "en": "student (f.)",
+    "pos": "noun"
+  },
+  {
+    "rank": 480,
+    "cz": "určitě",
+    "en": "certainly",
+    "pos": "adv"
+  },
+  {
+    "rank": 480,
+    "cz": "vlasy",
+    "en": "hair",
+    "pos": "noun"
+  },
+  {
+    "rank": 485,
+    "cz": "lampa",
+    "en": "lamp",
+    "pos": "noun"
+  },
+  {
+    "rank": 485,
+    "cz": "modrý",
+    "en": "blue",
+    "pos": "adj"
+  },
+  {
+    "rank": 485,
+    "cz": "žena",
+    "en": "woman",
+    "pos": "noun"
+  },
+  {
+    "rank": 490,
+    "cz": "krk",
+    "en": "neck",
+    "pos": "noun"
+  },
+  {
+    "rank": 490,
+    "cz": "stanice",
+    "en": "station, stop",
+    "pos": "noun"
+  },
+  {
+    "rank": 495,
+    "cz": "zelený",
+    "en": "green",
+    "pos": "adj"
+  },
+  {
+    "rank": 495,
+    "cz": "časopis",
+    "en": "magazine",
+    "pos": "noun"
+  },
+  {
+    "rank": 500,
+    "cz": "košile",
+    "en": "shirt",
+    "pos": "noun"
+  },
+  {
+    "rank": 500,
+    "cz": "malý",
+    "en": "small",
+    "pos": "adj"
+  },
+  {
+    "rank": 503,
+    "cz": "smutný",
+    "en": "sad",
+    "pos": "adj"
+  },
+  {
+    "rank": 505,
+    "cz": "nápad",
+    "en": "idea",
+    "pos": "noun"
+  },
+  {
+    "rank": 505,
+    "cz": "rameno",
+    "en": "shoulder",
+    "pos": "noun"
+  },
+  {
+    "rank": 510,
+    "cz": "jídlo",
+    "en": "food, meal",
+    "pos": "noun"
+  },
+  {
+    "rank": 510,
+    "cz": "náměstí",
+    "en": "(town) square",
+    "pos": "noun"
+  },
+  {
+    "rank": 515,
+    "cz": "paže",
+    "en": "arm",
+    "pos": "noun"
+  },
+  {
+    "rank": 515,
+    "cz": "začít",
+    "en": "to begin",
+    "pos": "verb"
+  },
+  {
+    "rank": 515,
+    "cz": "žlutý",
+    "en": "yellow",
+    "pos": "adj"
+  },
+  {
+    "rank": 520,
+    "cz": "možná",
+    "en": "maybe",
+    "pos": "adv"
+  },
+  {
+    "rank": 520,
+    "cz": "snídaně",
+    "en": "breakfast",
+    "pos": "noun"
+  },
+  {
+    "rank": 525,
+    "cz": "film",
+    "en": "film, movie",
+    "pos": "noun"
+  },
+  {
+    "rank": 525,
+    "cz": "prst",
+    "en": "finger",
+    "pos": "noun"
+  },
+  {
+    "rank": 530,
+    "cz": "aby",
+    "en": "in order that",
+    "pos": "conj"
+  },
+  {
+    "rank": 530,
+    "cz": "nemoc",
+    "en": "illness",
+    "pos": "noun"
+  },
+  {
+    "rank": 530,
+    "cz": "nádraží",
+    "en": "(train) station",
+    "pos": "noun"
+  },
+  {
+    "rank": 530,
+    "cz": "oběd",
+    "en": "lunch",
+    "pos": "noun"
+  },
+  {
+    "rank": 533,
+    "cz": "nemocný",
+    "en": "sick, ill",
+    "pos": "adj"
+  },
+  {
+    "rank": 535,
+    "cz": "noha",
+    "en": "leg, foot",
+    "pos": "noun"
+  },
+  {
+    "rank": 540,
+    "cz": "doktor",
+    "en": "doctor (title)",
+    "pos": "noun"
+  },
+  {
+    "rank": 540,
+    "cz": "večeře",
+    "en": "dinner",
+    "pos": "noun"
+  },
+  {
+    "rank": 545,
+    "cz": "koleno",
+    "en": "knee",
+    "pos": "noun"
+  },
+  {
+    "rank": 545,
+    "cz": "lednice",
+    "en": "fridge",
+    "pos": "noun"
+  },
+  {
+    "rank": 550,
+    "cz": "maso",
+    "en": "meat",
+    "pos": "noun"
+  },
+  {
+    "rank": 550,
+    "cz": "pošta",
+    "en": "post office",
+    "pos": "noun"
+  },
+  {
+    "rank": 553,
+    "cz": "nejlepší",
+    "en": "best",
+    "pos": "adj"
+  },
+  {
+    "rank": 555,
+    "cz": "končit",
+    "en": "to end, finish",
+    "pos": "verb"
+  },
+  {
+    "rank": 555,
+    "cz": "srdce",
+    "en": "heart",
+    "pos": "noun"
+  },
+  {
+    "rank": 560,
+    "cz": "bohužel",
+    "en": "unfortunately",
+    "pos": "adv"
+  },
+  {
+    "rank": 560,
+    "cz": "inženýr",
+    "en": "engineer",
+    "pos": "noun"
+  },
+  {
+    "rank": 560,
+    "cz": "ryba",
+    "en": "fish",
+    "pos": "noun"
+  },
+  {
+    "rank": 560,
+    "cz": "tričko",
+    "en": "t-shirt",
+    "pos": "noun"
+  },
+  {
+    "rank": 563,
+    "cz": "zdravý",
+    "en": "healthy",
+    "pos": "adj"
+  },
+  {
+    "rank": 565,
+    "cz": "kůže",
+    "en": "skin",
+    "pos": "noun"
+  },
+  {
+    "rank": 565,
+    "cz": "sen",
+    "en": "dream",
+    "pos": "noun"
+  },
+  {
+    "rank": 567,
+    "cz": "hvězda",
+    "en": "star",
+    "pos": "noun"
+  },
+  {
+    "rank": 570,
+    "cz": "kromě",
+    "en": "except for",
+    "pos": "prep"
+  },
+  {
+    "rank": 570,
+    "cz": "letiště",
+    "en": "airport",
+    "pos": "noun"
+  },
+  {
+    "rank": 570,
+    "cz": "most",
+    "en": "bridge",
+    "pos": "noun"
+  },
+  {
+    "rank": 570,
+    "cz": "zelenina",
+    "en": "vegetables",
+    "pos": "noun"
+  },
+  {
+    "rank": 575,
+    "cz": "hudba",
+    "en": "music",
+    "pos": "noun"
+  },
+  {
+    "rank": 575,
+    "cz": "kost",
+    "en": "bone",
+    "pos": "noun"
+  },
+  {
+    "rank": 580,
+    "cz": "naštěstí",
+    "en": "fortunately",
+    "pos": "adv"
+  },
+  {
+    "rank": 580,
+    "cz": "ovoce",
+    "en": "fruit",
+    "pos": "noun"
+  },
+  {
+    "rank": 585,
+    "cz": "tělo",
+    "en": "body",
+    "pos": "noun"
+  },
+  {
+    "rank": 590,
+    "cz": "hotel",
+    "en": "hotel",
+    "pos": "noun"
+  },
+  {
+    "rank": 590,
+    "cz": "jablko",
+    "en": "apple",
+    "pos": "noun"
+  },
+  {
+    "rank": 590,
+    "cz": "lékař",
+    "en": "doctor",
+    "pos": "noun"
+  },
+  {
+    "rank": 593,
+    "cz": "čistý",
+    "en": "clean",
+    "pos": "adj"
+  },
+  {
+    "rank": 595,
+    "cz": "obličej",
+    "en": "face",
+    "pos": "noun"
+  },
+  {
+    "rank": 595,
+    "cz": "pomáhat",
+    "en": "to help",
+    "pos": "verb"
+  },
+  {
+    "rank": 600,
+    "cz": "starý",
+    "en": "old",
+    "pos": "adj"
+  },
+  {
+    "rank": 605,
+    "cz": "krev",
+    "en": "blood",
+    "pos": "noun"
+  },
+  {
+    "rank": 605,
+    "cz": "trouba",
+    "en": "oven",
+    "pos": "noun"
+  },
+  {
+    "rank": 610,
+    "cz": "hruška",
+    "en": "pear",
+    "pos": "noun"
+  },
+  {
+    "rank": 610,
+    "cz": "pokud",
+    "en": "if, in case",
+    "pos": "conj"
+  },
+  {
+    "rank": 615,
+    "cz": "bouřka",
+    "en": "thunderstorm",
+    "pos": "noun"
+  },
+  {
+    "rank": 615,
+    "cz": "květina",
+    "en": "flower",
+    "pos": "noun"
+  },
+  {
+    "rank": 615,
+    "cz": "mozek",
+    "en": "brain",
+    "pos": "noun"
+  },
+  {
+    "rank": 615,
+    "cz": "píseň",
+    "en": "song",
+    "pos": "noun"
+  },
+  {
+    "rank": 620,
+    "cz": "banán",
+    "en": "banana",
+    "pos": "noun"
+  },
+  {
+    "rank": 620,
+    "cz": "kalhoty",
+    "en": "trousers",
+    "pos": "noun"
+  },
+  {
+    "rank": 620,
+    "cz": "navíc",
+    "en": "moreover",
+    "pos": "adv"
+  },
+  {
+    "rank": 620,
+    "cz": "úřad",
+    "en": "office (public)",
+    "pos": "noun"
+  },
+  {
+    "rank": 623,
+    "cz": "špinavý",
+    "en": "dirty",
+    "pos": "adj"
+  },
+  {
+    "rank": 625,
+    "cz": "vzpomínka",
+    "en": "memory",
+    "pos": "noun"
+  },
+  {
+    "rank": 630,
+    "cz": "hrad",
+    "en": "castle (medieval)",
+    "pos": "noun"
+  },
+  {
+    "rank": 630,
+    "cz": "pomeranč",
+    "en": "orange",
+    "pos": "noun"
+  },
+  {
+    "rank": 635,
+    "cz": "čekat",
+    "en": "to wait",
+    "pos": "verb"
+  },
+  {
+    "rank": 640,
+    "cz": "firma",
+    "en": "company, firm",
+    "pos": "noun"
+  },
+  {
+    "rank": 640,
+    "cz": "jahoda",
+    "en": "strawberry",
+    "pos": "noun"
+  },
+  {
+    "rank": 645,
+    "cz": "hra",
+    "en": "game, play",
+    "pos": "noun"
+  },
+  {
+    "rank": 650,
+    "cz": "kvůli",
+    "en": "because of",
+    "pos": "prep"
+  },
+  {
+    "rank": 650,
+    "cz": "rajče",
+    "en": "tomato",
+    "pos": "noun"
+  },
+  {
+    "rank": 650,
+    "cz": "sestra (zdrav.)",
+    "en": "nurse",
+    "pos": "noun"
+  },
+  {
+    "rank": 650,
+    "cz": "zámek",
+    "en": "château, lock",
+    "pos": "noun"
+  },
+  {
+    "rank": 653,
+    "cz": "plný",
+    "en": "full",
+    "pos": "adj"
+  },
+  {
+    "rank": 660,
+    "cz": "brambora",
+    "en": "potato",
+    "pos": "noun"
+  },
+  {
+    "rank": 660,
+    "cz": "džíny",
+    "en": "jeans",
+    "pos": "noun"
+  },
+  {
+    "rank": 660,
+    "cz": "kancelář",
+    "en": "office (workplace)",
+    "pos": "noun"
+  },
+  {
+    "rank": 660,
+    "cz": "vpravo",
+    "en": "on the right",
+    "pos": "adv"
+  },
+  {
+    "rank": 665,
+    "cz": "sporák",
+    "en": "stove, cooker",
+    "pos": "noun"
+  },
+  {
+    "rank": 670,
+    "cz": "mrkev",
+    "en": "carrot",
+    "pos": "noun"
+  },
+  {
+    "rank": 670,
+    "cz": "ostrov",
+    "en": "island",
+    "pos": "noun"
+  },
+  {
+    "rank": 675,
+    "cz": "hledat",
+    "en": "to look for",
+    "pos": "verb"
+  },
+  {
+    "rank": 680,
+    "cz": "cibule",
+    "en": "onion",
+    "pos": "noun"
+  },
+  {
+    "rank": 680,
+    "cz": "schůzka",
+    "en": "meeting, appointment",
+    "pos": "noun"
+  },
+  {
+    "rank": 680,
+    "cz": "vlevo",
+    "en": "on the left",
+    "pos": "adv"
+  },
+  {
+    "rank": 683,
+    "cz": "prázdný",
+    "en": "empty",
+    "pos": "adj"
+  },
+  {
+    "rank": 685,
+    "cz": "sport",
+    "en": "sport",
+    "pos": "noun"
+  },
+  {
+    "rank": 685,
+    "cz": "strach",
+    "en": "fear",
+    "pos": "noun"
+  },
+  {
+    "rank": 690,
+    "cz": "podle",
+    "en": "according to",
+    "pos": "prep"
+  },
+  {
+    "rank": 690,
+    "cz": "česnek",
+    "en": "garlic",
+    "pos": "noun"
+  },
+  {
+    "rank": 700,
+    "cz": "mladý",
+    "en": "young",
+    "pos": "adj"
+  },
+  {
+    "rank": 710,
+    "cz": "lék",
+    "en": "medicine",
+    "pos": "noun"
+  },
+  {
+    "rank": 710,
+    "cz": "mléko",
+    "en": "milk",
+    "pos": "noun"
+  },
+  {
+    "rank": 713,
+    "cz": "drahý",
+    "en": "expensive, dear",
+    "pos": "adj"
+  },
+  {
+    "rank": 715,
+    "cz": "jezero",
+    "en": "lake",
+    "pos": "noun"
+  },
+  {
+    "rank": 715,
+    "cz": "najít",
+    "en": "to find",
+    "pos": "verb"
+  },
+  {
+    "rank": 715,
+    "cz": "tráva",
+    "en": "grass",
+    "pos": "noun"
+  },
+  {
+    "rank": 720,
+    "cz": "dopředu",
+    "en": "forward",
+    "pos": "adv"
+  },
+  {
+    "rank": 720,
+    "cz": "sukně",
+    "en": "skirt",
+    "pos": "noun"
+  },
+  {
+    "rank": 720,
+    "cz": "sýr",
+    "en": "cheese",
+    "pos": "noun"
+  },
+  {
+    "rank": 720,
+    "cz": "úkol",
+    "en": "task, assignment",
+    "pos": "noun"
+  },
+  {
+    "rank": 725,
+    "cz": "myčka",
+    "en": "dishwasher",
+    "pos": "noun"
+  },
+  {
+    "rank": 730,
+    "cz": "díky",
+    "en": "thanks to",
+    "pos": "prep"
+  },
+  {
+    "rank": 730,
+    "cz": "kdyby",
+    "en": "if (conditional)",
+    "pos": "conj"
+  },
+  {
+    "rank": 730,
+    "cz": "máslo",
+    "en": "butter",
+    "pos": "noun"
+  },
+  {
+    "rank": 730,
+    "cz": "vesnice",
+    "en": "village",
+    "pos": "noun"
+  },
+  {
+    "rank": 735,
+    "cz": "fotbal",
+    "en": "football, soccer",
+    "pos": "noun"
+  },
+  {
+    "rank": 740,
+    "cz": "dozadu",
+    "en": "backward",
+    "pos": "adv"
+  },
+  {
+    "rank": 740,
+    "cz": "vejce",
+    "en": "egg",
+    "pos": "noun"
+  },
+  {
+    "rank": 743,
+    "cz": "levný",
+    "en": "cheap",
+    "pos": "adj"
+  },
+  {
+    "rank": 745,
+    "cz": "radost",
+    "en": "joy",
+    "pos": "noun"
+  },
+  {
+    "rank": 750,
+    "cz": "cukr",
+    "en": "sugar",
+    "pos": "noun"
+  },
+  {
+    "rank": 753,
+    "cz": "nejhorší",
+    "en": "worst",
+    "pos": "adj"
+  },
+  {
+    "rank": 755,
+    "cz": "ztratit",
+    "en": "to lose",
+    "pos": "verb"
+  },
+  {
+    "rank": 760,
+    "cz": "problém",
+    "en": "problem",
+    "pos": "noun"
+  },
+  {
+    "rank": 760,
+    "cz": "sůl",
+    "en": "salt",
+    "pos": "noun"
+  },
+  {
+    "rank": 770,
+    "cz": "bolest",
+    "en": "pain",
+    "pos": "noun"
+  },
+  {
+    "rank": 770,
+    "cz": "během",
+    "en": "during",
+    "pos": "prep"
+  },
+  {
+    "rank": 770,
+    "cz": "pepř",
+    "en": "pepper",
+    "pos": "noun"
+  },
+  {
+    "rank": 773,
+    "cz": "otevřený",
+    "en": "open",
+    "pos": "adj"
+  },
+  {
+    "rank": 775,
+    "cz": "moře",
+    "en": "sea",
+    "pos": "noun"
+  },
+  {
+    "rank": 780,
+    "cz": "nahoru",
+    "en": "up(ward)",
+    "pos": "adv"
+  },
+  {
+    "rank": 780,
+    "cz": "polévka",
+    "en": "soup",
+    "pos": "noun"
+  },
+  {
+    "rank": 780,
+    "cz": "šaty",
+    "en": "dress, clothes",
+    "pos": "noun"
+  },
+  {
+    "rank": 785,
+    "cz": "hokej",
+    "en": "ice hockey",
+    "pos": "noun"
+  },
+  {
+    "rank": 785,
+    "cz": "pračka",
+    "en": "washing machine",
+    "pos": "noun"
+  },
+  {
+    "rank": 790,
+    "cz": "knedlík",
+    "en": "dumpling",
+    "pos": "noun"
+  },
+  {
+    "rank": 795,
+    "cz": "koupit",
+    "en": "to buy",
+    "pos": "verb"
+  },
+  {
+    "rank": 800,
+    "cz": "otázka",
+    "en": "question",
+    "pos": "noun"
+  },
+  {
+    "rank": 800,
+    "cz": "rychlý",
+    "en": "fast",
+    "pos": "adj"
+  },
+  {
+    "rank": 803,
+    "cz": "zavřený",
+    "en": "closed",
+    "pos": "adj"
+  },
+  {
+    "rank": 805,
+    "cz": "list",
+    "en": "leaf, sheet",
+    "pos": "noun"
+  },
+  {
+    "rank": 805,
+    "cz": "štěstí",
+    "en": "happiness, luck",
+    "pos": "noun"
+  },
+  {
+    "rank": 810,
+    "cz": "okolo",
+    "en": "around",
+    "pos": "prep"
+  },
+  {
+    "rank": 810,
+    "cz": "rýže",
+    "en": "rice",
+    "pos": "noun"
+  },
+  {
+    "rank": 815,
+    "cz": "pole",
+    "en": "field",
+    "pos": "noun"
+  },
+  {
+    "rank": 820,
+    "cz": "dolů",
+    "en": "down(ward)",
+    "pos": "adv"
+  },
+  {
+    "rank": 820,
+    "cz": "těstoviny",
+    "en": "pasta",
+    "pos": "noun"
+  },
+  {
+    "rank": 825,
+    "cz": "tenis",
+    "en": "tennis",
+    "pos": "noun"
+  },
+  {
+    "rank": 830,
+    "cz": "horečka",
+    "en": "fever",
+    "pos": "noun"
+  },
+  {
+    "rank": 830,
+    "cz": "čaj",
+    "en": "tea",
+    "pos": "noun"
+  },
+  {
+    "rank": 833,
+    "cz": "hlavní",
+    "en": "main",
+    "pos": "adj"
+  },
+  {
+    "rank": 835,
+    "cz": "prodat",
+    "en": "to sell",
+    "pos": "verb"
+  },
+  {
+    "rank": 840,
+    "cz": "kabát",
+    "en": "coat",
+    "pos": "noun"
+  },
+  {
+    "rank": 840,
+    "cz": "odpověď",
+    "en": "answer",
+    "pos": "noun"
+  },
+  {
+    "rank": 840,
+    "cz": "víno",
+    "en": "wine",
+    "pos": "noun"
+  },
+  {
+    "rank": 840,
+    "cz": "Česko",
+    "en": "Czechia",
+    "pos": "noun"
+  },
+  {
+    "rank": 845,
+    "cz": "Německo",
+    "en": "Germany",
+    "pos": "noun"
+  },
+  {
+    "rank": 845,
+    "cz": "televize",
+    "en": "television",
+    "pos": "noun"
+  },
+  {
+    "rank": 850,
+    "cz": "šťáva",
+    "en": "juice",
+    "pos": "noun"
+  },
+  {
+    "rank": 855,
+    "cz": "Francie",
+    "en": "France",
+    "pos": "noun"
+  },
+  {
+    "rank": 855,
+    "cz": "louka",
+    "en": "meadow",
+    "pos": "noun"
+  },
+  {
+    "rank": 855,
+    "cz": "míč",
+    "en": "ball",
+    "pos": "noun"
+  },
+  {
+    "rank": 860,
+    "cz": "blízko",
+    "en": "near",
+    "pos": "adv"
+  },
+  {
+    "rank": 860,
+    "cz": "limonáda",
+    "en": "soft drink",
+    "pos": "noun"
+  },
+  {
+    "rank": 863,
+    "cz": "hloupý",
+    "en": "stupid",
+    "pos": "adj"
+  },
+  {
+    "rank": 865,
+    "cz": "Anglie",
+    "en": "England",
+    "pos": "noun"
+  },
+  {
+    "rank": 865,
+    "cz": "smutek",
+    "en": "sadness",
+    "pos": "noun"
+  },
+  {
+    "rank": 870,
+    "cz": "jestli",
+    "en": "whether, if",
+    "pos": "conj"
+  },
+  {
+    "rank": 873,
+    "cz": "zajímavý",
+    "en": "interesting",
+    "pos": "adj"
+  },
+  {
+    "rank": 875,
+    "cz": "Amerika",
+    "en": "America",
+    "pos": "noun"
+  },
+  {
+    "rank": 875,
+    "cz": "platit",
+    "en": "to pay",
+    "pos": "verb"
+  },
+  {
+    "rank": 880,
+    "cz": "daleko",
+    "en": "far",
+    "pos": "adv"
+  },
+  {
+    "rank": 880,
+    "cz": "salát",
+    "en": "salad",
+    "pos": "noun"
+  },
+  {
+    "rank": 885,
+    "cz": "Rusko",
+    "en": "Russia",
+    "pos": "noun"
+  },
+  {
+    "rank": 890,
+    "cz": "chřipka",
+    "en": "flu",
+    "pos": "noun"
+  },
+  {
+    "rank": 890,
+    "cz": "koláč",
+    "en": "cake, pastry",
+    "pos": "noun"
+  },
+  {
+    "rank": 893,
+    "cz": "chytrý",
+    "en": "smart, clever",
+    "pos": "adj"
+  },
+  {
+    "rank": 895,
+    "cz": "Polsko",
+    "en": "Poland",
+    "pos": "noun"
+  },
+  {
+    "rank": 895,
+    "cz": "dárek",
+    "en": "gift, present",
+    "pos": "noun"
+  },
+  {
+    "rank": 900,
+    "cz": "bunda",
+    "en": "jacket",
+    "pos": "noun"
+  },
+  {
+    "rank": 900,
+    "cz": "pomalý",
+    "en": "slow",
+    "pos": "adj"
+  },
+  {
+    "rank": 905,
+    "cz": "Slovensko",
+    "en": "Slovakia",
+    "pos": "noun"
+  },
+  {
+    "rank": 905,
+    "cz": "kámen",
+    "en": "stone",
+    "pos": "noun"
+  },
+  {
+    "rank": 905,
+    "cz": "počítač",
+    "en": "computer",
+    "pos": "noun"
+  },
+  {
+    "rank": 910,
+    "cz": "čokoláda",
+    "en": "chocolate",
+    "pos": "noun"
+  },
+  {
+    "rank": 915,
+    "cz": "Rakousko",
+    "en": "Austria",
+    "pos": "noun"
+  },
+  {
+    "rank": 915,
+    "cz": "stát se",
+    "en": "to happen, become",
+    "pos": "verb"
+  },
+  {
+    "rank": 920,
+    "cz": "lekce",
+    "en": "lesson",
+    "pos": "noun"
+  },
+  {
+    "rank": 920,
+    "cz": "uvnitř",
+    "en": "inside",
+    "pos": "adv"
+  },
+  {
+    "rank": 920,
+    "cz": "zmrzlina",
+    "en": "ice cream",
+    "pos": "noun"
+  },
+  {
+    "rank": 923,
+    "cz": "hezký",
+    "en": "pretty, nice",
+    "pos": "adj"
+  },
+  {
+    "rank": 925,
+    "cz": "Itálie",
+    "en": "Italy",
+    "pos": "noun"
+  },
+  {
+    "rank": 925,
+    "cz": "zlost",
+    "en": "anger",
+    "pos": "noun"
+  },
+  {
+    "rank": 930,
+    "cz": "med",
+    "en": "honey",
+    "pos": "noun"
+  },
+  {
+    "rank": 935,
+    "cz": "Španělsko",
+    "en": "Spain",
+    "pos": "noun"
+  },
+  {
+    "rank": 940,
+    "cz": "olej",
+    "en": "oil",
+    "pos": "noun"
+  },
+  {
+    "rank": 940,
+    "cz": "venku",
+    "en": "outside",
+    "pos": "adv"
+  },
+  {
+    "rank": 945,
+    "cz": "Maďarsko",
+    "en": "Hungary",
+    "pos": "noun"
+  },
+  {
+    "rank": 945,
+    "cz": "narozeniny",
+    "en": "birthday",
+    "pos": "noun"
+  },
+  {
+    "rank": 950,
+    "cz": "ocet",
+    "en": "vinegar",
+    "pos": "noun"
+  },
+  {
+    "rank": 950,
+    "cz": "rýma",
+    "en": "runny nose",
+    "pos": "noun"
+  },
+  {
+    "rank": 953,
+    "cz": "ošklivý",
+    "en": "ugly",
+    "pos": "adj"
+  },
+  {
+    "rank": 955,
+    "cz": "Nizozemsko",
+    "en": "the Netherlands",
+    "pos": "noun"
+  },
+  {
+    "rank": 955,
+    "cz": "otevřít",
+    "en": "to open",
+    "pos": "verb"
+  },
+  {
+    "rank": 960,
+    "cz": "mouka",
+    "en": "flour",
+    "pos": "noun"
+  },
+  {
+    "rank": 965,
+    "cz": "Belgie",
+    "en": "Belgium",
+    "pos": "noun"
+  },
+  {
+    "rank": 965,
+    "cz": "telefon",
+    "en": "telephone",
+    "pos": "noun"
+  },
+  {
+    "rank": 970,
+    "cz": "zvíře",
+    "en": "animal",
+    "pos": "noun"
+  },
+  {
+    "rank": 975,
+    "cz": "Švýcarsko",
+    "en": "Switzerland",
+    "pos": "noun"
+  },
+  {
+    "rank": 980,
+    "cz": "kůň",
+    "en": "horse",
+    "pos": "noun"
+  },
+  {
+    "rank": 980,
+    "cz": "univerzita",
+    "en": "university",
+    "pos": "noun"
+  },
+  {
+    "rank": 983,
+    "cz": "hluboký",
+    "en": "deep",
+    "pos": "adj"
+  },
+  {
+    "rank": 985,
+    "cz": "naděje",
+    "en": "hope",
+    "pos": "noun"
+  },
+  {
+    "rank": 985,
+    "cz": "Čína",
+    "en": "China",
+    "pos": "noun"
+  },
+  {
+    "rank": 990,
+    "cz": "kráva",
+    "en": "cow",
+    "pos": "noun"
+  },
+  {
+    "rank": 995,
+    "cz": "Japonsko",
+    "en": "Japan",
+    "pos": "noun"
+  },
+  {
+    "rank": 995,
+    "cz": "zavřít",
+    "en": "to close",
+    "pos": "verb"
+  },
+  {
+    "rank": 1000,
+    "cz": "i",
+    "en": "even, also",
+    "pos": "conj"
+  },
+  {
+    "rank": 1000,
+    "cz": "pivo",
+    "en": "beer",
+    "pos": "noun"
+  },
+  {
+    "rank": 1005,
+    "cz": "Evropa",
+    "en": "Europe",
+    "pos": "noun"
+  },
+  {
+    "rank": 1005,
+    "cz": "Vánoce",
+    "en": "Christmas",
+    "pos": "noun"
+  },
+  {
+    "rank": 1010,
+    "cz": "kašel",
+    "en": "cough",
+    "pos": "noun"
+  },
+  {
+    "rank": 1010,
+    "cz": "prase",
+    "en": "pig",
+    "pos": "noun"
+  },
+  {
+    "rank": 1013,
+    "cz": "ostrý",
+    "en": "sharp",
+    "pos": "adj"
+  },
+  {
+    "rank": 1015,
+    "cz": "Asie",
+    "en": "Asia",
+    "pos": "noun"
+  },
+  {
+    "rank": 1015,
+    "cz": "kolem",
+    "en": "around",
+    "pos": "adv"
+  },
+  {
+    "rank": 1015,
+    "cz": "písek",
+    "en": "sand",
+    "pos": "noun"
+  },
+  {
+    "rank": 1020,
+    "cz": "ovce",
+    "en": "sheep",
+    "pos": "noun"
+  },
+  {
+    "rank": 1020,
+    "cz": "svetr",
+    "en": "sweater",
+    "pos": "noun"
+  },
+  {
+    "rank": 1025,
+    "cz": "Afrika",
+    "en": "Africa",
+    "pos": "noun"
+  },
+  {
+    "rank": 1025,
+    "cz": "klíč",
+    "en": "key",
+    "pos": "noun"
+  },
+  {
+    "rank": 1025,
+    "cz": "oranžový",
+    "en": "orange (colour)",
+    "pos": "adj"
+  },
+  {
+    "rank": 1030,
+    "cz": "koza",
+    "en": "goat",
+    "pos": "noun"
+  },
+  {
+    "rank": 1035,
+    "cz": "Praha",
+    "en": "Prague",
+    "pos": "noun"
+  },
+  {
+    "rank": 1035,
+    "cz": "ukázat",
+    "en": "to show",
+    "pos": "verb"
+  },
+  {
+    "rank": 1040,
+    "cz": "slepice",
+    "en": "hen",
+    "pos": "noun"
+  },
+  {
+    "rank": 1040,
+    "cz": "učení",
+    "en": "learning, studying",
+    "pos": "noun"
+  },
+  {
+    "rank": 1043,
+    "cz": "tupý",
+    "en": "blunt, dull",
+    "pos": "adj"
+  },
+  {
+    "rank": 1045,
+    "cz": "Brno",
+    "en": "Brno",
+    "pos": "noun"
+  },
+  {
+    "rank": 1045,
+    "cz": "víra",
+    "en": "faith, belief",
+    "pos": "noun"
+  },
+  {
+    "rank": 1050,
+    "cz": "kuře",
+    "en": "chicken (chick)",
+    "pos": "noun"
+  },
+  {
+    "rank": 1055,
+    "cz": "spolu",
+    "en": "together",
+    "pos": "adv"
+  },
+  {
+    "rank": 1060,
+    "cz": "kachna",
+    "en": "duck",
+    "pos": "noun"
+  },
+  {
+    "rank": 1065,
+    "cz": "Velikonoce",
+    "en": "Easter",
+    "pos": "noun"
+  },
+  {
+    "rank": 1070,
+    "cz": "pták",
+    "en": "bird",
+    "pos": "noun"
+  },
+  {
+    "rank": 1073,
+    "cz": "suchý",
+    "en": "dry",
+    "pos": "adj"
+  },
+  {
+    "rank": 1075,
+    "cz": "zeptat se",
+    "en": "to ask",
+    "pos": "verb"
+  },
+  {
+    "rank": 1080,
+    "cz": "boty",
+    "en": "shoes",
+    "pos": "noun"
+  },
+  {
+    "rank": 1080,
+    "cz": "myš",
+    "en": "mouse",
+    "pos": "noun"
+  },
+  {
+    "rank": 1085,
+    "cz": "zrcadlo",
+    "en": "mirror",
+    "pos": "noun"
+  },
+  {
+    "rank": 1090,
+    "cz": "had",
+    "en": "snake",
+    "pos": "noun"
+  },
+  {
+    "rank": 1095,
+    "cz": "zvlášť",
+    "en": "separately, especially",
+    "pos": "adv"
+  },
+  {
+    "rank": 1100,
+    "cz": "ani",
+    "en": "neither, nor",
+    "pos": "conj"
+  },
+  {
+    "rank": 1100,
+    "cz": "žába",
+    "en": "frog",
+    "pos": "noun"
+  },
+  {
+    "rank": 1103,
+    "cz": "mokrý",
+    "en": "wet",
+    "pos": "adj"
+  },
+  {
+    "rank": 1105,
+    "cz": "klid",
+    "en": "calm, peace",
+    "pos": "noun"
+  },
+  {
+    "rank": 1110,
+    "cz": "motýl",
+    "en": "butterfly",
+    "pos": "noun"
+  },
+  {
+    "rank": 1110,
+    "cz": "známka",
+    "en": "grade, stamp",
+    "pos": "noun"
+  },
+  {
+    "rank": 1115,
+    "cz": "duha",
+    "en": "rainbow",
+    "pos": "noun"
+  },
+  {
+    "rank": 1115,
+    "cz": "odpovědět",
+    "en": "to answer",
+    "pos": "verb"
+  },
+  {
+    "rank": 1115,
+    "cz": "svátek",
+    "en": "holiday, name day",
+    "pos": "noun"
+  },
+  {
+    "rank": 1120,
+    "cz": "včela",
+    "en": "bee",
+    "pos": "noun"
+  },
+  {
+    "rank": 1130,
+    "cz": "moucha",
+    "en": "fly",
+    "pos": "noun"
+  },
+  {
+    "rank": 1133,
+    "cz": "horký",
+    "en": "hot",
+    "pos": "adj"
+  },
+  {
+    "rank": 1135,
+    "cz": "fialový",
+    "en": "purple, violet",
+    "pos": "adj"
+  },
+  {
+    "rank": 1140,
+    "cz": "pavouk",
+    "en": "spider",
+    "pos": "noun"
+  },
+  {
+    "rank": 1140,
+    "cz": "ponožky",
+    "en": "socks",
+    "pos": "noun"
+  },
+  {
+    "rank": 1145,
+    "cz": "hodiny",
+    "en": "clock",
+    "pos": "noun"
+  },
+  {
+    "rank": 1145,
+    "cz": "čeština",
+    "en": "Czech (language)",
+    "pos": "noun"
+  },
+  {
+    "rank": 1150,
+    "cz": "medvěd",
+    "en": "bear",
+    "pos": "noun"
+  },
+  {
+    "rank": 1155,
+    "cz": "líbit se",
+    "en": "to be liked",
+    "pos": "verb"
+  },
+  {
+    "rank": 1160,
+    "cz": "vlk",
+    "en": "wolf",
+    "pos": "noun"
+  },
+  {
+    "rank": 1163,
+    "cz": "teplý",
+    "en": "warm",
+    "pos": "adj"
+  },
+  {
+    "rank": 1165,
+    "cz": "ticho",
+    "en": "silence",
+    "pos": "noun"
+  },
+  {
+    "rank": 1170,
+    "cz": "liška",
+    "en": "fox",
+    "pos": "noun"
+  },
+  {
+    "rank": 1170,
+    "cz": "zkouška",
+    "en": "exam",
+    "pos": "noun"
+  },
+  {
+    "rank": 1175,
+    "cz": "dovolená",
+    "en": "vacation, holiday",
+    "pos": "noun"
+  },
+  {
+    "rank": 1180,
+    "cz": "zajíc",
+    "en": "hare",
+    "pos": "noun"
+  },
+  {
+    "rank": 1190,
+    "cz": "veverka",
+    "en": "squirrel",
+    "pos": "noun"
+  },
+  {
+    "rank": 1193,
+    "cz": "studený",
+    "en": "cold",
+    "pos": "adj"
+  },
+  {
+    "rank": 1195,
+    "cz": "jmenovat se",
+    "en": "to be named",
+    "pos": "verb"
+  },
+  {
+    "rank": 1200,
+    "cz": "káva",
+    "en": "coffee",
+    "pos": "noun"
+  },
+  {
+    "rank": 1200,
+    "cz": "čepice",
+    "en": "cap, hat (winter)",
+    "pos": "noun"
+  },
+  {
+    "rank": 1205,
+    "cz": "obraz",
+    "en": "picture, painting",
+    "pos": "noun"
+  },
+  {
+    "rank": 1215,
+    "cz": "led",
+    "en": "ice",
+    "pos": "noun"
+  },
+  {
+    "rank": 1223,
+    "cz": "chladný",
+    "en": "cool, chilly",
+    "pos": "adj"
+  },
+  {
+    "rank": 1225,
+    "cz": "hluk",
+    "en": "noise",
+    "pos": "noun"
+  },
+  {
+    "rank": 1230,
+    "cz": "diplom",
+    "en": "diploma",
+    "pos": "noun"
+  },
+  {
+    "rank": 1235,
+    "cz": "sednout si",
+    "en": "to sit down",
+    "pos": "verb"
+  },
+  {
+    "rank": 1235,
+    "cz": "víkend",
+    "en": "weekend",
+    "pos": "noun"
+  },
+  {
+    "rank": 1245,
+    "cz": "angličtina",
+    "en": "English (language)",
+    "pos": "noun"
+  },
+  {
+    "rank": 1245,
+    "cz": "růžový",
+    "en": "pink",
+    "pos": "adj"
+  },
+  {
+    "rank": 1253,
+    "cz": "hořký",
+    "en": "bitter",
+    "pos": "adj"
+  },
+  {
+    "rank": 1260,
+    "cz": "klobouk",
+    "en": "hat",
+    "pos": "noun"
+  },
+  {
+    "rank": 1265,
+    "cz": "podlaha",
+    "en": "floor",
+    "pos": "noun"
+  },
+  {
+    "rank": 1275,
+    "cz": "vstát",
+    "en": "to get up, stand up",
+    "pos": "verb"
+  },
+  {
+    "rank": 1283,
+    "cz": "sladký",
+    "en": "sweet",
+    "pos": "adj"
+  },
+  {
+    "rank": 1285,
+    "cz": "krása",
+    "en": "beauty",
+    "pos": "noun"
+  },
+  {
+    "rank": 1313,
+    "cz": "kyselý",
+    "en": "sour",
+    "pos": "adj"
+  },
+  {
+    "rank": 1315,
+    "cz": "blesk",
+    "en": "lightning",
+    "pos": "noun"
+  },
+  {
+    "rank": 1315,
+    "cz": "lehnout si",
+    "en": "to lie down",
+    "pos": "verb"
+  },
+  {
+    "rank": 1320,
+    "cz": "rukavice",
+    "en": "gloves",
+    "pos": "noun"
+  },
+  {
+    "rank": 1325,
+    "cz": "strop",
+    "en": "ceiling",
+    "pos": "noun"
+  },
+  {
+    "rank": 1343,
+    "cz": "slaný",
+    "en": "salty",
+    "pos": "adj"
+  },
+  {
+    "rank": 1345,
+    "cz": "němčina",
+    "en": "German (language)",
+    "pos": "noun"
+  },
+  {
+    "rank": 1345,
+    "cz": "síla",
+    "en": "strength, power",
+    "pos": "noun"
+  },
+  {
+    "rank": 1355,
+    "cz": "hnědý",
+    "en": "brown",
+    "pos": "adj"
+  },
+  {
+    "rank": 1355,
+    "cz": "žít",
+    "en": "to live",
+    "pos": "verb"
+  },
+  {
+    "rank": 1373,
+    "cz": "čerstvý",
+    "en": "fresh",
+    "pos": "adj"
+  },
+  {
+    "rank": 1380,
+    "cz": "šála",
+    "en": "scarf",
+    "pos": "noun"
+  },
+  {
+    "rank": 1385,
+    "cz": "stěna",
+    "en": "wall",
+    "pos": "noun"
+  },
+  {
+    "rank": 1395,
+    "cz": "schránka",
+    "en": "mailbox",
+    "pos": "noun"
+  },
+  {
+    "rank": 1395,
+    "cz": "zemřít",
+    "en": "to die",
+    "pos": "verb"
+  },
+  {
+    "rank": 1403,
+    "cz": "stejný",
+    "en": "same",
+    "pos": "adj"
+  },
+  {
+    "rank": 1405,
+    "cz": "důvěra",
+    "en": "trust",
+    "pos": "noun"
+  },
+  {
+    "rank": 1415,
+    "cz": "hrom",
+    "en": "thunder",
+    "pos": "noun"
+  },
+  {
+    "rank": 1433,
+    "cz": "jiný",
+    "en": "different, other",
+    "pos": "adj"
+  },
+  {
+    "rank": 1435,
+    "cz": "narodit se",
+    "en": "to be born",
+    "pos": "verb"
+  },
+  {
+    "rank": 1445,
+    "cz": "francouzština",
+    "en": "French (language)",
+    "pos": "noun"
+  },
+  {
+    "rank": 1445,
+    "cz": "střecha",
+    "en": "roof",
+    "pos": "noun"
+  },
+  {
+    "rank": 1450,
+    "cz": "továrna",
+    "en": "factory",
+    "pos": "noun"
+  },
+  {
+    "rank": 1455,
+    "cz": "kapsa",
+    "en": "pocket",
+    "pos": "noun"
+  },
+  {
+    "rank": 1463,
+    "cz": "možný",
+    "en": "possible",
+    "pos": "adj"
+  },
+  {
+    "rank": 1465,
+    "cz": "úspěch",
+    "en": "success",
+    "pos": "noun"
+  },
+  {
+    "rank": 1465,
+    "cz": "šedý",
+    "en": "grey",
+    "pos": "adj"
+  },
+  {
+    "rank": 1475,
+    "cz": "nést",
+    "en": "to carry",
+    "pos": "verb"
+  },
+  {
+    "rank": 1493,
+    "cz": "nemožný",
+    "en": "impossible",
+    "pos": "adj"
+  },
+  {
+    "rank": 1500,
+    "cz": "ulice",
+    "en": "street",
+    "pos": "noun"
+  },
+  {
+    "rank": 1505,
+    "cz": "schody",
+    "en": "stairs",
+    "pos": "noun"
+  },
+  {
+    "rank": 1515,
+    "cz": "mlha",
+    "en": "fog",
+    "pos": "noun"
+  },
+  {
+    "rank": 1515,
+    "cz": "přinést",
+    "en": "to bring",
+    "pos": "verb"
+  },
+  {
+    "rank": 1515,
+    "cz": "taška",
+    "en": "bag",
+    "pos": "noun"
+  },
+  {
+    "rank": 1523,
+    "cz": "jistý",
+    "en": "certain, sure",
+    "pos": "adj"
+  },
+  {
+    "rank": 1525,
+    "cz": "selhání",
+    "en": "failure",
+    "pos": "noun"
+  },
+  {
+    "rank": 1545,
+    "cz": "španělština",
+    "en": "Spanish (language)",
+    "pos": "noun"
+  },
+  {
+    "rank": 1550,
+    "cz": "kino",
+    "en": "cinema",
+    "pos": "noun"
+  },
+  {
+    "rank": 1553,
+    "cz": "snadný",
+    "en": "easy",
+    "pos": "adj"
+  },
+  {
+    "rank": 1555,
+    "cz": "položit",
+    "en": "to put down, lay",
+    "pos": "verb"
+  },
+  {
+    "rank": 1575,
+    "cz": "batoh",
+    "en": "backpack",
+    "pos": "noun"
+  },
+  {
+    "rank": 1575,
+    "cz": "zlatý",
+    "en": "golden",
+    "pos": "adj"
+  },
+  {
+    "rank": 1583,
+    "cz": "obtížný",
+    "en": "difficult",
+    "pos": "adj"
+  },
+  {
+    "rank": 1595,
+    "cz": "poslat",
+    "en": "to send",
+    "pos": "verb"
+  },
+  {
+    "rank": 1613,
+    "cz": "nudný",
+    "en": "boring",
+    "pos": "adj"
+  },
+  {
+    "rank": 1615,
+    "cz": "obláček",
+    "en": "small cloud",
+    "pos": "noun"
+  },
+  {
+    "rank": 1635,
+    "cz": "dostávat",
+    "en": "to receive (impf.)",
+    "pos": "verb"
+  },
+  {
+    "rank": 1635,
+    "cz": "peněženka",
+    "en": "wallet",
+    "pos": "noun"
+  },
+  {
+    "rank": 1643,
+    "cz": "tichý",
+    "en": "quiet",
+    "pos": "adj"
+  },
+  {
+    "rank": 1645,
+    "cz": "ruština",
+    "en": "Russian (language)",
+    "pos": "noun"
+  },
+  {
+    "rank": 1650,
+    "cz": "divadlo",
+    "en": "theatre",
+    "pos": "noun"
+  },
+  {
+    "rank": 1673,
+    "cz": "hlučný",
+    "en": "loud, noisy",
+    "pos": "adj"
+  },
+  {
+    "rank": 1675,
+    "cz": "hrát",
+    "en": "to play",
+    "pos": "verb"
+  },
+  {
+    "rank": 1685,
+    "cz": "stříbrný",
+    "en": "silver",
+    "pos": "adj"
+  },
+  {
+    "rank": 1703,
+    "cz": "jasný",
+    "en": "clear, bright",
+    "pos": "adj"
+  },
+  {
+    "rank": 1715,
+    "cz": "déšťovka",
+    "en": "rainwater",
+    "pos": "noun"
+  },
+  {
+    "rank": 1715,
+    "cz": "zpívat",
+    "en": "to sing",
+    "pos": "verb"
+  },
+  {
+    "rank": 1733,
+    "cz": "tmavý",
+    "en": "dark",
+    "pos": "adj"
+  },
+  {
+    "rank": 1750,
+    "cz": "muzeum",
+    "en": "museum",
+    "pos": "noun"
+  },
+  {
+    "rank": 1755,
+    "cz": "tančit",
+    "en": "to dance",
+    "pos": "verb"
+  },
+  {
+    "rank": 1763,
+    "cz": "světlý",
+    "en": "light (colour)",
+    "pos": "adj"
+  },
+  {
+    "rank": 1793,
+    "cz": "ranný",
+    "en": "early (morning)",
+    "pos": "adj"
+  },
+  {
+    "rank": 1795,
+    "cz": "vařit",
+    "en": "to cook",
+    "pos": "verb"
+  },
+  {
+    "rank": 1800,
+    "cz": "obloha",
+    "en": "sky",
+    "pos": "noun"
+  },
+  {
+    "rank": 1823,
+    "cz": "pozdní",
+    "en": "late",
+    "pos": "adj"
+  },
+  {
+    "rank": 1835,
+    "cz": "prát",
+    "en": "to wash (laundry)",
+    "pos": "verb"
+  },
+  {
+    "rank": 1850,
+    "cz": "knihovna",
+    "en": "library",
+    "pos": "noun"
+  },
+  {
+    "rank": 1853,
+    "cz": "neznámý",
+    "en": "unknown",
+    "pos": "adj"
+  },
+  {
+    "rank": 1875,
+    "cz": "mýt",
+    "en": "to wash",
+    "pos": "verb"
+  },
+  {
+    "rank": 1883,
+    "cz": "volný",
+    "en": "free, vacant",
+    "pos": "adj"
+  },
+  {
+    "rank": 1913,
+    "cz": "obsazený",
+    "en": "occupied",
+    "pos": "adj"
+  },
+  {
+    "rank": 1915,
+    "cz": "uklidit",
+    "en": "to tidy up",
+    "pos": "verb"
+  },
+  {
+    "rank": 1943,
+    "cz": "živý",
+    "en": "alive, lively",
+    "pos": "adj"
+  },
+  {
+    "rank": 1950,
+    "cz": "nemocnice",
+    "en": "hospital",
+    "pos": "noun"
+  },
+  {
+    "rank": 1955,
+    "cz": "plavat",
+    "en": "to swim",
+    "pos": "verb"
+  },
+  {
+    "rank": 1973,
+    "cz": "mrtvý",
+    "en": "dead",
+    "pos": "adj"
+  },
+  {
+    "rank": 1995,
+    "cz": "běhat",
+    "en": "to run (regularly)",
+    "pos": "verb"
+  },
+  {
+    "rank": 2035,
+    "cz": "běžet",
+    "en": "to run (now)",
+    "pos": "verb"
+  },
+  {
+    "rank": 2050,
+    "cz": "lékárna",
+    "en": "pharmacy",
+    "pos": "noun"
+  },
+  {
+    "rank": 2075,
+    "cz": "létat",
+    "en": "to fly (regularly)",
+    "pos": "verb"
+  },
+  {
+    "rank": 2100,
+    "cz": "zítra",
+    "en": "tomorrow",
+    "pos": "adv"
+  },
+  {
+    "rank": 2115,
+    "cz": "řídit",
+    "en": "to drive",
+    "pos": "verb"
+  },
+  {
+    "rank": 2150,
+    "cz": "ambasáda",
+    "en": "embassy",
+    "pos": "noun"
+  },
+  {
+    "rank": 2155,
+    "cz": "jezdit",
+    "en": "to ride, travel",
+    "pos": "verb"
+  },
+  {
+    "rank": 2195,
+    "cz": "padat",
+    "en": "to fall",
+    "pos": "verb"
+  },
+  {
+    "rank": 2235,
+    "cz": "smát se",
+    "en": "to laugh",
+    "pos": "verb"
+  },
+  {
+    "rank": 2250,
+    "cz": "kavárna",
+    "en": "café",
+    "pos": "noun"
+  },
+  {
+    "rank": 2275,
+    "cz": "plakat",
+    "en": "to cry",
+    "pos": "verb"
+  },
+  {
+    "rank": 2315,
+    "cz": "věřit",
+    "en": "to believe",
+    "pos": "verb"
+  },
+  {
+    "rank": 2350,
+    "cz": "hospoda",
+    "en": "pub",
+    "pos": "noun"
+  },
+  {
+    "rank": 2355,
+    "cz": "snít",
+    "en": "to dream",
+    "pos": "verb"
+  },
+  {
+    "rank": 2395,
+    "cz": "vzpomenout si",
+    "en": "to remember",
+    "pos": "verb"
+  },
+  {
+    "rank": 2435,
+    "cz": "zapomenout",
+    "en": "to forget",
+    "pos": "verb"
+  },
+  {
+    "rank": 2475,
+    "cz": "vyhrát",
+    "en": "to win",
+    "pos": "verb"
+  },
+  {
+    "rank": 2515,
+    "cz": "prohrát",
+    "en": "to lose (a game)",
+    "pos": "verb"
+  },
+  {
+    "rank": 2555,
+    "cz": "učit",
+    "en": "to teach, train",
+    "pos": "verb"
+  },
+  {
+    "rank": 2595,
+    "cz": "kouřit",
+    "en": "to smoke",
+    "pos": "verb"
+  },
+  {
+    "rank": 2635,
+    "cz": "myslit",
+    "en": "to think (variant)",
+    "pos": "verb"
+  },
+  {
+    "rank": 2715,
+    "cz": "ptát se",
+    "en": "to ask (impf.)",
+    "pos": "verb"
+  },
+  {
+    "rank": 2755,
+    "cz": "odejít",
+    "en": "to leave",
+    "pos": "verb"
+  },
+  {
+    "rank": 2795,
+    "cz": "vrátit se",
+    "en": "to return",
+    "pos": "verb"
+  },
+  {
+    "rank": 2835,
+    "cz": "dívat se",
+    "en": "to look, watch",
+    "pos": "verb"
+  },
+  {
+    "rank": 2875,
+    "cz": "podívat se",
+    "en": "to take a look",
+    "pos": "verb"
+  },
+  {
+    "rank": 2915,
+    "cz": "vybrat",
+    "en": "to choose",
+    "pos": "verb"
+  },
+  {
+    "rank": 2955,
+    "cz": "rozhodnout",
+    "en": "to decide",
+    "pos": "verb"
+  },
+  {
+    "rank": 2995,
+    "cz": "změnit",
+    "en": "to change",
+    "pos": "verb"
+  },
+  {
+    "rank": 3035,
+    "cz": "zkusit",
+    "en": "to try",
+    "pos": "verb"
+  },
+  {
+    "rank": 3075,
+    "cz": "stavět",
+    "en": "to build",
+    "pos": "verb"
+  },
+  {
+    "rank": 3115,
+    "cz": "vyrábět",
+    "en": "to produce",
+    "pos": "verb"
+  },
+  {
+    "rank": 3155,
+    "cz": "kreslit",
+    "en": "to draw",
+    "pos": "verb"
+  },
+  {
+    "rank": 3195,
+    "cz": "fotit",
+    "en": "to take photos",
+    "pos": "verb"
+  }
 ]

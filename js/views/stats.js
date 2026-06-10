@@ -70,12 +70,12 @@ function renderCoverage(el, { coverage, knownCount, total }) {
 
 function renderTiers(el, tiers) {
   el.innerHTML = tiers.map(t => {
-    const pct = t.total ? Math.round((t.known / t.total) * 100) : 0;
+    const pct = Math.round(t.pct * 100);
     return `
       <div class="tier">
         <div class="tier__head">
           <span class="tier__label">${t.label}</span>
-          <span class="tier__count">${t.known}/${t.total}</span>
+          <span class="tier__count">${pct}%</span>
         </div>
         <div class="tier__bar"><div class="tier__fill" style="width:${pct}%"></div></div>
       </div>`;

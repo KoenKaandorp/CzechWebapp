@@ -1,6 +1,6 @@
 // app.js — bootstrap, tab routing, lifecycle.
 
-import { Session, seedIfEmpty } from './session.js';
+import { Session, seedNewWords } from './session.js';
 import { mountLearnView }    from './views/learn.js';
 import { mountStatsView }    from './views/stats.js';
 import { mountSettingsView } from './views/settings.js';
@@ -20,8 +20,8 @@ async function boot() {
   }
 
   // 2. Seed vocabulary if first run.
-  const seeded = await seedIfEmpty('./data/seed.json');
-  if (seeded) console.info('Seeded starter vocabulary.');
+  const seeded = await seedNewWords('./data/seed.json');
+  if (seeded) console.info('Added ${added} new words.');
 
   // 3. Init the session manager.
   await session.init();

@@ -79,32 +79,30 @@ export async function coverageEstimate() {
   let weightKnown = 0;
   let weightTotal = 0;
   let knownCount = 0;
-
-  // Tier counters: [top 100, top 500, top 1000, top 2000, rest]
-  const tierCaps = [100, 500, 1000, 2000, Infinity];
-  const tierKnown = [0, 0, 0, 0, 0];
-  const tierTotal = [0, 0, 0, 0, 0];
+  const levelWeights = { 2: 0, 3: 0, 4: 0, 5: 0 };
 
   for (const w of words) {
     const r = w.frequencyRank || 9999;
     const weight = 1 / r;
     weightTotal += weight;
-    const tierIdx = tierCaps.findIndex(cap => r <= cap);
-    tierTotal[tierIdx] += 1;
+    const level = w.level || deriveLevel(w.interval, w.repetitions);
+    if (level >= 2 && level <= 5) levelWeights[level] += weight;
     if (isKnown(w)) {
       weightKnown += weight;
       knownCount += 1;
-      tierKnown[tierIdx] += 1;
     }
   }
 
   const coverage = weightTotal > 0 ? weightKnown / weightTotal : 0;
 
-  const tierLabels = ['Top 100', '101–500', '501–1k', '1k–2k', '2k+'];
-  const tiers = tierLabels.map((label, i) => ({
+  const tiers = [
+    { label: 'Reading',  level: 2 },
+    { label: 'Young',    level: 3 },
+    { label: 'Maturing', level: 4 },
+    { label: 'Mature',   level: 5 },
+  ].map(({ label, level }) => ({
     label,
-    known: tierKnown[i],
-    total: tierTotal[i],
+    pct: weightTotal > 0 ? levelWeights[level] / weightTotal : 0,
   }));
 
   return { coverage, knownCount, total: words.length, tiers };

@@ -94,6 +94,22 @@ export async function getDueWords(now = Date.now(), limit = 50) {
   });
 }
 
+// Already-learned words not yet due, ordered by soonest due first.
+export async function getSoonDueWords(from = Date.now(), limit = 20) {
+  const db = await openDB();
+  const idx = tx(db, ['words']).objectStore('words').index('by-due');
+  const range = IDBKeyRange.lowerBound(from, true);
+  const out = [];
+  return new Promise((resolve) => {
+    idx.openCursor(range).onsuccess = (e) => {
+      const cur = e.target.result;
+      if (!cur || out.length >= limit) return resolve(out);
+      if (cur.value.repetitions > 0) out.push(cur.value);
+      cur.continue();
+    };
+  });
+}
+
 // New words (never reviewed) ordered by frequency rank ascending.
 export async function getNewWords(limit = 10) {
   const db = await openDB();

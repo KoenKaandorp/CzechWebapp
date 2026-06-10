@@ -43,6 +43,10 @@ export class Session {
     }
   }
 
+  async refillBonus() {
+    this.queue = await db.getSoonDueWords(Date.now(), 20);
+  }
+
   // Apply a rating, persist, update session stats. Returns the updated card.
   async rate(card, rating) {
     const wasNew = card.repetitions === 0 && !card.lastReviewedAt;
@@ -88,18 +92,16 @@ export function todayKey(d = new Date()) {
 }
 
 // First-run helper: seed the words store if empty.
-export async function seedIfEmpty(seedUrl = './data/seed.json') {
-  const count = await db.countWords();
-  if (count > 0) return false;
-  const res = await fetch(seedUrl);
-  const seed = await res.json();
-  const cards = seed.map(s => freshCard({
-    id: `cz:${s.cz}`,
-    cz: s.cz,
-    en: s.en,
-    pos: s.pos || null,
-    frequencyRank: s.rank,
-  }));
-  await db.bulkPutWords(cards);
-  return true;
+// in session.js
+export async function seedNewWords(seedUrl = './data/seed.json') {
+  const existing = new Set((await db.getAllWords()).map(w => w.id));
+  const seed = await (await fetch(seedUrl)).json();
+  const fresh = seed
+    .filter(s => !existing.has(`cz:${s.cz}`))
+    .map(s => freshCard({
+      id: `cz:${s.cz}`, cz: s.cz, en: s.en, pos: s.pos || null,
+      frequencyRank: s.rank,
+    }));
+  if (fresh.length) await db.bulkPutWords(fresh);
+  return fresh.length;
 }

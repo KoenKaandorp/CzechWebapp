@@ -51,6 +51,7 @@ export function mountLearnView(root, session) {
       <div class="empty" id="empty" hidden>
         <h2>Nothing due right now.</h2>
         <p>Come back later, or raise the daily new-word limit in Settings.</p>
+        <button class="btn btn--practice" id="practice-more" type="button">Keep practicing</button>
       </div>
     </section>
   `;
@@ -63,7 +64,8 @@ export function mountLearnView(root, session) {
     front:   $('.card__face--front', root),
     back:    $('.card__face--back', root),
     ratings: $('#ratings', root),
-    empty:   $('#empty', root),
+    empty:       $('#empty', root),
+    practiceMore: $('#practice-more', root),
     stage:   $('#card-stage', root),
     due:     $('#learn-due', root),
     newC:    $('#learn-new', root),
@@ -99,16 +101,19 @@ export function mountLearnView(root, session) {
   }
 
   function flip() {
-    if (!current || revealed) return;
-    revealed = true;
-    els.front.hidden = true;
-    els.back.hidden  = false;
-    els.card.classList.add('is-flipped');
-    els.ratings.hidden = false;
+    if (!current) return;
+
+    revealed = !revealed;
+
+    els.front.hidden = revealed;
+    els.back.hidden  = !revealed;
+
+    els.card.classList.toggle('is-flipped', revealed);
+    els.ratings.hidden = !revealed;
   }
 
   async function rate(ratingKey) {
-    if (!current || !revealed) return;
+    if (!current) return;
     const rating = RATING[ratingKey];
     if (!rating) return;
     els.stage.classList.add('exit');
@@ -127,6 +132,11 @@ export function mountLearnView(root, session) {
   }
 
   // ---- events ----
+  els.practiceMore.addEventListener('click', async () => {
+    await session.refillBonus();
+    loadNext();
+  });
+
   els.card.addEventListener('click', flip);
   els.ratings.addEventListener('click', (e) => {
     const btn = e.target.closest('.rating');

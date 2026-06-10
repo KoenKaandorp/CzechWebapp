@@ -238,6 +238,7 @@ p { margin: 0; }
   margin-bottom: 8px;
   color: var(--text);
 }
+.empty .btn { margin-top: 20px; }
 
 /* ---------- Stats / Settings shared panel ---------- */
 .panel {
