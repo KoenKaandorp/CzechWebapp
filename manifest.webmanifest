@@ -1,0 +1,20 @@
+{
+  "name": "Czech Flash",
+  "short_name": "Czech Flash",
+  "description": "Spaced-repetition Czech vocabulary trainer. Offline-first.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F4F1EC",
+  "theme_color": "#2E5E4E",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "./icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
