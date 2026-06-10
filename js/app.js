@@ -20,8 +20,8 @@ async function boot() {
   }
 
   // 2. Seed vocabulary if first run.
-  const seeded = await seedNewWords('./data/seed.json');
-  if (seeded) console.info('Added ${added} new words.');
+  const added = await seedNewWords('./data/seed.json');
+  if (added) console.info(`Added ${added} new words.`);
 
   // 3. Init the session manager.
   await session.init();
@@ -56,7 +56,7 @@ function switchTab(name) {
 
 async function resetAndReload() {
   // Re-seed and re-mount learn view fresh.
-  await seedIfEmpty('./data/seed.json');
+  await seedNewWords('./data/seed.json');
   await session.init();
   for (const v of Object.values(views)) v.mounted = null;
   switchTab('learn');

@@ -91,8 +91,7 @@ export function todayKey(d = new Date()) {
   return d.toISOString().slice(0, 10);   // YYYY-MM-DD (UTC; fine for daily buckets)
 }
 
-// First-run helper: seed the words store if empty.
-// in session.js
+// Seeds any words in seed.json not yet in the DB (safe to call on every boot).
 export async function seedNewWords(seedUrl = './data/seed.json') {
   const existing = new Set((await db.getAllWords()).map(w => w.id));
   const seed = await (await fetch(seedUrl)).json();
