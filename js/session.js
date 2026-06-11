@@ -11,19 +11,25 @@
 import * as db from './db.js';
 import { applyRating, freshCard } from './scheduler.js';
 
-const DEFAULT_NEW_PER_DAY = 10;
+const DEFAULT_NEW_ALLOTTED = 10;
+const BONUS_BATCH = 5;
 
 export class Session {
-  constructor({ newPerDay = DEFAULT_NEW_PER_DAY } = {}) {
-    this.newPerDay = newPerDay;
+  constructor() {
+    this.newAllottedToday = DEFAULT_NEW_ALLOTTED;
     this.newIntroducedToday = 0;
     this.queue = [];           // upcoming cards (small lookahead)
     this.today = todayKey();
   }
 
   async init() {
-    this.newPerDay = await db.getMeta('newPerDay', DEFAULT_NEW_PER_DAY);
     this.newIntroducedToday = await db.getMeta(`newCount:${this.today}`, 0);
+    this.newAllottedToday   = await db.getMeta(`newAllotted:${this.today}`, DEFAULT_NEW_ALLOTTED);
+  }
+
+  async addMoreNew() {
+    this.newAllottedToday += BONUS_BATCH;
+    await db.setMeta(`newAllotted:${this.today}`, this.newAllottedToday);
   }
 
   async nextCard() {
@@ -36,7 +42,7 @@ export class Session {
     const due = await db.getDueWords(now, 20);
     if (due.length) { this.queue = due; return; }
 
-    const remaining = Math.max(0, this.newPerDay - this.newIntroducedToday);
+    const remaining = Math.max(0, this.newAllottedToday - this.newIntroducedToday);
     if (remaining > 0) {
       const fresh = await db.getNewWords(remaining);
       if (fresh.length) this.queue = fresh;
@@ -82,7 +88,7 @@ export class Session {
     return {
       reviewedToday: session.reviewed,
       learnedToday: session.learned,
-      newRemaining: Math.max(0, this.newPerDay - this.newIntroducedToday),
+      newRemaining: Math.max(0, this.newAllottedToday - this.newIntroducedToday),
     };
   }
 }

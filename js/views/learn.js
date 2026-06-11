@@ -50,8 +50,9 @@ export function mountLearnView(root, session) {
 
       <div class="empty" id="empty" hidden>
         <h2>Nothing due right now.</h2>
-        <p>Come back later, or raise the daily new-word limit in Settings.</p>
+        <p>Come back later, or add more new words below.</p>
         <button class="btn btn--practice" id="practice-more" type="button">Keep practicing</button>
+        <button class="btn btn--add-new" id="add-new" type="button">+ 5 new words</button>
       </div>
     </section>
   `;
@@ -64,8 +65,9 @@ export function mountLearnView(root, session) {
     front:   $('.card__face--front', root),
     back:    $('.card__face--back', root),
     ratings: $('#ratings', root),
-    empty:       $('#empty', root),
+    empty:        $('#empty', root),
     practiceMore: $('#practice-more', root),
+    addNew:       $('#add-new', root),
     stage:   $('#card-stage', root),
     due:     $('#learn-due', root),
     newC:    $('#learn-new', root),
@@ -134,6 +136,11 @@ export function mountLearnView(root, session) {
   // ---- events ----
   els.practiceMore.addEventListener('click', async () => {
     await session.refillBonus();
+    loadNext();
+  });
+
+  els.addNew.addEventListener('click', async () => {
+    await session.addMoreNew();
     loadNext();
   });
 
