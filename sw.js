@@ -7,7 +7,7 @@
 //             That means: serve from cache immediately if present, refresh in
 //             the background. Network failures fall back silently to cache.
 
-const CACHE_VERSION = 'czech-flash-v1';
+const CACHE_VERSION = 'czech-flash-v2';
 const APP_SHELL = [
   './',
   './index.html',
