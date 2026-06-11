@@ -138,5 +138,40 @@
     "present":    ["jím", "jíš", "jí", "jíme", "jíte", "jedí"],
     "past":       ["jedl jsem / jedla jsem", "jedl jsi / jedla jsi", "jedl / jedla / jedlo", "jedli jsme / jedly jsme", "jedli jste / jedly jste", "jedli / jedly"],
     "imperative": [null, "jez", null, "jezme", "jezte", null]
-  }
+  },
+  {
+  "infinitive": "muset",
+  "en": "to have to / must",
+  "present":    ["musím", "musíš", "musí", "musíme", "musíte", "musí"],
+  "past":       ["musel jsem / musela jsem", "musel jsi / musela jsi", "musel / musela / muselo", "museli jsme / musely jsme", "museli jste / musely jste", "museli / musely"],
+  "imperative": [null, "mus", null, "musme", "muste", null]
+},
+{
+  "infinitive": "říct",
+  "en": "to say / tell",
+  "present":    ["řeknu", "řekneš", "řekne", "řekneme", "řeknete", "řeknou"],
+  "past":       ["řekl jsem / řekla jsem", "řekl jsi / řekla jsi", "řekl / řekla / řeklo", "řekli jsme / řekly jsme", "řekli jste / řekly jste", "řekli / řekly"],
+  "imperative": [null, "řekni", null, "řekněme", "řekněte", null]
+},
+{
+  "infinitive": "stát",
+  "en": "to stand",
+  "present":    ["stojím", "stojíš", "stojí", "stojíme", "stojíte", "stojí"],
+  "past":       ["stál jsem / stála jsem", "stál jsi / stála jsi", "stál / stála / stálo", "stáli jsme / stály jsme", "stáli jste / stály jste", "stáli / stály"],
+  "imperative": [null, "stůj", null, "stůjme", "stůjte", null]
+},
+{
+  "infinitive": "dostat",
+  "en": "to get / receive",
+  "present":    ["dostanu", "dostaneš", "dostane", "dostaneme", "dostanete", "dostanou"],
+  "past":       ["dostal jsem / dostala jsem", "dostal jsi / dostala jsi", "dostal / dostala / dostalo", "dostali jsme / dostaly jsme", "dostali jste / dostaly jste", "dostali / dostaly"],
+  "imperative": [null, "dostaň", null, "dostaňme", "dostaňte", null]
+},
+{
+  "infinitive": "slyšet",
+  "en": "to hear",
+  "present":    ["slyším", "slyšíš", "slyší", "slyšíme", "slyšíte", "slyší"],
+  "past":       ["slyšel jsem / slyšela jsem", "slyšel jsi / slyšela jsi", "slyšel / slyšela / slyšelo", "slyšeli jsme / slyšely jsme", "slyšeli jste / slyšely jste", "slyšeli / slyšely"],
+  "imperative": [null, "slyš", null, "slyšme", "slyšte", null]
+}
 ]

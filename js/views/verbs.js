@@ -1,3 +1,5 @@
+import { getAllWords } from '../db.js';
+
 const PRONOUNS = ['já', 'ty', 'on/ona/ono', 'my', 'vy', 'oni/ony'];
 
 let verbsCache = null;
@@ -7,6 +9,15 @@ async function loadVerbs() {
   const r = await fetch('./data/verbs.json');
   verbsCache = await r.json();
   return verbsCache;
+}
+
+async function getSeenInfinitives() {
+  const words = await getAllWords();
+  return new Set(
+    words
+      .filter(w => w.repetitions > 0)
+      .map(w => w.cz)
+  );
 }
 
 function generateCards(verbs, tense) {
@@ -82,8 +93,9 @@ export function mountVerbsView(el) {
 
   async function startMode(newMode) {
     mode = newMode;
-    const data = await loadVerbs();
-    queue = generateCards(data, mode);
+    const [data, seenInfinitives] = await Promise.all([loadVerbs(), getSeenInfinitives()]);
+    const filtered = data.filter(v => seenInfinitives.has(v.infinitive));
+    queue = generateCards(filtered, mode);
     done = 0;
     showCard();
   }
