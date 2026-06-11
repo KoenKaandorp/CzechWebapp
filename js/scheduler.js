@@ -86,7 +86,7 @@ export function deriveLevel(interval, repetitions) {
 // A word is considered "known" for the comprehension estimator when it
 // reaches the maturing level (interval ≥ 21d) and hasn't been failed recently.
 export function isKnown(card) {
-  return card.repetitions >= 2 && card.interval >= 21;
+  return card.repetitions >= 2 && card.interval >= 60;
 }
 
 // Used when seeding new cards.

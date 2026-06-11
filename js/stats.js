@@ -96,9 +96,9 @@ export async function coverageEstimate() {
   const coverage = weightTotal > 0 ? weightKnown / weightTotal : 0;
   const tiers = [
     { label: 'Learning', level: 2 },
-    { label: 'Young', level: 3 },
-    { label: 'Maturing', level: 4 },
-    { label: 'Mature', level: 5 },
+    { label: 'Familiar', level: 3 },
+    { label: 'Known', level: 4 },
+    { label: 'Mastered', level: 5 },
   ].map(({ label, level }) => ({
     label,
     pct:
