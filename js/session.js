@@ -50,7 +50,7 @@ export class Session {
   }
 
   async refillBonus() {
-    this.queue = await db.getSoonDueWords(Date.now(), 20);
+    this.queue = await db.getBonusWords(20);
   }
 
   // Apply a rating, persist, update session stats. Returns the updated card.

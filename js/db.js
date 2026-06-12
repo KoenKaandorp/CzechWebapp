@@ -105,23 +105,29 @@ export async function getDueWords(now = Date.now(), limit = 50) {
   });
 }
 
-// Already-learned words not yet due, ordered by hardest first (lowest ef, then most lapses).
-export async function getSoonDueWords(from = Date.now(), limit = 20) {
-  const db = await openDB();
-  const idx = tx(db, ['words']).objectStore('words').index('by-due');
-  const range = IDBKeyRange.lowerBound(from, true);
-  const candidates = [];
-  return new Promise((resolve) => {
-    idx.openCursor(range).onsuccess = (e) => {
-      const cur = e.target.result;
-      if (!cur || candidates.length >= limit * 5) {
-        candidates.sort((a, b) => a.ef - b.ef || b.lapses - a.lapses);
-        return resolve(candidates.slice(0, limit));
-      }
-      if (cur.value.repetitions > 0) candidates.push(cur.value);
-      cur.continue();
-    };
-  });
+// Bonus words for "keep practicing": new words first (priority), then
+// 50% hardest learned words + 50% random learned words.
+export async function getBonusWords(limit = 20) {
+  const newWords = await getNewWords(limit);
+  if (newWords.length >= limit) return newWords.slice(0, limit);
+
+  const all = await getAllWords();
+  const learned = all.filter(w => w.repetitions > 0);
+
+  learned.sort((a, b) => a.ef - b.ef || b.lapses - a.lapses);
+
+  const remaining = limit - newWords.length;
+  const hardestCount = Math.ceil(remaining / 2);
+  const hardest = learned.slice(0, hardestCount);
+
+  const randomPool = learned.slice(hardestCount);
+  for (let i = randomPool.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [randomPool[i], randomPool[j]] = [randomPool[j], randomPool[i]];
+  }
+  const random = randomPool.slice(0, remaining - hardestCount);
+
+  return [...newWords, ...hardest, ...random];
 }
 
 // New words (never reviewed), frequency-prioritised but shuffled to avoid alphabetical runs.
