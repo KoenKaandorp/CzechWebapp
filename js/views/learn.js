@@ -51,7 +51,10 @@ export function mountLearnView(root, session) {
       <div class="empty" id="empty" hidden>
         <h2>Nothing due right now.</h2>
         <p>Come back later, or add more new words below.</p>
-        <button class="btn btn--practice" id="practice-more" type="button">Keep practicing</button>
+        <div class="practice-row">
+          <input class="practice-size" id="practice-size" type="number" min="5" max="100" value="20" aria-label="Number of words to practice">
+          <button class="btn btn--practice" id="practice-more" type="button">Keep practicing</button>
+        </div>
         <button class="btn btn--add-new" id="add-new" type="button">+ 5 new words</button>
       </div>
     </section>
@@ -67,6 +70,7 @@ export function mountLearnView(root, session) {
     ratings: $('#ratings', root),
     empty:        $('#empty', root),
     practiceMore: $('#practice-more', root),
+    practiceSize: $('#practice-size', root),
     addNew:       $('#add-new', root),
     stage:   $('#card-stage', root),
     due:     $('#learn-due', root),
@@ -135,7 +139,8 @@ export function mountLearnView(root, session) {
 
   // ---- events ----
   els.practiceMore.addEventListener('click', async () => {
-    await session.refillBonus();
+    const limit = Math.min(100, Math.max(5, parseInt(els.practiceSize.value, 10) || 20));
+    await session.refillBonus(limit);
     loadNext();
   });
 

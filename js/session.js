@@ -49,8 +49,9 @@ export class Session {
     }
   }
 
-  async refillBonus() {
-    this.queue = await db.getBonusWords(20);
+  async refillBonus(limit = 20) {
+    const todayStart = new Date(this.today).getTime();
+    this.queue = await db.getBonusWords(limit, todayStart);
   }
 
   // Apply a rating, persist, update session stats. Returns the updated card.

@@ -105,18 +105,22 @@ export async function getDueWords(now = Date.now(), limit = 50) {
   });
 }
 
-// Bonus words for "keep practicing": new words first (priority), then
-// 50% hardest learned words + 50% random learned words.
-export async function getBonusWords(limit = 20) {
-  const newWords = await getNewWords(limit);
-  if (newWords.length >= limit) return newWords.slice(0, limit);
-
+// Bonus words for "keep practicing":
+//   1. Words introduced today (repetitions === 1, reviewed today) — shown first.
+//   2. Remaining slots split evenly: 50% hardest learned words, 50% random learned words.
+export async function getBonusWords(limit = 20, todayStart = 0) {
   const all = await getAllWords();
-  const learned = all.filter(w => w.repetitions > 0);
+
+  const todayNew = all.filter(
+    w => w.repetitions <= 2 && w.lastReviewedAt !== null && w.lastReviewedAt >= todayStart
+  );
+
+  const todayNewIds = new Set(todayNew.map(w => w.id));
+  const learned = all.filter(w => w.repetitions > 0 && !todayNewIds.has(w.id));
 
   learned.sort((a, b) => a.ef - b.ef || b.lapses - a.lapses);
 
-  const remaining = limit - newWords.length;
+  const remaining = Math.max(0, limit - todayNew.length);
   const hardestCount = Math.ceil(remaining / 2);
   const hardest = learned.slice(0, hardestCount);
 
@@ -127,7 +131,12 @@ export async function getBonusWords(limit = 20) {
   }
   const random = randomPool.slice(0, remaining - hardestCount);
 
-  return [...newWords, ...hardest, ...random];
+  const combined = [...todayNew, ...hardest, ...random];
+  for (let i = combined.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [combined[i], combined[j]] = [combined[j], combined[i]];
+  }
+  return combined;
 }
 
 // New words (never reviewed), frequency-prioritised but shuffled to avoid alphabetical runs.

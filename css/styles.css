@@ -239,6 +239,18 @@ p { margin: 0; }
   color: var(--text);
 }
 .empty .btn { margin-top: 20px; }
+.practice-row { display: inline-flex; align-items: center; gap: 8px; margin-top: 20px; }
+.practice-row .btn { margin-top: 0; }
+.practice-size {
+  width: 56px;
+  padding: 8px 6px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--surface);
+  color: var(--text);
+  font-size: 0.95rem;
+  text-align: center;
+}
 
 /* ---------- Stats / Settings shared panel ---------- */
 .panel {
