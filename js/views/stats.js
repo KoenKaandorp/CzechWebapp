@@ -2,6 +2,7 @@
 // Charts are hand-rolled SVG so the app has zero chart-library overhead.
 
 import { levelDistribution, dailyProgress, comprehensionOverTime, coverageEstimate } from '../stats.js';
+import { todayMs, weeklyMs, formatTime } from '../timer.js';
 
 const LEVEL_LABELS = ['New', 'Learning', 'Familiar', 'Known', 'Mastered'];
 
@@ -32,6 +33,11 @@ export function mountStatsView(root) {
         <h2 class="panel__title">Mastered words over time</h2>
         <div id="growth-chart" class="chart chart--spark"></div>
       </div>
+
+      <div class="panel">
+        <h2 class="panel__title">Time spent</h2>
+        <div class="time-stats" id="time-stats"></div>
+      </div>
     </section>
   `;
 
@@ -39,11 +45,12 @@ export function mountStatsView(root) {
   return { reload: refresh };
 
   async function refresh() {
-    const [dist, daily, growth, coverage] = await Promise.all([
+    const [dist, daily, growth, coverage, weekly] = await Promise.all([
       levelDistribution(),
       dailyProgress(30),
       comprehensionOverTime(30),
       coverageEstimate(),
+      weeklyMs(),
     ]);
 
     renderCoverage(root.querySelector('#coverage'), coverage);
@@ -51,7 +58,21 @@ export function mountStatsView(root) {
     renderBars(root.querySelector('#dist-chart'), dist);
     renderSpark(root.querySelector('#daily-chart'), daily.map(d => d.reviewed), daily.map(d => d.date));
     renderSpark(root.querySelector('#growth-chart'), growth.map(d => d.known), growth.map(d => d.date), { fill: true });
+    renderTimeStats(root.querySelector('#time-stats'), todayMs(), weekly);
   }
+}
+
+function renderTimeStats(el, todayMillis, weekMillis) {
+  el.innerHTML = `
+    <div class="time-row">
+      <span class="time-label">Today</span>
+      <span class="time-value">${formatTime(todayMillis)}</span>
+    </div>
+    <div class="time-row">
+      <span class="time-label">This week</span>
+      <span class="time-value">${formatTime(weekMillis)}</span>
+    </div>
+  `;
 }
 
 function renderCoverage(el, { coverage, knownCount, total }) {

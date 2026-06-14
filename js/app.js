@@ -5,6 +5,7 @@ import { mountLearnView }    from './views/learn.js';
 import { mountStatsView }    from './views/stats.js';
 import { mountSettingsView } from './views/settings.js';
 import { mountVerbsView }    from './views/verbs.js';
+import { initTimer }         from './timer.js';
 
 const views = {
   learn:    { el: document.getElementById('view-learn'),    mounted: null },
@@ -25,8 +26,9 @@ async function boot() {
   const added = await seedNewWords('./data/seed.json');
   if (added) console.info(`Added ${added} new words.`);
 
-  // 3. Init the session manager.
+  // 3. Init the session manager and time tracker.
   await session.init();
+  await initTimer();
 
   // 4. Mount the default view.
   switchTab('learn');

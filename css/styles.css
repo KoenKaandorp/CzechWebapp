@@ -252,6 +252,18 @@ p { margin: 0; }
   text-align: center;
 }
 
+/* ---- Time stats ---- */
+.time-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--border);
+}
+.time-row:last-child { border-bottom: none; }
+.time-label { color: var(--text-muted); font-size: 0.9rem; }
+.time-value { font-weight: 600; font-size: 1.05rem; }
+
 /* ---------- Stats / Settings shared panel ---------- */
 .panel {
   background: var(--surface);
