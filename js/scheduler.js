@@ -77,10 +77,10 @@ export function applyRating(card, rating, now = Date.now()) {
 // This is purely for visualization — the scheduler itself is interval-based.
 export function deriveLevel(interval, repetitions) {
   if (repetitions === 0) return 1;     // new / lapsed
-  if (interval < 7)      return 2;     // learning
-  if (interval < 21)     return 3;     // young
-  if (interval < 60)     return 4;     // maturing
-  return 5;                            // mature / "known"
+  if (interval < 14)     return 2;     // learning
+  if (interval < 28)     return 3;     // familiar
+  if (interval < 60)     return 4;     // known
+  return 5;                            // mastered
 }
 
 // A word is considered "known" for the comprehension estimator when it
