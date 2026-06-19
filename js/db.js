@@ -200,6 +200,10 @@ export async function setMeta(key, value) {
   const db = await openDB();
   return wrap(tx(db, ['meta'], 'readwrite').objectStore('meta').put({ key, value }));
 }
+export async function getAllMeta() {
+  const db = await openDB();
+  return wrap(tx(db, ['meta']).objectStore('meta').getAll());
+}
 
 // ---------- danger ----------
 export async function wipeAll() {

@@ -46,14 +46,14 @@ export function todayMs() {
   return _todayMs + unsaved + TIME_OFFSET_MS;
 }
 
-export async function weeklyMs() {
-  const keys = Array.from({ length: 7 }, (_, i) => {
-    const d = new Date();
-    d.setDate(d.getDate() - i);
-    return `timeSpent:${d.toISOString().slice(0, 10)}`;
-  });
-  const values = await Promise.all(keys.map(k => db.getMeta(k, 0)));
-  return values.reduce((a, b) => a + b, 0) + TIME_OFFSET_MS;
+// Sum of all persisted daily time, plus live unsaved fraction, plus the fixed offset.
+export async function totalMs() {
+  const allMeta = await db.getAllMeta();
+  const persisted = allMeta
+    .filter(m => m.key.startsWith('timeSpent:'))
+    .reduce((sum, m) => sum + (m.value || 0), 0);
+  const unsaved = _start !== null ? Date.now() - _start : 0;
+  return persisted + unsaved + TIME_OFFSET_MS;
 }
 
 export function formatTime(ms) {

@@ -2,7 +2,7 @@
 // Charts are hand-rolled SVG so the app has zero chart-library overhead.
 
 import { levelDistribution, dailyProgress, comprehensionOverTime, coverageEstimate } from '../stats.js';
-import { todayMs, weeklyMs, formatTime } from '../timer.js';
+import { totalMs, formatTime } from '../timer.js';
 
 const LEVEL_LABELS = ['New', 'Learning', 'Familiar', 'Known', 'Mastered'];
 
@@ -45,12 +45,12 @@ export function mountStatsView(root) {
   return { reload: refresh };
 
   async function refresh() {
-    const [dist, daily, growth, coverage, weekly] = await Promise.all([
+    const [dist, daily, growth, coverage, total] = await Promise.all([
       levelDistribution(),
       dailyProgress(30),
       comprehensionOverTime(30),
       coverageEstimate(),
-      weeklyMs(),
+      totalMs(),
     ]);
 
     renderCoverage(root.querySelector('#coverage'), coverage);
@@ -58,19 +58,15 @@ export function mountStatsView(root) {
     renderBars(root.querySelector('#dist-chart'), dist);
     renderSpark(root.querySelector('#daily-chart'), daily.map(d => d.reviewed), daily.map(d => d.date));
     renderSpark(root.querySelector('#growth-chart'), growth.map(d => d.known), growth.map(d => d.date), { fill: true });
-    renderTimeStats(root.querySelector('#time-stats'), todayMs(), weekly);
+    renderTimeStats(root.querySelector('#time-stats'), total);
   }
 }
 
-function renderTimeStats(el, todayMillis, weekMillis) {
+function renderTimeStats(el, totalMillis) {
   el.innerHTML = `
     <div class="time-row">
-      <span class="time-label">Today</span>
-      <span class="time-value">${formatTime(todayMillis)}</span>
-    </div>
-    <div class="time-row">
-      <span class="time-label">This week</span>
-      <span class="time-value">${formatTime(weekMillis)}</span>
+      <span class="time-label">Total time</span>
+      <span class="time-value">${formatTime(totalMillis)}</span>
     </div>
   `;
 }

@@ -72,19 +72,24 @@ export async function comprehensionOverTime(days = 30) {
 }
 
 // Lexical coverage of "typical Czech text" — see header comment.
+// Fixed harmonic-series weight for the top ~20 000 Czech word forms.
+// Using only the seeded words as denominator inflates coverage dramatically
+// because the very top-ranked words carry huge Zipfian weight.
+// Σ(1/k, k=1..20000) ≈ 10.18
+const CORPUS_WEIGHT = 10.18;
+
 export async function coverageEstimate() {
   const words = await db.getAllWords();
   if (!words.length) return { coverage: 0, knownCount: 0, total: 0, tiers: [] };
 
   let weightKnown = 0;
-  let weightTotal = 0;
   let knownCount = 0;
   const levelWeights = { 2: 0, 3: 0, 4: 0, 5: 0 };
 
   for (const w of words) {
+    if (w.pos === 'verb-conj') continue;
     const r = w.frequencyRank || 9999;
     const weight = 1 / r;
-    weightTotal += weight;
     const level = w.level || deriveLevel(w.interval, w.repetitions);
     if (level >= 2 && level <= 5) levelWeights[level] += weight;
     if (isKnown(w)) {
@@ -93,7 +98,7 @@ export async function coverageEstimate() {
     }
   }
 
-  const coverage = weightTotal > 0 ? weightKnown / weightTotal : 0;
+  const coverage = weightKnown / CORPUS_WEIGHT;
   const tiers = [
     { label: 'Learning', level: 2 },
     { label: 'Familiar', level: 3 },
@@ -101,12 +106,9 @@ export async function coverageEstimate() {
     { label: 'Mastered', level: 5 },
   ].map(({ label, level }) => ({
     label,
-    pct:
-      weightTotal > 0
-        ? Object.entries(levelWeights)
-            .filter(([lvl]) => Number(lvl) >= level)
-            .reduce((sum, [, weight]) => sum + weight, 0) / weightTotal
-        : 0,
+    pct: Object.entries(levelWeights)
+      .filter(([lvl]) => Number(lvl) >= level)
+      .reduce((sum, [, weight]) => sum + weight, 0) / CORPUS_WEIGHT,
   }));
 
   return { coverage, knownCount, total: words.length, tiers };
