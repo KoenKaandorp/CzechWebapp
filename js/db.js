@@ -91,7 +91,8 @@ export async function getDueWords(now = Date.now(), limit = 50) {
       if (
         cur &&
         out.length < limit &&
-        cur.value.repetitions > 0
+        cur.value.repetitions > 0 &&
+        cur.value.pos !== 'verb-conj'
       ) {
         out.push(cur.value);
       }
@@ -109,7 +110,7 @@ export async function getDueWords(now = Date.now(), limit = 50) {
 //   1. Words introduced today (repetitions === 1, reviewed today) — shown first.
 //   2. Remaining slots split evenly: 50% hardest learned words, 50% random learned words.
 export async function getBonusWords(limit = 20, todayStart = 0) {
-  const all = await getAllWords();
+  const all = (await getAllWords()).filter(w => w.pos !== 'verb-conj');
 
   const todayNew = all.filter(
     w => w.repetitions <= 2 && w.lastReviewedAt !== null && w.lastReviewedAt >= todayStart
@@ -150,7 +151,7 @@ export async function getNewWords(limit = 10) {
     idx.openCursor().onsuccess = (e) => {
       const cur = e.target.result;
       if (!cur || pool.length >= poolSize) return resolve();
-      if (cur.value.repetitions === 0 && !cur.value.lastReviewedAt) pool.push(cur.value);
+      if (cur.value.repetitions === 0 && !cur.value.lastReviewedAt && cur.value.pos !== 'verb-conj') pool.push(cur.value);
       cur.continue();
     };
   });

@@ -95,7 +95,7 @@ p { margin: 0; }
   position: fixed;
   inset: auto 0 0 0;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   height: calc(var(--tabbar-h) + env(safe-area-inset-bottom));
   padding-bottom: env(safe-area-inset-bottom);
   background: color-mix(in oklab, var(--surface) 92%, transparent);
@@ -485,6 +485,196 @@ p { margin: 0; }
 
 .verbs-empty { text-align: center; padding: 60px 20px; color: var(--text-muted); }
 .verbs-empty__msg {
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
+.verbs__subtitle { font-size: 15px; color: var(--text-muted); margin-bottom: 20px; }
+.verbs__back-btn {
+  display: inline-flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--accent);
+  padding: 6px 0;
+  margin-bottom: 12px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.verbs__back-btn:hover { opacity: 0.8; }
+
+.verb-mode-btns { display: flex; flex-direction: column; gap: 12px; }
+.verb-mode-btn {
+  width: 100%;
+  padding: 18px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: left;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  transition: background var(--t-fast) var(--ease), border-color var(--t-fast) var(--ease), transform var(--t-fast) var(--ease);
+}
+.verb-mode-btn:hover { border-color: var(--border-strong); }
+.verb-mode-btn:active { transform: scale(0.98); }
+.verb-mode-btn--accent {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+.verb-mode-btn--accent:hover { background: var(--accent-2); border-color: var(--accent-2); }
+
+.verb-list { display: flex; flex-direction: column; gap: 8px; }
+.verb-list__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  text-align: left;
+  transition: background var(--t-fast) var(--ease), border-color var(--t-fast) var(--ease), transform var(--t-fast) var(--ease);
+}
+.verb-list__item:hover { border-color: var(--border-strong); }
+.verb-list__item:active { transform: scale(0.98); }
+.verb-list__cz { font-family: var(--font-serif); font-size: 1.15rem; font-weight: 500; color: var(--text); }
+.verb-list__en { font-size: 14px; color: var(--accent); }
+.verb-list__empty { font-size: 15px; color: var(--text-muted); padding: 20px 0; }
+
+/* ---------- Lists view ---------- */
+.lists { display: flex; flex-direction: column; min-height: calc(100dvh - var(--tabbar-h) - 48px); }
+.lists__title {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: 2rem;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+}
+.lists__back-btn {
+  display: inline-flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--accent);
+  padding: 6px 0;
+  margin-bottom: 12px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.lists__back-btn:hover { opacity: 0.8; }
+.lists__list-name {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+.lists__progress {
+  font-size: 13px;
+  color: var(--text-soft);
+  margin-bottom: 4px;
+  font-variant-numeric: tabular-nums;
+  min-height: 20px;
+}
+
+.lists-category { margin-bottom: 20px; }
+.lists-category__label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-soft);
+  margin-bottom: 8px;
+}
+.lists-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  text-align: left;
+  margin-bottom: 6px;
+  transition: border-color var(--t-fast) var(--ease), transform var(--t-fast) var(--ease);
+}
+.lists-row:hover { border-color: var(--border-strong); }
+.lists-row:active { transform: scale(0.98); }
+.lists-row__name { font-size: 15px; font-weight: 500; color: var(--text); }
+.lists-row__count {
+  font-size: 12px;
+  color: var(--text-soft);
+  background: var(--surface-2);
+  border-radius: 10px;
+  padding: 2px 8px;
+}
+
+.list-mode-btns { display: flex; gap: 10px; margin-bottom: 16px; }
+.list-mode-btn {
+  flex: 1;
+  padding: 14px 16px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  transition: border-color var(--t-fast) var(--ease), transform var(--t-fast) var(--ease);
+}
+.list-mode-btn:hover { border-color: var(--border-strong); }
+.list-mode-btn:active { transform: scale(0.98); }
+.list-mode-btn--accent { background: var(--accent); border-color: var(--accent); color: #fff; }
+.list-mode-btn--accent:hover { background: var(--accent-2); border-color: var(--accent-2); }
+
+.list-table { width: 100%; border-collapse: collapse; }
+.list-table__cz {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--text);
+  padding: 11px 12px 11px 0;
+  border-bottom: 1px solid var(--border);
+  width: 48%;
+}
+.list-table__en {
+  font-size: 14px;
+  color: var(--text-muted);
+  padding: 11px 0 11px 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.lists-card__face { width: 100%; text-align: center; }
+.lists-card__cz {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 8vw, 2.8rem);
+  font-weight: 500;
+  color: var(--text);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+.lists-card__hint { margin-top: 12px; font-size: 13px; color: var(--text-soft); }
+.lists-card__en {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+  font-family: var(--font-serif);
+  font-size: clamp(1.8rem, 7vw, 2.4rem);
+  font-weight: 500;
+  color: var(--accent);
+  letter-spacing: -0.01em;
+}
+
+.lists-actions { display: flex; justify-content: flex-end; margin-top: 12px; }
+#ls-next { flex: none; }
+.lists-empty { text-align: center; padding: 60px 20px; color: var(--text-muted); }
+.lists-empty__msg {
   font-family: var(--font-serif);
   font-size: 1.6rem;
   color: var(--text);

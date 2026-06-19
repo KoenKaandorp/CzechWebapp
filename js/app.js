@@ -5,13 +5,15 @@ import { mountLearnView }    from './views/learn.js';
 import { mountStatsView }    from './views/stats.js';
 import { mountSettingsView } from './views/settings.js';
 import { mountVerbsView }    from './views/verbs.js';
+import { mountListsView }    from './views/lists.js';
 import { initTimer }         from './timer.js';
 
 const views = {
   learn:    { el: document.getElementById('view-learn'),    mounted: null },
+  verbs:    { el: document.getElementById('view-verbs'),    mounted: null },
+  lists:    { el: document.getElementById('view-lists'),    mounted: null },
   stats:    { el: document.getElementById('view-stats'),    mounted: null },
   settings: { el: document.getElementById('view-settings'), mounted: null },
-  verbs:    { el: document.getElementById('view-verbs'),    mounted: null },
 };
 
 const session = new Session();
@@ -51,9 +53,10 @@ function switchTab(name) {
   const v = views[name];
   if (!v.mounted) {
     if (name === 'learn')    v.mounted = mountLearnView(v.el, session);
+    if (name === 'verbs')    v.mounted = mountVerbsView(v.el);
+    if (name === 'lists')    v.mounted = mountListsView(v.el);
     if (name === 'stats')    v.mounted = mountStatsView(v.el);
     if (name === 'settings') v.mounted = mountSettingsView(v.el, { onReset: resetAndReload });
-    if (name === 'verbs')    v.mounted = mountVerbsView(v.el);
   } else {
     v.mounted.reload?.();
   }
