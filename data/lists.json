@@ -1,0 +1,217 @@
+{
+  "lists": [
+    {
+      "id": "numbers_1_10",
+      "name": "Numbers 1–10",
+      "category": "numbers",
+      "items": [
+        { "czech": "jeden", "english": "one" },
+        { "czech": "dva", "english": "two" },
+        { "czech": "tři", "english": "three" },
+        { "czech": "čtyři", "english": "four" },
+        { "czech": "pět", "english": "five" },
+        { "czech": "šest", "english": "six" },
+        { "czech": "sedm", "english": "seven" },
+        { "czech": "osm", "english": "eight" },
+        { "czech": "devět", "english": "nine" },
+        { "czech": "deset", "english": "ten" }
+      ]
+    },
+
+    {
+      "id": "question_words",
+      "name": "Question Words",
+      "category": "grammar",
+      "items": [
+        { "czech": "kdo", "english": "who" },
+        { "czech": "co", "english": "what" },
+        { "czech": "kde", "english": "where" },
+        { "czech": "kdy", "english": "when" },
+        { "czech": "proč", "english": "why" },
+        { "czech": "jak", "english": "how" },
+        { "czech": "který", "english": "which" },
+        { "czech": "čí", "english": "whose" },
+        { "czech": "kam", "english": "to where" },
+        { "czech": "odkud", "english": "from where" }
+      ]
+    },
+
+    {
+      "id": "common_prepositions",
+      "name": "Common Prepositions",
+      "category": "grammar",
+      "items": [
+        { "czech": "v", "english": "in" },
+        { "czech": "na", "english": "on, at" },
+        { "czech": "do", "english": "into, to" },
+        { "czech": "z", "english": "from, out of" },
+        { "czech": "u", "english": "at, by" },
+        { "czech": "s", "english": "with" },
+        { "czech": "bez", "english": "without" },
+        { "czech": "pro", "english": "for" },
+        { "czech": "před", "english": "before, in front of" },
+        { "czech": "po", "english": "after, around" }
+      ]
+    },
+
+    {
+      "id": "days_of_week",
+      "name": "Days of the Week",
+      "category": "time",
+      "items": [
+        { "czech": "pondělí", "english": "Monday" },
+        { "czech": "úterý", "english": "Tuesday" },
+        { "czech": "středa", "english": "Wednesday" },
+        { "czech": "čtvrtek", "english": "Thursday" },
+        { "czech": "pátek", "english": "Friday" },
+        { "czech": "sobota", "english": "Saturday" },
+        { "czech": "neděle", "english": "Sunday" }
+      ]
+    },
+
+    {
+      "id": "months",
+      "name": "Months",
+      "category": "time",
+      "items": [
+        { "czech": "leden", "english": "January" },
+        { "czech": "únor", "english": "February" },
+        { "czech": "březen", "english": "March" },
+        { "czech": "duben", "english": "April" },
+        { "czech": "květen", "english": "May" },
+        { "czech": "červen", "english": "June" },
+        { "czech": "červenec", "english": "July" },
+        { "czech": "srpen", "english": "August" },
+        { "czech": "září", "english": "September" },
+        { "czech": "říjen", "english": "October" },
+        { "czech": "listopad", "english": "November" },
+        { "czech": "prosinec", "english": "December" }
+      ]
+    },
+
+    {
+      "id": "seasons",
+      "name": "Seasons",
+      "category": "time",
+      "items": [
+        { "czech": "jaro", "english": "spring" },
+        { "czech": "léto", "english": "summer" },
+        { "czech": "podzim", "english": "autumn" },
+        { "czech": "zima", "english": "winter" }
+      ]
+    },
+
+    {
+      "id": "colors",
+      "name": "Colors",
+      "category": "basics",
+      "items": [
+        { "czech": "červená", "english": "red" },
+        { "czech": "modrá", "english": "blue" },
+        { "czech": "zelená", "english": "green" },
+        { "czech": "žlutá", "english": "yellow" },
+        { "czech": "černá", "english": "black" },
+        { "czech": "bílá", "english": "white" },
+        { "czech": "šedá", "english": "gray" },
+        { "czech": "hnědá", "english": "brown" },
+        { "czech": "oranžová", "english": "orange" },
+        { "czech": "růžová", "english": "pink" }
+      ]
+    },
+
+    {
+      "id": "personal_pronouns",
+      "name": "Personal Pronouns",
+      "category": "grammar",
+      "items": [
+        { "czech": "já", "english": "I" },
+        { "czech": "ty", "english": "you" },
+        { "czech": "on", "english": "he" },
+        { "czech": "ona", "english": "she" },
+        { "czech": "ono", "english": "it" },
+        { "czech": "my", "english": "we" },
+        { "czech": "vy", "english": "you (plural)" },
+        { "czech": "oni", "english": "they (masculine)" },
+        { "czech": "ony", "english": "they (feminine)" }
+      ]
+    },
+
+    {
+      "id": "family",
+      "name": "Family",
+      "category": "people",
+      "items": [
+        { "czech": "matka", "english": "mother" },
+        { "czech": "otec", "english": "father" },
+        { "czech": "sestra", "english": "sister" },
+        { "czech": "bratr", "english": "brother" },
+        { "czech": "dcera", "english": "daughter" },
+        { "czech": "syn", "english": "son" },
+        { "czech": "babička", "english": "grandmother" },
+        { "czech": "dědeček", "english": "grandfather" }
+      ]
+    },
+
+    {
+      "id": "directions",
+      "name": "Directions",
+      "category": "travel",
+      "items": [
+        { "czech": "vlevo", "english": "left" },
+        { "czech": "vpravo", "english": "right" },
+        { "czech": "rovně", "english": "straight ahead" },
+        { "czech": "nahoru", "english": "up" },
+        { "czech": "dolů", "english": "down" },
+        { "czech": "sever", "english": "north" },
+        { "czech": "jih", "english": "south" },
+        { "czech": "východ", "english": "east" },
+        { "czech": "západ", "english": "west" }
+      ]
+    },
+
+    {
+      "id": "common_conjunctions",
+      "name": "Common Conjunctions",
+      "category": "grammar",
+      "items": [
+        { "czech": "a", "english": "and" },
+        { "czech": "ale", "english": "but" },
+        { "czech": "nebo", "english": "or" },
+        { "czech": "protože", "english": "because" },
+        { "czech": "že", "english": "that" },
+        { "czech": "jestli", "english": "if, whether" },
+        { "czech": "když", "english": "when, if" }
+      ]
+    },
+
+    {
+      "id": "weather",
+      "name": "Weather",
+      "category": "nature",
+      "items": [
+        { "czech": "slunce", "english": "sun" },
+        { "czech": "déšť", "english": "rain" },
+        { "czech": "sníh", "english": "snow" },
+        { "czech": "vítr", "english": "wind" },
+        { "czech": "mrak", "english": "cloud" },
+        { "czech": "bouřka", "english": "storm" },
+        { "czech": "mlha", "english": "fog" }
+      ]
+    },
+
+    {
+      "id": "body_parts",
+      "name": "Body Parts",
+      "category": "basics",
+      "items": [
+        { "czech": "hlava", "english": "head" },
+        { "czech": "oko", "english": "eye" },
+        { "czech": "ucho", "english": "ear" },
+        { "czech": "nos", "english": "nose" },
+        { "czech": "ústa", "english": "mouth" },
+        { "czech": "ruka", "english": "hand" },
+        { "czech": "noha", "english": "leg, foot" }
+      ]
+    }
+  ]
+}
