@@ -105,9 +105,9 @@ export async function seedNewWords(seedUrl = CONFIG.seed) {
   const existing = new Set((await db.getAllWords()).map(w => w.id));
   const seed = await (await fetch(seedUrl)).json();
   const fresh = seed
-    .filter(s => !existing.has(`${prefix}:${s.cz}`))
+    .filter(s => !existing.has(`${prefix}:${s[prefix]}`))
     .map(s => freshCard({
-      id: `${prefix}:${s.cz}`, cz: s.cz, en: s.en, pos: s.pos || null,
+      id: `${prefix}:${s[prefix]}`, cz: s[prefix], en: s.en, pos: s.pos || null,
       frequencyRank: s.rank,
     }));
   if (fresh.length) await db.bulkPutWords(fresh);
