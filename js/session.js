@@ -10,6 +10,7 @@
 
 import * as db from './db.js';
 import { applyRating, freshCard } from './scheduler.js';
+import { CONFIG } from './lang.js';
 
 const DEFAULT_NEW_ALLOTTED = 10;
 const BONUS_BATCH = 5;
@@ -98,14 +99,15 @@ export function todayKey(d = new Date()) {
   return d.toISOString().slice(0, 10);   // YYYY-MM-DD (UTC; fine for daily buckets)
 }
 
-// Seeds any words in seed.json not yet in the DB (safe to call on every boot).
-export async function seedNewWords(seedUrl = './data/seed.json') {
+// Seeds any words in the language's seed file not yet in the DB (safe to call on every boot).
+export async function seedNewWords(seedUrl = CONFIG.seed) {
+  const prefix = CONFIG.idPrefix;
   const existing = new Set((await db.getAllWords()).map(w => w.id));
   const seed = await (await fetch(seedUrl)).json();
   const fresh = seed
-    .filter(s => !existing.has(`cz:${s.cz}`))
+    .filter(s => !existing.has(`${prefix}:${s.cz}`))
     .map(s => freshCard({
-      id: `cz:${s.cz}`, cz: s.cz, en: s.en, pos: s.pos || null,
+      id: `${prefix}:${s.cz}`, cz: s.cz, en: s.en, pos: s.pos || null,
       frequencyRank: s.rank,
     }));
   if (fresh.length) await db.bulkPutWords(fresh);

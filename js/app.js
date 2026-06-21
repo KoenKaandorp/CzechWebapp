@@ -7,6 +7,7 @@ import { mountSettingsView } from './views/settings.js';
 import { mountVerbsView }    from './views/verbs.js';
 import { mountListsView }    from './views/lists.js';
 import { initTimer }         from './timer.js';
+import { CONFIG }            from './lang.js';
 
 const views = {
   learn:    { el: document.getElementById('view-learn'),    mounted: null },
@@ -25,7 +26,7 @@ async function boot() {
   }
 
   // 2. Seed vocabulary if first run.
-  const added = await seedNewWords('./data/seed.json');
+  const added = await seedNewWords(CONFIG.seed);
   if (added) console.info(`Added ${added} new words.`);
 
   // 3. Init the session manager and time tracker.
@@ -64,7 +65,7 @@ function switchTab(name) {
 
 async function resetAndReload() {
   // Re-seed and re-mount learn view fresh.
-  await seedNewWords('./data/seed.json');
+  await seedNewWords(CONFIG.seed);
   await session.init();
   for (const v of Object.values(views)) v.mounted = null;
   switchTab('learn');

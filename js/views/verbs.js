@@ -1,5 +1,6 @@
 import { getAllWords, getWord, putWord, addReview, bumpSession } from '../db.js';
 import { applyRating, RATING } from '../scheduler.js';
+import { CONFIG } from '../lang.js';
 
 const PRONOUNS = ['já', 'ty', 'on/ona/ono', 'my', 'vy', 'oni/ony'];
 
@@ -7,7 +8,7 @@ let verbsCache = null;
 
 async function loadVerbs() {
   if (verbsCache) return verbsCache;
-  const r = await fetch('./data/verbs.json');
+  const r = await fetch(CONFIG.verbs);
   verbsCache = await r.json();
   return verbsCache;
 }

@@ -1,0 +1,217 @@
+{
+  "lists": [
+    {
+      "id": "numbers_1_10",
+      "name": "Numbers 1–10",
+      "category": "numbers",
+      "items": [
+        { "dutch": "één", "english": "one" },
+        { "dutch": "twee", "english": "two" },
+        { "dutch": "drie", "english": "three" },
+        { "dutch": "vier", "english": "four" },
+        { "dutch": "vijf", "english": "five" },
+        { "dutch": "zes", "english": "six" },
+        { "dutch": "zeven", "english": "seven" },
+        { "dutch": "acht", "english": "eight" },
+        { "dutch": "negen", "english": "nine" },
+        { "dutch": "tien", "english": "ten" }
+      ]
+    },
+
+    {
+      "id": "question_words",
+      "name": "Question Words",
+      "category": "grammar",
+      "items": [
+        { "dutch": "wie", "english": "who" },
+        { "dutch": "wat", "english": "what" },
+        { "dutch": "waar", "english": "where" },
+        { "dutch": "wanneer", "english": "when" },
+        { "dutch": "waarom", "english": "why" },
+        { "dutch": "hoe", "english": "how" },
+        { "dutch": "welke", "english": "which" },
+        { "dutch": "van wie", "english": "whose" },
+        { "dutch": "waarheen", "english": "to where" },
+        { "dutch": "waarvandaan", "english": "from where" }
+      ]
+    },
+
+    {
+      "id": "common_prepositions",
+      "name": "Common Prepositions",
+      "category": "grammar",
+      "items": [
+        { "dutch": "in", "english": "in" },
+        { "dutch": "op, aan", "english": "on, at" },
+        { "dutch": "naar", "english": "into, to" },
+        { "dutch": "van, uit", "english": "from, out of" },
+        { "dutch": "bij", "english": "at, by" },
+        { "dutch": "met", "english": "with" },
+        { "dutch": "zonder", "english": "without" },
+        { "dutch": "voor", "english": "for" },
+        { "dutch": "voor", "english": "before, in front of" },
+        { "dutch": "na", "english": "after, around" }
+      ]
+    },
+
+    {
+      "id": "days_of_week",
+      "name": "Days of the Week",
+      "category": "time",
+      "items": [
+        { "dutch": "maandag", "english": "Monday" },
+        { "dutch": "dinsdag", "english": "Tuesday" },
+        { "dutch": "woensdag", "english": "Wednesday" },
+        { "dutch": "donderdag", "english": "Thursday" },
+        { "dutch": "vrijdag", "english": "Friday" },
+        { "dutch": "zaterdag", "english": "Saturday" },
+        { "dutch": "zondag", "english": "Sunday" }
+      ]
+    },
+
+    {
+      "id": "months",
+      "name": "Months",
+      "category": "time",
+      "items": [
+        { "dutch": "januari", "english": "January" },
+        { "dutch": "februari", "english": "February" },
+        { "dutch": "maart", "english": "March" },
+        { "dutch": "april", "english": "April" },
+        { "dutch": "mei", "english": "May" },
+        { "dutch": "juni", "english": "June" },
+        { "dutch": "juli", "english": "July" },
+        { "dutch": "augustus", "english": "August" },
+        { "dutch": "september", "english": "September" },
+        { "dutch": "oktober", "english": "October" },
+        { "dutch": "november", "english": "November" },
+        { "dutch": "december", "english": "December" }
+      ]
+    },
+
+    {
+      "id": "seasons",
+      "name": "Seasons",
+      "category": "time",
+      "items": [
+        { "dutch": "lente", "english": "spring" },
+        { "dutch": "zomer", "english": "summer" },
+        { "dutch": "herfst", "english": "autumn" },
+        { "dutch": "winter", "english": "winter" }
+      ]
+    },
+
+    {
+      "id": "colors",
+      "name": "Colors",
+      "category": "basics",
+      "items": [
+        { "dutch": "rood", "english": "red" },
+        { "dutch": "blauw", "english": "blue" },
+        { "dutch": "groen", "english": "green" },
+        { "dutch": "geel", "english": "yellow" },
+        { "dutch": "zwart", "english": "black" },
+        { "dutch": "wit", "english": "white" },
+        { "dutch": "grijs", "english": "gray" },
+        { "dutch": "bruin", "english": "brown" },
+        { "dutch": "oranje", "english": "orange" },
+        { "dutch": "roze", "english": "pink" }
+      ]
+    },
+
+    {
+      "id": "personal_pronouns",
+      "name": "Personal Pronouns",
+      "category": "grammar",
+      "items": [
+        { "dutch": "ik", "english": "I" },
+        { "dutch": "jij", "english": "you (informal)" },
+        { "dutch": "u", "english": "you (formal)" },
+        { "dutch": "hij", "english": "he" },
+        { "dutch": "zij", "english": "she" },
+        { "dutch": "het", "english": "it" },
+        { "dutch": "wij", "english": "we" },
+        { "dutch": "jullie", "english": "you (plural)" },
+        { "dutch": "zij", "english": "they" }
+      ]
+    },
+
+    {
+      "id": "family",
+      "name": "Family",
+      "category": "people",
+      "items": [
+        { "dutch": "moeder", "english": "mother" },
+        { "dutch": "vader", "english": "father" },
+        { "dutch": "zus", "english": "sister" },
+        { "dutch": "broer", "english": "brother" },
+        { "dutch": "dochter", "english": "daughter" },
+        { "dutch": "zoon", "english": "son" },
+        { "dutch": "oma", "english": "grandmother" },
+        { "dutch": "opa", "english": "grandfather" }
+      ]
+    },
+
+    {
+      "id": "directions",
+      "name": "Directions",
+      "category": "travel",
+      "items": [
+        { "dutch": "links", "english": "left" },
+        { "dutch": "rechts", "english": "right" },
+        { "dutch": "rechtdoor", "english": "straight ahead" },
+        { "dutch": "omhoog", "english": "up" },
+        { "dutch": "omlaag", "english": "down" },
+        { "dutch": "noorden", "english": "north" },
+        { "dutch": "zuiden", "english": "south" },
+        { "dutch": "oosten", "english": "east" },
+        { "dutch": "westen", "english": "west" }
+      ]
+    },
+
+    {
+      "id": "common_conjunctions",
+      "name": "Common Conjunctions",
+      "category": "grammar",
+      "items": [
+        { "dutch": "en", "english": "and" },
+        { "dutch": "maar", "english": "but" },
+        { "dutch": "of", "english": "or" },
+        { "dutch": "omdat", "english": "because" },
+        { "dutch": "dat", "english": "that" },
+        { "dutch": "of", "english": "if, whether" },
+        { "dutch": "als", "english": "when, if" }
+      ]
+    },
+
+    {
+      "id": "weather",
+      "name": "Weather",
+      "category": "nature",
+      "items": [
+        { "dutch": "zon", "english": "sun" },
+        { "dutch": "regen", "english": "rain" },
+        { "dutch": "sneeuw", "english": "snow" },
+        { "dutch": "wind", "english": "wind" },
+        { "dutch": "wolk", "english": "cloud" },
+        { "dutch": "storm", "english": "storm" },
+        { "dutch": "mist", "english": "fog" }
+      ]
+    },
+
+    {
+      "id": "body_parts",
+      "name": "Body Parts",
+      "category": "basics",
+      "items": [
+        { "dutch": "hoofd", "english": "head" },
+        { "dutch": "oog", "english": "eye" },
+        { "dutch": "oor", "english": "ear" },
+        { "dutch": "neus", "english": "nose" },
+        { "dutch": "mond", "english": "mouth" },
+        { "dutch": "hand", "english": "hand" },
+        { "dutch": "been, voet", "english": "leg, foot" }
+      ]
+    }
+  ]
+}

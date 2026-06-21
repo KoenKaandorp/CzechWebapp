@@ -8,7 +8,7 @@
 //   sessions { date (YYYY-MM-DD), reviewed, learned, again, hard, good, easy }
 //   meta     { key, value }   — settings, schema version, last-seed marker
 
-const DB_NAME = 'czech-flash';
+const DB_NAME = (localStorage.getItem('lang') === 'nl') ? 'dutch-flash' : 'czech-flash';
 const DB_VERSION = 1;
 
 let _dbPromise = null;

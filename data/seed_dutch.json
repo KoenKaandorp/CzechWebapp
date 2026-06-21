@@ -1,0 +1,4202 @@
+[
+  {
+    "rank": 1,
+    "nl": "de",
+    "en": "the",
+    "pos": "art"
+  },
+  {
+    "rank": 2,
+    "nl": "en",
+    "en": "and",
+    "pos": "conj"
+  },
+  {
+    "rank": 3,
+    "nl": "van",
+    "en": "of, from",
+    "pos": "prep"
+  },
+  {
+    "rank": 4,
+    "nl": "ik",
+    "en": "I",
+    "pos": "pron"
+  },
+  {
+    "rank": 5,
+    "nl": "te",
+    "en": "to",
+    "pos": "prep"
+  },
+  {
+    "rank": 6,
+    "nl": "dat",
+    "en": "that",
+    "pos": "conj"
+  },
+  {
+    "rank": 7,
+    "nl": "die",
+    "en": "that, those, who",
+    "pos": "pron"
+  },
+  {
+    "rank": 8,
+    "nl": "in",
+    "en": "in",
+    "pos": "prep"
+  },
+  {
+    "rank": 9,
+    "nl": "een",
+    "en": "a, one",
+    "pos": "art"
+  },
+  {
+    "rank": 10,
+    "nl": "hij",
+    "en": "he",
+    "pos": "pron"
+  },
+  {
+    "rank": 11,
+    "nl": "het",
+    "en": "the, it",
+    "pos": "art"
+  },
+  {
+    "rank": 12,
+    "nl": "niet",
+    "en": "not",
+    "pos": "adv"
+  },
+  {
+    "rank": 13,
+    "nl": "zijn",
+    "en": "to be; his",
+    "pos": "verb"
+  },
+  {
+    "rank": 14,
+    "nl": "is",
+    "en": "is",
+    "pos": "verb"
+  },
+  {
+    "rank": 15,
+    "nl": "was",
+    "en": "was",
+    "pos": "verb"
+  },
+  {
+    "rank": 16,
+    "nl": "op",
+    "en": "on, up",
+    "pos": "prep"
+  },
+  {
+    "rank": 17,
+    "nl": "aan",
+    "en": "on, to",
+    "pos": "prep"
+  },
+  {
+    "rank": 18,
+    "nl": "met",
+    "en": "with",
+    "pos": "prep"
+  },
+  {
+    "rank": 19,
+    "nl": "als",
+    "en": "as, if",
+    "pos": "conj"
+  },
+  {
+    "rank": 20,
+    "nl": "voor",
+    "en": "for, before",
+    "pos": "prep"
+  },
+  {
+    "rank": 21,
+    "nl": "had",
+    "en": "had",
+    "pos": "verb"
+  },
+  {
+    "rank": 22,
+    "nl": "er",
+    "en": "there",
+    "pos": "adv"
+  },
+  {
+    "rank": 23,
+    "nl": "maar",
+    "en": "but",
+    "pos": "conj"
+  },
+  {
+    "rank": 24,
+    "nl": "om",
+    "en": "around, in order to",
+    "pos": "prep"
+  },
+  {
+    "rank": 25,
+    "nl": "hem",
+    "en": "him",
+    "pos": "pron"
+  },
+  {
+    "rank": 26,
+    "nl": "dan",
+    "en": "then, than",
+    "pos": "adv"
+  },
+  {
+    "rank": 27,
+    "nl": "zou",
+    "en": "would",
+    "pos": "verb"
+  },
+  {
+    "rank": 28,
+    "nl": "of",
+    "en": "or, whether",
+    "pos": "conj"
+  },
+  {
+    "rank": 29,
+    "nl": "wat",
+    "en": "what",
+    "pos": "pron"
+  },
+  {
+    "rank": 30,
+    "nl": "mijn",
+    "en": "my",
+    "pos": "det"
+  },
+  {
+    "rank": 31,
+    "nl": "men",
+    "en": "one (impersonal)",
+    "pos": "pron"
+  },
+  {
+    "rank": 32,
+    "nl": "dit",
+    "en": "this",
+    "pos": "det"
+  },
+  {
+    "rank": 33,
+    "nl": "zo",
+    "en": "so, like this",
+    "pos": "adv"
+  },
+  {
+    "rank": 34,
+    "nl": "door",
+    "en": "through, by",
+    "pos": "prep"
+  },
+  {
+    "rank": 35,
+    "nl": "over",
+    "en": "over, about",
+    "pos": "prep"
+  },
+  {
+    "rank": 36,
+    "nl": "ze",
+    "en": "they, she",
+    "pos": "pron"
+  },
+  {
+    "rank": 37,
+    "nl": "zich",
+    "en": "oneself",
+    "pos": "pron"
+  },
+  {
+    "rank": 38,
+    "nl": "bij",
+    "en": "at, near",
+    "pos": "prep"
+  },
+  {
+    "rank": 39,
+    "nl": "ook",
+    "en": "also",
+    "pos": "adv"
+  },
+  {
+    "rank": 40,
+    "nl": "tot",
+    "en": "until, to",
+    "pos": "prep"
+  },
+  {
+    "rank": 41,
+    "nl": "jij",
+    "en": "you",
+    "pos": "pron"
+  },
+  {
+    "rank": 42,
+    "nl": "mij",
+    "en": "me",
+    "pos": "pron"
+  },
+  {
+    "rank": 43,
+    "nl": "uit",
+    "en": "out, from",
+    "pos": "prep"
+  },
+  {
+    "rank": 44,
+    "nl": "daar",
+    "en": "there",
+    "pos": "adv"
+  },
+  {
+    "rank": 45,
+    "nl": "haar",
+    "en": "her",
+    "pos": "pron"
+  },
+  {
+    "rank": 46,
+    "nl": "naar",
+    "en": "to, toward",
+    "pos": "prep"
+  },
+  {
+    "rank": 47,
+    "nl": "heb",
+    "en": "have",
+    "pos": "verb"
+  },
+  {
+    "rank": 48,
+    "nl": "hoe",
+    "en": "how",
+    "pos": "adv"
+  },
+  {
+    "rank": 49,
+    "nl": "heeft",
+    "en": "has",
+    "pos": "verb"
+  },
+  {
+    "rank": 50,
+    "nl": "hebben",
+    "en": "to have",
+    "pos": "verb"
+  },
+  {
+    "rank": 51,
+    "nl": "deze",
+    "en": "this, these",
+    "pos": "det"
+  },
+  {
+    "rank": 52,
+    "nl": "u",
+    "en": "you (formal)",
+    "pos": "pron"
+  },
+  {
+    "rank": 53,
+    "nl": "want",
+    "en": "because, for",
+    "pos": "conj"
+  },
+  {
+    "rank": 54,
+    "nl": "nog",
+    "en": "still, yet",
+    "pos": "adv"
+  },
+  {
+    "rank": 55,
+    "nl": "zal",
+    "en": "will, shall",
+    "pos": "verb"
+  },
+  {
+    "rank": 56,
+    "nl": "me",
+    "en": "me",
+    "pos": "pron"
+  },
+  {
+    "rank": 57,
+    "nl": "zij",
+    "en": "she, they",
+    "pos": "pron"
+  },
+  {
+    "rank": 58,
+    "nl": "nu",
+    "en": "now",
+    "pos": "adv"
+  },
+  {
+    "rank": 59,
+    "nl": "geen",
+    "en": "no, none",
+    "pos": "det"
+  },
+  {
+    "rank": 60,
+    "nl": "omdat",
+    "en": "because",
+    "pos": "conj"
+  },
+  {
+    "rank": 61,
+    "nl": "iets",
+    "en": "something",
+    "pos": "pron"
+  },
+  {
+    "rank": 62,
+    "nl": "worden",
+    "en": "to become",
+    "pos": "verb"
+  },
+  {
+    "rank": 63,
+    "nl": "toch",
+    "en": "yet, anyway",
+    "pos": "adv"
+  },
+  {
+    "rank": 64,
+    "nl": "al",
+    "en": "already, all",
+    "pos": "adv"
+  },
+  {
+    "rank": 65,
+    "nl": "waren",
+    "en": "were",
+    "pos": "verb"
+  },
+  {
+    "rank": 66,
+    "nl": "veel",
+    "en": "much, many",
+    "pos": "adv"
+  },
+  {
+    "rank": 67,
+    "nl": "meer",
+    "en": "more",
+    "pos": "adv"
+  },
+  {
+    "rank": 68,
+    "nl": "doen",
+    "en": "to do",
+    "pos": "verb"
+  },
+  {
+    "rank": 69,
+    "nl": "toen",
+    "en": "then, when",
+    "pos": "adv"
+  },
+  {
+    "rank": 70,
+    "nl": "moet",
+    "en": "must",
+    "pos": "verb"
+  },
+  {
+    "rank": 71,
+    "nl": "ben",
+    "en": "am",
+    "pos": "verb"
+  },
+  {
+    "rank": 72,
+    "nl": "zonder",
+    "en": "without",
+    "pos": "prep"
+  },
+  {
+    "rank": 73,
+    "nl": "kan",
+    "en": "can",
+    "pos": "verb"
+  },
+  {
+    "rank": 74,
+    "nl": "hun",
+    "en": "their, them",
+    "pos": "det"
+  },
+  {
+    "rank": 75,
+    "nl": "dus",
+    "en": "so, thus",
+    "pos": "adv"
+  },
+  {
+    "rank": 76,
+    "nl": "alles",
+    "en": "everything",
+    "pos": "pron"
+  },
+  {
+    "rank": 77,
+    "nl": "onder",
+    "en": "under",
+    "pos": "prep"
+  },
+  {
+    "rank": 78,
+    "nl": "ja",
+    "en": "yes",
+    "pos": "interj"
+  },
+  {
+    "rank": 79,
+    "nl": "eens",
+    "en": "once",
+    "pos": "adv"
+  },
+  {
+    "rank": 80,
+    "nl": "hier",
+    "en": "here",
+    "pos": "adv"
+  },
+  {
+    "rank": 81,
+    "nl": "wie",
+    "en": "who",
+    "pos": "pron"
+  },
+  {
+    "rank": 82,
+    "nl": "werd",
+    "en": "became",
+    "pos": "verb"
+  },
+  {
+    "rank": 83,
+    "nl": "altijd",
+    "en": "always",
+    "pos": "adv"
+  },
+  {
+    "rank": 84,
+    "nl": "wordt",
+    "en": "becomes",
+    "pos": "verb"
+  },
+  {
+    "rank": 85,
+    "nl": "kunnen",
+    "en": "to be able to",
+    "pos": "verb"
+  },
+  {
+    "rank": 86,
+    "nl": "ons",
+    "en": "us, our",
+    "pos": "pron"
+  },
+  {
+    "rank": 87,
+    "nl": "zelf",
+    "en": "self",
+    "pos": "pron"
+  },
+  {
+    "rank": 88,
+    "nl": "tegen",
+    "en": "against",
+    "pos": "prep"
+  },
+  {
+    "rank": 89,
+    "nl": "na",
+    "en": "after",
+    "pos": "prep"
+  },
+  {
+    "rank": 90,
+    "nl": "wil",
+    "en": "to want",
+    "pos": "verb"
+  },
+  {
+    "rank": 91,
+    "nl": "kon",
+    "en": "could",
+    "pos": "verb"
+  },
+  {
+    "rank": 92,
+    "nl": "niets",
+    "en": "nothing",
+    "pos": "pron"
+  },
+  {
+    "rank": 93,
+    "nl": "uw",
+    "en": "your (formal)",
+    "pos": "det"
+  },
+  {
+    "rank": 94,
+    "nl": "iemand",
+    "en": "someone",
+    "pos": "pron"
+  },
+  {
+    "rank": 95,
+    "nl": "geweest",
+    "en": "been",
+    "pos": "verb"
+  },
+  {
+    "rank": 96,
+    "nl": "wel",
+    "en": "indeed, well",
+    "pos": "adv"
+  },
+  {
+    "rank": 97,
+    "nl": "gaan",
+    "en": "to go",
+    "pos": "verb"
+  },
+  {
+    "rank": 98,
+    "nl": "jou",
+    "en": "you",
+    "pos": "pron"
+  },
+  {
+    "rank": 99,
+    "nl": "weer",
+    "en": "again",
+    "pos": "adv"
+  },
+  {
+    "rank": 100,
+    "nl": "nooit",
+    "en": "never",
+    "pos": "adv"
+  },
+  {
+    "rank": 101,
+    "nl": "man",
+    "en": "man",
+    "pos": "noun"
+  },
+  {
+    "rank": 102,
+    "nl": "zien",
+    "en": "to see",
+    "pos": "verb"
+  },
+  {
+    "rank": 103,
+    "nl": "laatste",
+    "en": "last",
+    "pos": "adj"
+  },
+  {
+    "rank": 104,
+    "nl": "vrouw",
+    "en": "woman, wife",
+    "pos": "noun"
+  },
+  {
+    "rank": 105,
+    "nl": "mens",
+    "en": "human, person",
+    "pos": "noun"
+  },
+  {
+    "rank": 106,
+    "nl": "komen",
+    "en": "to come",
+    "pos": "verb"
+  },
+  {
+    "rank": 107,
+    "nl": "waarom",
+    "en": "why",
+    "pos": "adv"
+  },
+  {
+    "rank": 108,
+    "nl": "goed",
+    "en": "good",
+    "pos": "adj"
+  },
+  {
+    "rank": 109,
+    "nl": "mensen",
+    "en": "people",
+    "pos": "noun"
+  },
+  {
+    "rank": 110,
+    "nl": "kind",
+    "en": "child",
+    "pos": "noun"
+  },
+  {
+    "rank": 111,
+    "nl": "maken",
+    "en": "to make",
+    "pos": "verb"
+  },
+  {
+    "rank": 112,
+    "nl": "kinderen",
+    "en": "children",
+    "pos": "noun"
+  },
+  {
+    "rank": 113,
+    "nl": "slecht",
+    "en": "bad",
+    "pos": "adj"
+  },
+  {
+    "rank": 114,
+    "nl": "nul",
+    "en": "zero",
+    "pos": "num"
+  },
+  {
+    "rank": 115,
+    "nl": "zeggen",
+    "en": "to say",
+    "pos": "verb"
+  },
+  {
+    "rank": 116,
+    "nl": "jongen",
+    "en": "boy",
+    "pos": "noun"
+  },
+  {
+    "rank": 117,
+    "nl": "meisje",
+    "en": "girl",
+    "pos": "noun"
+  },
+  {
+    "rank": 118,
+    "nl": "groot",
+    "en": "big",
+    "pos": "adj"
+  },
+  {
+    "rank": 119,
+    "nl": "willen",
+    "en": "to want",
+    "pos": "verb"
+  },
+  {
+    "rank": 120,
+    "nl": "waar",
+    "en": "where",
+    "pos": "adv"
+  },
+  {
+    "rank": 121,
+    "nl": "baby",
+    "en": "baby",
+    "pos": "noun"
+  },
+  {
+    "rank": 122,
+    "nl": "vader",
+    "en": "father",
+    "pos": "noun"
+  },
+  {
+    "rank": 123,
+    "nl": "weten",
+    "en": "to know",
+    "pos": "verb"
+  },
+  {
+    "rank": 124,
+    "nl": "klein",
+    "en": "small",
+    "pos": "adj"
+  },
+  {
+    "rank": 125,
+    "nl": "moeder",
+    "en": "mother",
+    "pos": "noun"
+  },
+  {
+    "rank": 126,
+    "nl": "ouders",
+    "en": "parents",
+    "pos": "noun"
+  },
+  {
+    "rank": 127,
+    "nl": "krijgen",
+    "en": "to get, receive",
+    "pos": "verb"
+  },
+  {
+    "rank": 128,
+    "nl": "zoon",
+    "en": "son",
+    "pos": "noun"
+  },
+  {
+    "rank": 129,
+    "nl": "lang",
+    "en": "long, tall",
+    "pos": "adj"
+  },
+  {
+    "rank": 130,
+    "nl": "dochter",
+    "en": "daughter",
+    "pos": "noun"
+  },
+  {
+    "rank": 131,
+    "nl": "laten",
+    "en": "to let, leave",
+    "pos": "verb"
+  },
+  {
+    "rank": 132,
+    "nl": "wanneer",
+    "en": "when",
+    "pos": "adv"
+  },
+  {
+    "rank": 133,
+    "nl": "tussen",
+    "en": "between",
+    "pos": "prep"
+  },
+  {
+    "rank": 134,
+    "nl": "broer",
+    "en": "brother",
+    "pos": "noun"
+  },
+  {
+    "rank": 135,
+    "nl": "kort",
+    "en": "short",
+    "pos": "adj"
+  },
+  {
+    "rank": 136,
+    "nl": "zus",
+    "en": "sister",
+    "pos": "noun"
+  },
+  {
+    "rank": 137,
+    "nl": "hoewel",
+    "en": "although",
+    "pos": "conj"
+  },
+  {
+    "rank": 138,
+    "nl": "nee",
+    "en": "no",
+    "pos": "interj"
+  },
+  {
+    "rank": 139,
+    "nl": "vinden",
+    "en": "to find, think",
+    "pos": "verb"
+  },
+  {
+    "rank": 140,
+    "nl": "oma",
+    "en": "grandma",
+    "pos": "noun"
+  },
+  {
+    "rank": 141,
+    "nl": "hoog",
+    "en": "high",
+    "pos": "adj"
+  },
+  {
+    "rank": 142,
+    "nl": "opa",
+    "en": "grandpa",
+    "pos": "noun"
+  },
+  {
+    "rank": 143,
+    "nl": "staan",
+    "en": "to stand",
+    "pos": "verb"
+  },
+  {
+    "rank": 144,
+    "nl": "twee",
+    "en": "two",
+    "pos": "num"
+  },
+  {
+    "rank": 145,
+    "nl": "dezelfde",
+    "en": "the same",
+    "pos": "det"
+  },
+  {
+    "rank": 146,
+    "nl": "oom",
+    "en": "uncle",
+    "pos": "noun"
+  },
+  {
+    "rank": 147,
+    "nl": "nemen",
+    "en": "to take",
+    "pos": "verb"
+  },
+  {
+    "rank": 148,
+    "nl": "vandaag",
+    "en": "today",
+    "pos": "adv"
+  },
+  {
+    "rank": 149,
+    "nl": "laag",
+    "en": "low",
+    "pos": "adj"
+  },
+  {
+    "rank": 150,
+    "nl": "tante",
+    "en": "aunt",
+    "pos": "noun"
+  },
+  {
+    "rank": 151,
+    "nl": "neef",
+    "en": "cousin, nephew",
+    "pos": "noun"
+  },
+  {
+    "rank": 152,
+    "nl": "geven",
+    "en": "to give",
+    "pos": "verb"
+  },
+  {
+    "rank": 153,
+    "nl": "nicht",
+    "en": "cousin, niece",
+    "pos": "noun"
+  },
+  {
+    "rank": 154,
+    "nl": "breed",
+    "en": "wide",
+    "pos": "adj"
+  },
+  {
+    "rank": 155,
+    "nl": "familie",
+    "en": "family",
+    "pos": "noun"
+  },
+  {
+    "rank": 156,
+    "nl": "houden",
+    "en": "to hold, keep",
+    "pos": "verb"
+  },
+  {
+    "rank": 157,
+    "nl": "vriend",
+    "en": "friend (m.)",
+    "pos": "noun"
+  },
+  {
+    "rank": 158,
+    "nl": "smal",
+    "en": "narrow",
+    "pos": "adj"
+  },
+  {
+    "rank": 159,
+    "nl": "vriendin",
+    "en": "friend (f.), girlfriend",
+    "pos": "noun"
+  },
+  {
+    "rank": 160,
+    "nl": "blijven",
+    "en": "to stay, remain",
+    "pos": "verb"
+  },
+  {
+    "rank": 161,
+    "nl": "morgen",
+    "en": "tomorrow, morning",
+    "pos": "adv"
+  },
+  {
+    "rank": 162,
+    "nl": "buurman",
+    "en": "neighbor (m.)",
+    "pos": "noun"
+  },
+  {
+    "rank": 163,
+    "nl": "dik",
+    "en": "thick, fat",
+    "pos": "adj"
+  },
+  {
+    "rank": 164,
+    "nl": "buurvrouw",
+    "en": "neighbor (f.)",
+    "pos": "noun"
+  },
+  {
+    "rank": 165,
+    "nl": "lopen",
+    "en": "to walk, run",
+    "pos": "verb"
+  },
+  {
+    "rank": 166,
+    "nl": "baas",
+    "en": "boss",
+    "pos": "noun"
+  },
+  {
+    "rank": 167,
+    "nl": "collega",
+    "en": "colleague",
+    "pos": "noun"
+  },
+  {
+    "rank": 168,
+    "nl": "dun",
+    "en": "thin",
+    "pos": "adj"
+  },
+  {
+    "rank": 169,
+    "nl": "brengen",
+    "en": "to bring",
+    "pos": "verb"
+  },
+  {
+    "rank": 170,
+    "nl": "klant",
+    "en": "customer",
+    "pos": "noun"
+  },
+  {
+    "rank": 171,
+    "nl": "gast",
+    "en": "guest",
+    "pos": "noun"
+  },
+  {
+    "rank": 172,
+    "nl": "denken",
+    "en": "to think",
+    "pos": "verb"
+  },
+  {
+    "rank": 173,
+    "nl": "gisteren",
+    "en": "yesterday",
+    "pos": "adv"
+  },
+  {
+    "rank": 174,
+    "nl": "drie",
+    "en": "three",
+    "pos": "num"
+  },
+  {
+    "rank": 175,
+    "nl": "zwaar",
+    "en": "heavy",
+    "pos": "adj"
+  },
+  {
+    "rank": 176,
+    "nl": "naam",
+    "en": "name",
+    "pos": "noun"
+  },
+  {
+    "rank": 177,
+    "nl": "vragen",
+    "en": "to ask",
+    "pos": "verb"
+  },
+  {
+    "rank": 178,
+    "nl": "leeftijd",
+    "en": "age",
+    "pos": "noun"
+  },
+  {
+    "rank": 179,
+    "nl": "oud",
+    "en": "old",
+    "pos": "adj"
+  },
+  {
+    "rank": 180,
+    "nl": "dokter",
+    "en": "doctor",
+    "pos": "noun"
+  },
+  {
+    "rank": 181,
+    "nl": "jullie",
+    "en": "you (plural)",
+    "pos": "pron"
+  },
+  {
+    "rank": 182,
+    "nl": "zitten",
+    "en": "to sit",
+    "pos": "verb"
+  },
+  {
+    "rank": 183,
+    "nl": "arts",
+    "en": "physician",
+    "pos": "noun"
+  },
+  {
+    "rank": 184,
+    "nl": "jong",
+    "en": "young",
+    "pos": "adj"
+  },
+  {
+    "rank": 185,
+    "nl": "leraar",
+    "en": "teacher (m.)",
+    "pos": "noun"
+  },
+  {
+    "rank": 186,
+    "nl": "liggen",
+    "en": "to lie",
+    "pos": "verb"
+  },
+  {
+    "rank": 187,
+    "nl": "straks",
+    "en": "later, soon",
+    "pos": "adv"
+  },
+  {
+    "rank": 188,
+    "nl": "lerares",
+    "en": "teacher (f.)",
+    "pos": "noun"
+  },
+  {
+    "rank": 189,
+    "nl": "student",
+    "en": "student",
+    "pos": "noun"
+  },
+  {
+    "rank": 190,
+    "nl": "nieuw",
+    "en": "new",
+    "pos": "adj"
+  },
+  {
+    "rank": 191,
+    "nl": "spreken",
+    "en": "to speak",
+    "pos": "verb"
+  },
+  {
+    "rank": 192,
+    "nl": "agent",
+    "en": "police officer",
+    "pos": "noun"
+  },
+  {
+    "rank": 193,
+    "nl": "koning",
+    "en": "king",
+    "pos": "noun"
+  },
+  {
+    "rank": 194,
+    "nl": "praten",
+    "en": "to talk",
+    "pos": "verb"
+  },
+  {
+    "rank": 195,
+    "nl": "mooi",
+    "en": "beautiful",
+    "pos": "adj"
+  },
+  {
+    "rank": 196,
+    "nl": "koningin",
+    "en": "queen",
+    "pos": "noun"
+  },
+  {
+    "rank": 197,
+    "nl": "president",
+    "en": "president",
+    "pos": "noun"
+  },
+  {
+    "rank": 198,
+    "nl": "lezen",
+    "en": "to read",
+    "pos": "verb"
+  },
+  {
+    "rank": 199,
+    "nl": "vroeger",
+    "en": "earlier, in the past",
+    "pos": "adv"
+  },
+  {
+    "rank": 200,
+    "nl": "lelijk",
+    "en": "ugly",
+    "pos": "adj"
+  },
+  {
+    "rank": 201,
+    "nl": "minister",
+    "en": "minister",
+    "pos": "noun"
+  },
+  {
+    "rank": 202,
+    "nl": "vier",
+    "en": "four",
+    "pos": "num"
+  },
+  {
+    "rank": 203,
+    "nl": "achter",
+    "en": "behind",
+    "pos": "prep"
+  },
+  {
+    "rank": 204,
+    "nl": "schrijven",
+    "en": "to write",
+    "pos": "verb"
+  },
+  {
+    "rank": 205,
+    "nl": "soldaat",
+    "en": "soldier",
+    "pos": "noun"
+  },
+  {
+    "rank": 206,
+    "nl": "boer",
+    "en": "farmer",
+    "pos": "noun"
+  },
+  {
+    "rank": 207,
+    "nl": "snel",
+    "en": "fast",
+    "pos": "adj"
+  },
+  {
+    "rank": 208,
+    "nl": "horen",
+    "en": "to hear",
+    "pos": "verb"
+  },
+  {
+    "rank": 209,
+    "nl": "kok",
+    "en": "cook, chef",
+    "pos": "noun"
+  },
+  {
+    "rank": 210,
+    "nl": "schrijver",
+    "en": "writer",
+    "pos": "noun"
+  },
+  {
+    "rank": 211,
+    "nl": "terwijl",
+    "en": "while",
+    "pos": "conj"
+  },
+  {
+    "rank": 212,
+    "nl": "hallo",
+    "en": "hello",
+    "pos": "interj"
+  },
+  {
+    "rank": 213,
+    "nl": "langzaam",
+    "en": "slow",
+    "pos": "adj"
+  },
+  {
+    "rank": 214,
+    "nl": "voelen",
+    "en": "to feel",
+    "pos": "verb"
+  },
+  {
+    "rank": 215,
+    "nl": "later",
+    "en": "later",
+    "pos": "adv"
+  },
+  {
+    "rank": 216,
+    "nl": "kunstenaar",
+    "en": "artist",
+    "pos": "noun"
+  },
+  {
+    "rank": 217,
+    "nl": "zanger",
+    "en": "singer",
+    "pos": "noun"
+  },
+  {
+    "rank": 218,
+    "nl": "kijken",
+    "en": "to look, watch",
+    "pos": "verb"
+  },
+  {
+    "rank": 219,
+    "nl": "warm",
+    "en": "warm",
+    "pos": "adj"
+  },
+  {
+    "rank": 220,
+    "nl": "speler",
+    "en": "player",
+    "pos": "noun"
+  },
+  {
+    "rank": 221,
+    "nl": "winkelier",
+    "en": "shopkeeper",
+    "pos": "noun"
+  },
+  {
+    "rank": 222,
+    "nl": "luisteren",
+    "en": "to listen",
+    "pos": "verb"
+  },
+  {
+    "rank": 223,
+    "nl": "koud",
+    "en": "cold",
+    "pos": "adj"
+  },
+  {
+    "rank": 224,
+    "nl": "lichaam",
+    "en": "body",
+    "pos": "noun"
+  },
+  {
+    "rank": 225,
+    "nl": "hoofd",
+    "en": "head",
+    "pos": "noun"
+  },
+  {
+    "rank": 226,
+    "nl": "begrijpen",
+    "en": "to understand",
+    "pos": "verb"
+  },
+  {
+    "rank": 227,
+    "nl": "tegenwoordig",
+    "en": "nowadays",
+    "pos": "adv"
+  },
+  {
+    "rank": 228,
+    "nl": "gezicht",
+    "en": "face",
+    "pos": "noun"
+  },
+  {
+    "rank": 229,
+    "nl": "heet",
+    "en": "hot",
+    "pos": "adj"
+  },
+  {
+    "rank": 230,
+    "nl": "oog",
+    "en": "eye",
+    "pos": "noun"
+  },
+  {
+    "rank": 231,
+    "nl": "leren",
+    "en": "to learn, teach",
+    "pos": "verb"
+  },
+  {
+    "rank": 232,
+    "nl": "vijf",
+    "en": "five",
+    "pos": "num"
+  },
+  {
+    "rank": 233,
+    "nl": "zulke",
+    "en": "such",
+    "pos": "det"
+  },
+  {
+    "rank": 234,
+    "nl": "oor",
+    "en": "ear",
+    "pos": "noun"
+  },
+  {
+    "rank": 235,
+    "nl": "droog",
+    "en": "dry",
+    "pos": "adj"
+  },
+  {
+    "rank": 236,
+    "nl": "werken",
+    "en": "to work",
+    "pos": "verb"
+  },
+  {
+    "rank": 237,
+    "nl": "neus",
+    "en": "nose",
+    "pos": "noun"
+  },
+  {
+    "rank": 238,
+    "nl": "mond",
+    "en": "mouth",
+    "pos": "noun"
+  },
+  {
+    "rank": 239,
+    "nl": "spelen",
+    "en": "to play",
+    "pos": "verb"
+  },
+  {
+    "rank": 240,
+    "nl": "thuis",
+    "en": "(at) home",
+    "pos": "adv"
+  },
+  {
+    "rank": 241,
+    "nl": "nat",
+    "en": "wet",
+    "pos": "adj"
+  },
+  {
+    "rank": 242,
+    "nl": "tand",
+    "en": "tooth",
+    "pos": "noun"
+  },
+  {
+    "rank": 243,
+    "nl": "tong",
+    "en": "tongue",
+    "pos": "noun"
+  },
+  {
+    "rank": 244,
+    "nl": "kopen",
+    "en": "to buy",
+    "pos": "verb"
+  },
+  {
+    "rank": 245,
+    "nl": "hals",
+    "en": "neck",
+    "pos": "noun"
+  },
+  {
+    "rank": 246,
+    "nl": "vol",
+    "en": "full",
+    "pos": "adj"
+  },
+  {
+    "rank": 247,
+    "nl": "nek",
+    "en": "neck (back)",
+    "pos": "noun"
+  },
+  {
+    "rank": 248,
+    "nl": "verkopen",
+    "en": "to sell",
+    "pos": "verb"
+  },
+  {
+    "rank": 249,
+    "nl": "schouder",
+    "en": "shoulder",
+    "pos": "noun"
+  },
+  {
+    "rank": 250,
+    "nl": "leeg",
+    "en": "empty",
+    "pos": "adj"
+  },
+  {
+    "rank": 251,
+    "nl": "arm",
+    "en": "arm",
+    "pos": "noun"
+  },
+  {
+    "rank": 252,
+    "nl": "betalen",
+    "en": "to pay",
+    "pos": "verb"
+  },
+  {
+    "rank": 253,
+    "nl": "erg",
+    "en": "very, badly",
+    "pos": "adv"
+  },
+  {
+    "rank": 254,
+    "nl": "hand",
+    "en": "hand",
+    "pos": "noun"
+  },
+  {
+    "rank": 255,
+    "nl": "open",
+    "en": "open",
+    "pos": "adj"
+  },
+  {
+    "rank": 256,
+    "nl": "vinger",
+    "en": "finger",
+    "pos": "noun"
+  },
+  {
+    "rank": 257,
+    "nl": "eten",
+    "en": "to eat",
+    "pos": "verb"
+  },
+  {
+    "rank": 258,
+    "nl": "been",
+    "en": "leg, bone",
+    "pos": "noun"
+  },
+  {
+    "rank": 259,
+    "nl": "drinken",
+    "en": "to drink",
+    "pos": "verb"
+  },
+  {
+    "rank": 260,
+    "nl": "voet",
+    "en": "foot",
+    "pos": "noun"
+  },
+  {
+    "rank": 261,
+    "nl": "dicht",
+    "en": "closed; dense",
+    "pos": "adj"
+  },
+  {
+    "rank": 262,
+    "nl": "zes",
+    "en": "six",
+    "pos": "num"
+  },
+  {
+    "rank": 263,
+    "nl": "knie",
+    "en": "knee",
+    "pos": "noun"
+  },
+  {
+    "rank": 264,
+    "nl": "slapen",
+    "en": "to sleep",
+    "pos": "verb"
+  },
+  {
+    "rank": 265,
+    "nl": "zeer",
+    "en": "very",
+    "pos": "adv"
+  },
+  {
+    "rank": 266,
+    "nl": "rug",
+    "en": "back",
+    "pos": "noun"
+  },
+  {
+    "rank": 267,
+    "nl": "schoon",
+    "en": "clean",
+    "pos": "adj"
+  },
+  {
+    "rank": 268,
+    "nl": "buik",
+    "en": "belly",
+    "pos": "noun"
+  },
+  {
+    "rank": 269,
+    "nl": "wonen",
+    "en": "to live, reside",
+    "pos": "verb"
+  },
+  {
+    "rank": 270,
+    "nl": "hart",
+    "en": "heart",
+    "pos": "noun"
+  },
+  {
+    "rank": 271,
+    "nl": "vies",
+    "en": "dirty",
+    "pos": "adj"
+  },
+  {
+    "rank": 272,
+    "nl": "naast",
+    "en": "next to",
+    "pos": "prep"
+  },
+  {
+    "rank": 273,
+    "nl": "bloed",
+    "en": "blood",
+    "pos": "noun"
+  },
+  {
+    "rank": 274,
+    "nl": "leven",
+    "en": "to live; life",
+    "pos": "verb"
+  },
+  {
+    "rank": 275,
+    "nl": "huid",
+    "en": "skin",
+    "pos": "noun"
+  },
+  {
+    "rank": 276,
+    "nl": "vuil",
+    "en": "dirty, filthy",
+    "pos": "adj"
+  },
+  {
+    "rank": 277,
+    "nl": "bot",
+    "en": "bone",
+    "pos": "noun"
+  },
+  {
+    "rank": 278,
+    "nl": "sterven",
+    "en": "to die",
+    "pos": "verb"
+  },
+  {
+    "rank": 279,
+    "nl": "best",
+    "en": "quite, best",
+    "pos": "adv"
+  },
+  {
+    "rank": 280,
+    "nl": "hersenen",
+    "en": "brain",
+    "pos": "noun"
+  },
+  {
+    "rank": 281,
+    "nl": "tijd",
+    "en": "time",
+    "pos": "noun"
+  },
+  {
+    "rank": 282,
+    "nl": "hard",
+    "en": "hard, loud",
+    "pos": "adj"
+  },
+  {
+    "rank": 283,
+    "nl": "beginnen",
+    "en": "to begin",
+    "pos": "verb"
+  },
+  {
+    "rank": 284,
+    "nl": "jaar",
+    "en": "year",
+    "pos": "noun"
+  },
+  {
+    "rank": 285,
+    "nl": "zodat",
+    "en": "so that",
+    "pos": "conj"
+  },
+  {
+    "rank": 286,
+    "nl": "doei",
+    "en": "bye",
+    "pos": "interj"
+  },
+  {
+    "rank": 287,
+    "nl": "maand",
+    "en": "month",
+    "pos": "noun"
+  },
+  {
+    "rank": 288,
+    "nl": "eindigen",
+    "en": "to end",
+    "pos": "verb"
+  },
+  {
+    "rank": 289,
+    "nl": "zacht",
+    "en": "soft",
+    "pos": "adj"
+  },
+  {
+    "rank": 290,
+    "nl": "week",
+    "en": "week",
+    "pos": "noun"
+  },
+  {
+    "rank": 291,
+    "nl": "zeven",
+    "en": "seven",
+    "pos": "num"
+  },
+  {
+    "rank": 292,
+    "nl": "stoppen",
+    "en": "to stop",
+    "pos": "verb"
+  },
+  {
+    "rank": 293,
+    "nl": "vooral",
+    "en": "especially",
+    "pos": "adv"
+  },
+  {
+    "rank": 294,
+    "nl": "dag",
+    "en": "day",
+    "pos": "noun"
+  },
+  {
+    "rank": 295,
+    "nl": "sterk",
+    "en": "strong",
+    "pos": "adj"
+  },
+  {
+    "rank": 296,
+    "nl": "uur",
+    "en": "hour",
+    "pos": "noun"
+  },
+  {
+    "rank": 297,
+    "nl": "openen",
+    "en": "to open",
+    "pos": "verb"
+  },
+  {
+    "rank": 298,
+    "nl": "minuut",
+    "en": "minute",
+    "pos": "noun"
+  },
+  {
+    "rank": 299,
+    "nl": "seconde",
+    "en": "second",
+    "pos": "noun"
+  },
+  {
+    "rank": 300,
+    "nl": "zwak",
+    "en": "weak",
+    "pos": "adj"
+  },
+  {
+    "rank": 301,
+    "nl": "sluiten",
+    "en": "to close",
+    "pos": "verb"
+  },
+  {
+    "rank": 302,
+    "nl": "moment",
+    "en": "moment",
+    "pos": "noun"
+  },
+  {
+    "rank": 303,
+    "nl": "ochtend",
+    "en": "morning",
+    "pos": "noun"
+  },
+  {
+    "rank": 304,
+    "nl": "rijk",
+    "en": "rich",
+    "pos": "adj"
+  },
+  {
+    "rank": 305,
+    "nl": "zoeken",
+    "en": "to search",
+    "pos": "verb"
+  },
+  {
+    "rank": 306,
+    "nl": "bijna",
+    "en": "almost",
+    "pos": "adv"
+  },
+  {
+    "rank": 307,
+    "nl": "middag",
+    "en": "afternoon",
+    "pos": "noun"
+  },
+  {
+    "rank": 308,
+    "nl": "avond",
+    "en": "evening",
+    "pos": "noun"
+  },
+  {
+    "rank": 309,
+    "nl": "volgen",
+    "en": "to follow",
+    "pos": "verb"
+  },
+  {
+    "rank": 310,
+    "nl": "duur",
+    "en": "expensive",
+    "pos": "adj"
+  },
+  {
+    "rank": 311,
+    "nl": "nacht",
+    "en": "night",
+    "pos": "noun"
+  },
+  {
+    "rank": 312,
+    "nl": "maandag",
+    "en": "Monday",
+    "pos": "noun"
+  },
+  {
+    "rank": 313,
+    "nl": "gebruiken",
+    "en": "to use",
+    "pos": "verb"
+  },
+  {
+    "rank": 314,
+    "nl": "goedkoop",
+    "en": "cheap",
+    "pos": "adj"
+  },
+  {
+    "rank": 315,
+    "nl": "dinsdag",
+    "en": "Tuesday",
+    "pos": "noun"
+  },
+  {
+    "rank": 316,
+    "nl": "woensdag",
+    "en": "Wednesday",
+    "pos": "noun"
+  },
+  {
+    "rank": 317,
+    "nl": "proberen",
+    "en": "to try",
+    "pos": "verb"
+  },
+  {
+    "rank": 318,
+    "nl": "ongeveer",
+    "en": "approximately",
+    "pos": "adv"
+  },
+  {
+    "rank": 319,
+    "nl": "acht",
+    "en": "eight",
+    "pos": "num"
+  },
+  {
+    "rank": 320,
+    "nl": "zo'n",
+    "en": "such a",
+    "pos": "det"
+  },
+  {
+    "rank": 321,
+    "nl": "donderdag",
+    "en": "Thursday",
+    "pos": "noun"
+  },
+  {
+    "rank": 322,
+    "nl": "vrij",
+    "en": "free",
+    "pos": "adj"
+  },
+  {
+    "rank": 323,
+    "nl": "helpen",
+    "en": "to help",
+    "pos": "verb"
+  },
+  {
+    "rank": 324,
+    "nl": "vrijdag",
+    "en": "Friday",
+    "pos": "noun"
+  },
+  {
+    "rank": 325,
+    "nl": "zaterdag",
+    "en": "Saturday",
+    "pos": "noun"
+  },
+  {
+    "rank": 326,
+    "nl": "druk",
+    "en": "busy",
+    "pos": "adj"
+  },
+  {
+    "rank": 327,
+    "nl": "werpen",
+    "en": "to throw",
+    "pos": "verb"
+  },
+  {
+    "rank": 328,
+    "nl": "zondag",
+    "en": "Sunday",
+    "pos": "noun"
+  },
+  {
+    "rank": 329,
+    "nl": "januari",
+    "en": "January",
+    "pos": "noun"
+  },
+  {
+    "rank": 330,
+    "nl": "vallen",
+    "en": "to fall",
+    "pos": "verb"
+  },
+  {
+    "rank": 331,
+    "nl": "precies",
+    "en": "exactly",
+    "pos": "adv"
+  },
+  {
+    "rank": 332,
+    "nl": "rustig",
+    "en": "calm, quiet",
+    "pos": "adj"
+  },
+  {
+    "rank": 333,
+    "nl": "februari",
+    "en": "February",
+    "pos": "noun"
+  },
+  {
+    "rank": 334,
+    "nl": "maart",
+    "en": "March",
+    "pos": "noun"
+  },
+  {
+    "rank": 335,
+    "nl": "rijden",
+    "en": "to drive, ride",
+    "pos": "verb"
+  },
+  {
+    "rank": 336,
+    "nl": "april",
+    "en": "April",
+    "pos": "noun"
+  },
+  {
+    "rank": 337,
+    "nl": "stil",
+    "en": "silent, still",
+    "pos": "adj"
+  },
+  {
+    "rank": 338,
+    "nl": "mei",
+    "en": "May",
+    "pos": "noun"
+  },
+  {
+    "rank": 339,
+    "nl": "vliegen",
+    "en": "to fly",
+    "pos": "verb"
+  },
+  {
+    "rank": 340,
+    "nl": "hen",
+    "en": "them",
+    "pos": "pron"
+  },
+  {
+    "rank": 341,
+    "nl": "tijdens",
+    "en": "during",
+    "pos": "prep"
+  },
+  {
+    "rank": 342,
+    "nl": "juni",
+    "en": "June",
+    "pos": "noun"
+  },
+  {
+    "rank": 343,
+    "nl": "blij",
+    "en": "happy, glad",
+    "pos": "adj"
+  },
+  {
+    "rank": 344,
+    "nl": "juli",
+    "en": "July",
+    "pos": "noun"
+  },
+  {
+    "rank": 345,
+    "nl": "zwemmen",
+    "en": "to swim",
+    "pos": "verb"
+  },
+  {
+    "rank": 346,
+    "nl": "genoeg",
+    "en": "enough",
+    "pos": "adv"
+  },
+  {
+    "rank": 347,
+    "nl": "augustus",
+    "en": "August",
+    "pos": "noun"
+  },
+  {
+    "rank": 348,
+    "nl": "verdrietig",
+    "en": "sad",
+    "pos": "adj"
+  },
+  {
+    "rank": 349,
+    "nl": "negen",
+    "en": "nine",
+    "pos": "num"
+  },
+  {
+    "rank": 350,
+    "nl": "zingen",
+    "en": "to sing",
+    "pos": "verb"
+  },
+  {
+    "rank": 351,
+    "nl": "september",
+    "en": "September",
+    "pos": "noun"
+  },
+  {
+    "rank": 352,
+    "nl": "oktober",
+    "en": "October",
+    "pos": "noun"
+  },
+  {
+    "rank": 353,
+    "nl": "dansen",
+    "en": "to dance",
+    "pos": "verb"
+  },
+  {
+    "rank": 354,
+    "nl": "boos",
+    "en": "angry",
+    "pos": "adj"
+  },
+  {
+    "rank": 355,
+    "nl": "november",
+    "en": "November",
+    "pos": "noun"
+  },
+  {
+    "rank": 356,
+    "nl": "december",
+    "en": "December",
+    "pos": "noun"
+  },
+  {
+    "rank": 357,
+    "nl": "lachen",
+    "en": "to laugh",
+    "pos": "verb"
+  },
+  {
+    "rank": 358,
+    "nl": "vaak",
+    "en": "often",
+    "pos": "adv"
+  },
+  {
+    "rank": 359,
+    "nl": "lente",
+    "en": "spring",
+    "pos": "noun"
+  },
+  {
+    "rank": 360,
+    "nl": "bang",
+    "en": "afraid",
+    "pos": "adj"
+  },
+  {
+    "rank": 361,
+    "nl": "doordat",
+    "en": "because (of)",
+    "pos": "conj"
+  },
+  {
+    "rank": 362,
+    "nl": "alstublieft",
+    "en": "please (formal)",
+    "pos": "interj"
+  },
+  {
+    "rank": 363,
+    "nl": "zomer",
+    "en": "summer",
+    "pos": "noun"
+  },
+  {
+    "rank": 364,
+    "nl": "huilen",
+    "en": "to cry",
+    "pos": "verb"
+  },
+  {
+    "rank": 365,
+    "nl": "herfst",
+    "en": "autumn",
+    "pos": "noun"
+  },
+  {
+    "rank": 366,
+    "nl": "moe",
+    "en": "tired",
+    "pos": "adj"
+  },
+  {
+    "rank": 367,
+    "nl": "winter",
+    "en": "winter",
+    "pos": "noun"
+  },
+  {
+    "rank": 368,
+    "nl": "wachten",
+    "en": "to wait",
+    "pos": "verb"
+  },
+  {
+    "rank": 369,
+    "nl": "helft",
+    "en": "half",
+    "pos": "noun"
+  },
+  {
+    "rank": 370,
+    "nl": "ziek",
+    "en": "sick",
+    "pos": "adj"
+  },
+  {
+    "rank": 371,
+    "nl": "paar",
+    "en": "pair, couple",
+    "pos": "noun"
+  },
+  {
+    "rank": 372,
+    "nl": "openmaken",
+    "en": "to open up",
+    "pos": "verb"
+  },
+  {
+    "rank": 373,
+    "nl": "soms",
+    "en": "sometimes",
+    "pos": "adv"
+  },
+  {
+    "rank": 374,
+    "nl": "aantal",
+    "en": "number, amount",
+    "pos": "noun"
+  },
+  {
+    "rank": 375,
+    "nl": "huis",
+    "en": "house",
+    "pos": "noun"
+  },
+  {
+    "rank": 376,
+    "nl": "gezond",
+    "en": "healthy",
+    "pos": "adj"
+  },
+  {
+    "rank": 377,
+    "nl": "vergeten",
+    "en": "to forget",
+    "pos": "verb"
+  },
+  {
+    "rank": 378,
+    "nl": "kamer",
+    "en": "room",
+    "pos": "noun"
+  },
+  {
+    "rank": 379,
+    "nl": "tien",
+    "en": "ten",
+    "pos": "num"
+  },
+  {
+    "rank": 380,
+    "nl": "herinneren",
+    "en": "to remember",
+    "pos": "verb"
+  },
+  {
+    "rank": 381,
+    "nl": "keuken",
+    "en": "kitchen",
+    "pos": "noun"
+  },
+  {
+    "rank": 382,
+    "nl": "levend",
+    "en": "alive",
+    "pos": "adj"
+  },
+  {
+    "rank": 383,
+    "nl": "badkamer",
+    "en": "bathroom",
+    "pos": "noun"
+  },
+  {
+    "rank": 384,
+    "nl": "kennen",
+    "en": "to know (person)",
+    "pos": "verb"
+  },
+  {
+    "rank": 385,
+    "nl": "meestal",
+    "en": "usually",
+    "pos": "adv"
+  },
+  {
+    "rank": 386,
+    "nl": "slaapkamer",
+    "en": "bedroom",
+    "pos": "noun"
+  },
+  {
+    "rank": 387,
+    "nl": "vals",
+    "en": "false, fake",
+    "pos": "adj"
+  },
+  {
+    "rank": 388,
+    "nl": "woonkamer",
+    "en": "living room",
+    "pos": "noun"
+  },
+  {
+    "rank": 389,
+    "nl": "verliezen",
+    "en": "to lose",
+    "pos": "verb"
+  },
+  {
+    "rank": 390,
+    "nl": "deur",
+    "en": "door",
+    "pos": "noun"
+  },
+  {
+    "rank": 391,
+    "nl": "juist",
+    "en": "correct, just",
+    "pos": "adj"
+  },
+  {
+    "rank": 392,
+    "nl": "raam",
+    "en": "window",
+    "pos": "noun"
+  },
+  {
+    "rank": 393,
+    "nl": "winnen",
+    "en": "to win",
+    "pos": "verb"
+  },
+  {
+    "rank": 394,
+    "nl": "muur",
+    "en": "wall",
+    "pos": "noun"
+  },
+  {
+    "rank": 395,
+    "nl": "vloer",
+    "en": "floor",
+    "pos": "noun"
+  },
+  {
+    "rank": 396,
+    "nl": "fout",
+    "en": "wrong",
+    "pos": "adj"
+  },
+  {
+    "rank": 397,
+    "nl": "kosten",
+    "en": "to cost",
+    "pos": "verb"
+  },
+  {
+    "rank": 398,
+    "nl": "zelden",
+    "en": "rarely",
+    "pos": "adv"
+  },
+  {
+    "rank": 399,
+    "nl": "plafond",
+    "en": "ceiling",
+    "pos": "noun"
+  },
+  {
+    "rank": 400,
+    "nl": "dak",
+    "en": "roof",
+    "pos": "noun"
+  },
+  {
+    "rank": 401,
+    "nl": "tonen",
+    "en": "to show",
+    "pos": "verb"
+  },
+  {
+    "rank": 402,
+    "nl": "makkelijk",
+    "en": "easy",
+    "pos": "adj"
+  },
+  {
+    "rank": 403,
+    "nl": "trap",
+    "en": "stairs",
+    "pos": "noun"
+  },
+  {
+    "rank": 404,
+    "nl": "tafel",
+    "en": "table",
+    "pos": "noun"
+  },
+  {
+    "rank": 405,
+    "nl": "noemen",
+    "en": "to name, call",
+    "pos": "verb"
+  },
+  {
+    "rank": 406,
+    "nl": "elf",
+    "en": "eleven",
+    "pos": "num"
+  },
+  {
+    "rank": 407,
+    "nl": "ieder",
+    "en": "each, every",
+    "pos": "det"
+  },
+  {
+    "rank": 408,
+    "nl": "moeilijk",
+    "en": "difficult",
+    "pos": "adj"
+  },
+  {
+    "rank": 409,
+    "nl": "stoel",
+    "en": "chair",
+    "pos": "noun"
+  },
+  {
+    "rank": 410,
+    "nl": "volgens",
+    "en": "according to",
+    "pos": "prep"
+  },
+  {
+    "rank": 411,
+    "nl": "heten",
+    "en": "to be called",
+    "pos": "verb"
+  },
+  {
+    "rank": 412,
+    "nl": "plotseling",
+    "en": "suddenly",
+    "pos": "adv"
+  },
+  {
+    "rank": 413,
+    "nl": "bank",
+    "en": "sofa; bank",
+    "pos": "noun"
+  },
+  {
+    "rank": 414,
+    "nl": "bed",
+    "en": "bed",
+    "pos": "noun"
+  },
+  {
+    "rank": 415,
+    "nl": "belangrijk",
+    "en": "important",
+    "pos": "adj"
+  },
+  {
+    "rank": 416,
+    "nl": "ontmoeten",
+    "en": "to meet",
+    "pos": "verb"
+  },
+  {
+    "rank": 417,
+    "nl": "kast",
+    "en": "cupboard, closet",
+    "pos": "noun"
+  },
+  {
+    "rank": 418,
+    "nl": "lamp",
+    "en": "lamp",
+    "pos": "noun"
+  },
+  {
+    "rank": 419,
+    "nl": "nodig",
+    "en": "necessary",
+    "pos": "adj"
+  },
+  {
+    "rank": 420,
+    "nl": "bezoeken",
+    "en": "to visit",
+    "pos": "verb"
+  },
+  {
+    "rank": 421,
+    "nl": "klok",
+    "en": "clock",
+    "pos": "noun"
+  },
+  {
+    "rank": 422,
+    "nl": "spiegel",
+    "en": "mirror",
+    "pos": "noun"
+  },
+  {
+    "rank": 423,
+    "nl": "reizen",
+    "en": "to travel",
+    "pos": "verb"
+  },
+  {
+    "rank": 424,
+    "nl": "eindelijk",
+    "en": "finally",
+    "pos": "adv"
+  },
+  {
+    "rank": 425,
+    "nl": "mogelijk",
+    "en": "possible",
+    "pos": "adj"
+  },
+  {
+    "rank": 426,
+    "nl": "tuin",
+    "en": "garden",
+    "pos": "noun"
+  },
+  {
+    "rank": 427,
+    "nl": "garage",
+    "en": "garage",
+    "pos": "noun"
+  },
+  {
+    "rank": 428,
+    "nl": "blijken",
+    "en": "to appear, prove",
+    "pos": "verb"
+  },
+  {
+    "rank": 429,
+    "nl": "zeker",
+    "en": "certain, sure",
+    "pos": "adj"
+  },
+  {
+    "rank": 430,
+    "nl": "sleutel",
+    "en": "key",
+    "pos": "noun"
+  },
+  {
+    "rank": 431,
+    "nl": "bord",
+    "en": "plate, sign",
+    "pos": "noun"
+  },
+  {
+    "rank": 432,
+    "nl": "lijken",
+    "en": "to seem",
+    "pos": "verb"
+  },
+  {
+    "rank": 433,
+    "nl": "voordat",
+    "en": "before (conj.)",
+    "pos": "conj"
+  },
+  {
+    "rank": 434,
+    "nl": "alsjeblieft",
+    "en": "please (informal)",
+    "pos": "interj"
+  },
+  {
+    "rank": 435,
+    "nl": "glas",
+    "en": "glass",
+    "pos": "noun"
+  },
+  {
+    "rank": 436,
+    "nl": "duidelijk",
+    "en": "clear",
+    "pos": "adj"
+  },
+  {
+    "rank": 437,
+    "nl": "twaalf",
+    "en": "twelve",
+    "pos": "num"
+  },
+  {
+    "rank": 438,
+    "nl": "schijnen",
+    "en": "to shine, seem",
+    "pos": "verb"
+  },
+  {
+    "rank": 439,
+    "nl": "meteen",
+    "en": "immediately",
+    "pos": "adv"
+  },
+  {
+    "rank": 440,
+    "nl": "kop",
+    "en": "cup; head",
+    "pos": "noun"
+  },
+  {
+    "rank": 441,
+    "nl": "mes",
+    "en": "knife",
+    "pos": "noun"
+  },
+  {
+    "rank": 442,
+    "nl": "bekend",
+    "en": "well-known",
+    "pos": "adj"
+  },
+  {
+    "rank": 443,
+    "nl": "gebeuren",
+    "en": "to happen",
+    "pos": "verb"
+  },
+  {
+    "rank": 444,
+    "nl": "vork",
+    "en": "fork",
+    "pos": "noun"
+  },
+  {
+    "rank": 445,
+    "nl": "lepel",
+    "en": "spoon",
+    "pos": "noun"
+  },
+  {
+    "rank": 446,
+    "nl": "bestaan",
+    "en": "to exist",
+    "pos": "verb"
+  },
+  {
+    "rank": 447,
+    "nl": "vreemd",
+    "en": "strange, foreign",
+    "pos": "adj"
+  },
+  {
+    "rank": 448,
+    "nl": "pan",
+    "en": "pan",
+    "pos": "noun"
+  },
+  {
+    "rank": 449,
+    "nl": "fles",
+    "en": "bottle",
+    "pos": "noun"
+  },
+  {
+    "rank": 450,
+    "nl": "betekenen",
+    "en": "to mean",
+    "pos": "verb"
+  },
+  {
+    "rank": 451,
+    "nl": "direct",
+    "en": "directly",
+    "pos": "adv"
+  },
+  {
+    "rank": 452,
+    "nl": "doos",
+    "en": "box",
+    "pos": "noun"
+  },
+  {
+    "rank": 453,
+    "nl": "normaal",
+    "en": "normal",
+    "pos": "adj"
+  },
+  {
+    "rank": 454,
+    "nl": "tas",
+    "en": "bag",
+    "pos": "noun"
+  },
+  {
+    "rank": 455,
+    "nl": "bouwen",
+    "en": "to build",
+    "pos": "verb"
+  },
+  {
+    "rank": 456,
+    "nl": "brood",
+    "en": "bread",
+    "pos": "noun"
+  },
+  {
+    "rank": 457,
+    "nl": "gewoon",
+    "en": "ordinary, just",
+    "pos": "adj"
+  },
+  {
+    "rank": 458,
+    "nl": "kaas",
+    "en": "cheese",
+    "pos": "noun"
+  },
+  {
+    "rank": 459,
+    "nl": "breken",
+    "en": "to break",
+    "pos": "verb"
+  },
+  {
+    "rank": 460,
+    "nl": "boter",
+    "en": "butter",
+    "pos": "noun"
+  },
+  {
+    "rank": 461,
+    "nl": "echt",
+    "en": "real",
+    "pos": "adj"
+  },
+  {
+    "rank": 462,
+    "nl": "melk",
+    "en": "milk",
+    "pos": "noun"
+  },
+  {
+    "rank": 463,
+    "nl": "trekken",
+    "en": "to pull",
+    "pos": "verb"
+  },
+  {
+    "rank": 464,
+    "nl": "opeens",
+    "en": "all at once",
+    "pos": "adv"
+  },
+  {
+    "rank": 465,
+    "nl": "dertien",
+    "en": "thirteen",
+    "pos": "num"
+  },
+  {
+    "rank": 466,
+    "nl": "ei",
+    "en": "egg",
+    "pos": "noun"
+  },
+  {
+    "rank": 467,
+    "nl": "duwen",
+    "en": "to push",
+    "pos": "verb"
+  },
+  {
+    "rank": 468,
+    "nl": "zwart",
+    "en": "black",
+    "pos": "adj"
+  },
+  {
+    "rank": 469,
+    "nl": "vlees",
+    "en": "meat",
+    "pos": "noun"
+  },
+  {
+    "rank": 470,
+    "nl": "vis",
+    "en": "fish",
+    "pos": "noun"
+  },
+  {
+    "rank": 471,
+    "nl": "dragen",
+    "en": "to carry, wear",
+    "pos": "verb"
+  },
+  {
+    "rank": 472,
+    "nl": "kip",
+    "en": "chicken",
+    "pos": "noun"
+  },
+  {
+    "rank": 473,
+    "nl": "wit",
+    "en": "white",
+    "pos": "adj"
+  },
+  {
+    "rank": 474,
+    "nl": "groente",
+    "en": "vegetable",
+    "pos": "noun"
+  },
+  {
+    "rank": 475,
+    "nl": "vasthouden",
+    "en": "to hold on",
+    "pos": "verb"
+  },
+  {
+    "rank": 476,
+    "nl": "inmiddels",
+    "en": "by now, meanwhile",
+    "pos": "adv"
+  },
+  {
+    "rank": 477,
+    "nl": "fruit",
+    "en": "fruit",
+    "pos": "noun"
+  },
+  {
+    "rank": 478,
+    "nl": "rood",
+    "en": "red",
+    "pos": "adj"
+  },
+  {
+    "rank": 479,
+    "nl": "vanaf",
+    "en": "from (a point)",
+    "pos": "prep"
+  },
+  {
+    "rank": 480,
+    "nl": "appel",
+    "en": "apple",
+    "pos": "noun"
+  },
+  {
+    "rank": 481,
+    "nl": "zetten",
+    "en": "to put, set",
+    "pos": "verb"
+  },
+  {
+    "rank": 482,
+    "nl": "banaan",
+    "en": "banana",
+    "pos": "noun"
+  },
+  {
+    "rank": 483,
+    "nl": "groen",
+    "en": "green",
+    "pos": "adj"
+  },
+  {
+    "rank": 484,
+    "nl": "sinaasappel",
+    "en": "orange",
+    "pos": "noun"
+  },
+  {
+    "rank": 485,
+    "nl": "leggen",
+    "en": "to lay, put",
+    "pos": "verb"
+  },
+  {
+    "rank": 486,
+    "nl": "aardappel",
+    "en": "potato",
+    "pos": "noun"
+  },
+  {
+    "rank": 487,
+    "nl": "tomaat",
+    "en": "tomato",
+    "pos": "noun"
+  },
+  {
+    "rank": 488,
+    "nl": "blauw",
+    "en": "blue",
+    "pos": "adj"
+  },
+  {
+    "rank": 489,
+    "nl": "hangen",
+    "en": "to hang",
+    "pos": "verb"
+  },
+  {
+    "rank": 490,
+    "nl": "ondertussen",
+    "en": "meanwhile",
+    "pos": "adv"
+  },
+  {
+    "rank": 491,
+    "nl": "rijst",
+    "en": "rice",
+    "pos": "noun"
+  },
+  {
+    "rank": 492,
+    "nl": "pasta",
+    "en": "pasta",
+    "pos": "noun"
+  },
+  {
+    "rank": 493,
+    "nl": "draaien",
+    "en": "to turn",
+    "pos": "verb"
+  },
+  {
+    "rank": 494,
+    "nl": "veertien",
+    "en": "fourteen",
+    "pos": "num"
+  },
+  {
+    "rank": 495,
+    "nl": "elk",
+    "en": "each",
+    "pos": "det"
+  },
+  {
+    "rank": 496,
+    "nl": "geel",
+    "en": "yellow",
+    "pos": "adj"
+  },
+  {
+    "rank": 497,
+    "nl": "soep",
+    "en": "soup",
+    "pos": "noun"
+  },
+  {
+    "rank": 498,
+    "nl": "bewegen",
+    "en": "to move",
+    "pos": "verb"
+  },
+  {
+    "rank": 499,
+    "nl": "salade",
+    "en": "salad",
+    "pos": "noun"
+  },
+  {
+    "rank": 500,
+    "nl": "bruin",
+    "en": "brown",
+    "pos": "adj"
+  },
+  {
+    "rank": 501,
+    "nl": "suiker",
+    "en": "sugar",
+    "pos": "noun"
+  },
+  {
+    "rank": 502,
+    "nl": "elkaar",
+    "en": "each other",
+    "pos": "pron"
+  },
+  {
+    "rank": 503,
+    "nl": "groeien",
+    "en": "to grow",
+    "pos": "verb"
+  },
+  {
+    "rank": 504,
+    "nl": "voortaan",
+    "en": "from now on",
+    "pos": "adv"
+  },
+  {
+    "rank": 505,
+    "nl": "zout",
+    "en": "salt",
+    "pos": "noun"
+  },
+  {
+    "rank": 506,
+    "nl": "grijs",
+    "en": "gray",
+    "pos": "adj"
+  },
+  {
+    "rank": 507,
+    "nl": "peper",
+    "en": "pepper",
+    "pos": "noun"
+  },
+  {
+    "rank": 508,
+    "nl": "veranderen",
+    "en": "to change",
+    "pos": "verb"
+  },
+  {
+    "rank": 509,
+    "nl": "nadat",
+    "en": "after (conj.)",
+    "pos": "conj"
+  },
+  {
+    "rank": 510,
+    "nl": "dank",
+    "en": "thanks",
+    "pos": "interj"
+  },
+  {
+    "rank": 511,
+    "nl": "water",
+    "en": "water",
+    "pos": "noun"
+  },
+  {
+    "rank": 512,
+    "nl": "koffie",
+    "en": "coffee",
+    "pos": "noun"
+  },
+  {
+    "rank": 513,
+    "nl": "roze",
+    "en": "pink",
+    "pos": "adj"
+  },
+  {
+    "rank": 514,
+    "nl": "verschillen",
+    "en": "to differ",
+    "pos": "verb"
+  },
+  {
+    "rank": 515,
+    "nl": "thee",
+    "en": "tea",
+    "pos": "noun"
+  },
+  {
+    "rank": 516,
+    "nl": "bier",
+    "en": "beer",
+    "pos": "noun"
+  },
+  {
+    "rank": 517,
+    "nl": "ontwikkelen",
+    "en": "to develop",
+    "pos": "verb"
+  },
+  {
+    "rank": 518,
+    "nl": "alweer",
+    "en": "yet again",
+    "pos": "adv"
+  },
+  {
+    "rank": 519,
+    "nl": "oranje",
+    "en": "orange",
+    "pos": "adj"
+  },
+  {
+    "rank": 520,
+    "nl": "wijn",
+    "en": "wine",
+    "pos": "noun"
+  },
+  {
+    "rank": 521,
+    "nl": "sap",
+    "en": "juice",
+    "pos": "noun"
+  },
+  {
+    "rank": 522,
+    "nl": "ontdekken",
+    "en": "to discover",
+    "pos": "verb"
+  },
+  {
+    "rank": 523,
+    "nl": "paars",
+    "en": "purple",
+    "pos": "adj"
+  },
+  {
+    "rank": 524,
+    "nl": "ijs",
+    "en": "ice, ice cream",
+    "pos": "noun"
+  },
+  {
+    "rank": 525,
+    "nl": "vijftien",
+    "en": "fifteen",
+    "pos": "num"
+  },
+  {
+    "rank": 526,
+    "nl": "bedenken",
+    "en": "to think up",
+    "pos": "verb"
+  },
+  {
+    "rank": 527,
+    "nl": "koek",
+    "en": "cookie",
+    "pos": "noun"
+  },
+  {
+    "rank": 528,
+    "nl": "taart",
+    "en": "cake, pie",
+    "pos": "noun"
+  },
+  {
+    "rank": 529,
+    "nl": "rond",
+    "en": "round",
+    "pos": "adj"
+  },
+  {
+    "rank": 530,
+    "nl": "besluiten",
+    "en": "to decide",
+    "pos": "verb"
+  },
+  {
+    "rank": 531,
+    "nl": "samen",
+    "en": "together",
+    "pos": "adv"
+  },
+  {
+    "rank": 532,
+    "nl": "chocolade",
+    "en": "chocolate",
+    "pos": "noun"
+  },
+  {
+    "rank": 533,
+    "nl": "ontbijt",
+    "en": "breakfast",
+    "pos": "noun"
+  },
+  {
+    "rank": 534,
+    "nl": "plat",
+    "en": "flat",
+    "pos": "adj"
+  },
+  {
+    "rank": 535,
+    "nl": "kiezen",
+    "en": "to choose",
+    "pos": "verb"
+  },
+  {
+    "rank": 536,
+    "nl": "lunch",
+    "en": "lunch",
+    "pos": "noun"
+  },
+  {
+    "rank": 537,
+    "nl": "avondeten",
+    "en": "dinner",
+    "pos": "noun"
+  },
+  {
+    "rank": 538,
+    "nl": "verklaren",
+    "en": "to explain, declare",
+    "pos": "verb"
+  },
+  {
+    "rank": 539,
+    "nl": "scherp",
+    "en": "sharp",
+    "pos": "adj"
+  },
+  {
+    "rank": 540,
+    "nl": "honger",
+    "en": "hunger",
+    "pos": "noun"
+  },
+  {
+    "rank": 541,
+    "nl": "dorst",
+    "en": "thirst",
+    "pos": "noun"
+  },
+  {
+    "rank": 542,
+    "nl": "antwoorden",
+    "en": "to answer",
+    "pos": "verb"
+  },
+  {
+    "rank": 543,
+    "nl": "alleen",
+    "en": "alone, only",
+    "pos": "adv"
+  },
+  {
+    "rank": 544,
+    "nl": "zoet",
+    "en": "sweet",
+    "pos": "adj"
+  },
+  {
+    "rank": 545,
+    "nl": "kleren",
+    "en": "clothes",
+    "pos": "noun"
+  },
+  {
+    "rank": 546,
+    "nl": "kleding",
+    "en": "clothing",
+    "pos": "noun"
+  },
+  {
+    "rank": 547,
+    "nl": "vertellen",
+    "en": "to tell",
+    "pos": "verb"
+  },
+  {
+    "rank": 548,
+    "nl": "dankzij",
+    "en": "thanks to",
+    "pos": "prep"
+  },
+  {
+    "rank": 549,
+    "nl": "jas",
+    "en": "coat",
+    "pos": "noun"
+  },
+  {
+    "rank": 550,
+    "nl": "zuur",
+    "en": "sour",
+    "pos": "adj"
+  },
+  {
+    "rank": 551,
+    "nl": "trui",
+    "en": "sweater",
+    "pos": "noun"
+  },
+  {
+    "rank": 552,
+    "nl": "vertalen",
+    "en": "to translate",
+    "pos": "verb"
+  },
+  {
+    "rank": 553,
+    "nl": "zestien",
+    "en": "sixteen",
+    "pos": "num"
+  },
+  {
+    "rank": 554,
+    "nl": "hemd",
+    "en": "shirt",
+    "pos": "noun"
+  },
+  {
+    "rank": 555,
+    "nl": "bitter",
+    "en": "bitter",
+    "pos": "adj"
+  },
+  {
+    "rank": 556,
+    "nl": "studeren",
+    "en": "to study",
+    "pos": "verb"
+  },
+  {
+    "rank": 557,
+    "nl": "misschien",
+    "en": "maybe",
+    "pos": "adv"
+  },
+  {
+    "rank": 558,
+    "nl": "broek",
+    "en": "trousers",
+    "pos": "noun"
+  },
+  {
+    "rank": 559,
+    "nl": "rok",
+    "en": "skirt",
+    "pos": "noun"
+  },
+  {
+    "rank": 560,
+    "nl": "rekenen",
+    "en": "to count, calculate",
+    "pos": "verb"
+  },
+  {
+    "rank": 561,
+    "nl": "lekker",
+    "en": "tasty, nice",
+    "pos": "adj"
+  },
+  {
+    "rank": 562,
+    "nl": "jurk",
+    "en": "dress",
+    "pos": "noun"
+  },
+  {
+    "rank": 563,
+    "nl": "schoen",
+    "en": "shoe",
+    "pos": "noun"
+  },
+  {
+    "rank": 564,
+    "nl": "meten",
+    "en": "to measure",
+    "pos": "verb"
+  },
+  {
+    "rank": 565,
+    "nl": "sok",
+    "en": "sock",
+    "pos": "noun"
+  },
+  {
+    "rank": 566,
+    "nl": "leuk",
+    "en": "fun, nice",
+    "pos": "adj"
+  },
+  {
+    "rank": 567,
+    "nl": "hoed",
+    "en": "hat",
+    "pos": "noun"
+  },
+  {
+    "rank": 568,
+    "nl": "wegen",
+    "en": "to weigh",
+    "pos": "verb"
+  },
+  {
+    "rank": 569,
+    "nl": "waarschijnlijk",
+    "en": "probably",
+    "pos": "adv"
+  },
+  {
+    "rank": 570,
+    "nl": "muts",
+    "en": "cap, beanie",
+    "pos": "noun"
+  },
+  {
+    "rank": 571,
+    "nl": "interessant",
+    "en": "interesting",
+    "pos": "adj"
+  },
+  {
+    "rank": 572,
+    "nl": "bril",
+    "en": "glasses",
+    "pos": "noun"
+  },
+  {
+    "rank": 573,
+    "nl": "koken",
+    "en": "to cook",
+    "pos": "verb"
+  },
+  {
+    "rank": 574,
+    "nl": "riem",
+    "en": "belt",
+    "pos": "noun"
+  },
+  {
+    "rank": 575,
+    "nl": "saai",
+    "en": "boring",
+    "pos": "adj"
+  },
+  {
+    "rank": 576,
+    "nl": "zak",
+    "en": "pocket, bag",
+    "pos": "noun"
+  },
+  {
+    "rank": 577,
+    "nl": "bakken",
+    "en": "to bake, fry",
+    "pos": "verb"
+  },
+  {
+    "rank": 578,
+    "nl": "natuur",
+    "en": "nature",
+    "pos": "noun"
+  },
+  {
+    "rank": 579,
+    "nl": "wassen",
+    "en": "to wash",
+    "pos": "verb"
+  },
+  {
+    "rank": 580,
+    "nl": "wereld",
+    "en": "world",
+    "pos": "noun"
+  },
+  {
+    "rank": 581,
+    "nl": "grappig",
+    "en": "funny",
+    "pos": "adj"
+  },
+  {
+    "rank": 582,
+    "nl": "natuurlijk",
+    "en": "of course",
+    "pos": "adv"
+  },
+  {
+    "rank": 583,
+    "nl": "zeventien",
+    "en": "seventeen",
+    "pos": "num"
+  },
+  {
+    "rank": 584,
+    "nl": "zodra",
+    "en": "as soon as",
+    "pos": "conj"
+  },
+  {
+    "rank": 585,
+    "nl": "alle",
+    "en": "all",
+    "pos": "det"
+  },
+  {
+    "rank": 586,
+    "nl": "bedankt",
+    "en": "thank you",
+    "pos": "interj"
+  },
+  {
+    "rank": 587,
+    "nl": "aarde",
+    "en": "earth",
+    "pos": "noun"
+  },
+  {
+    "rank": 588,
+    "nl": "schoonmaken",
+    "en": "to clean",
+    "pos": "verb"
+  },
+  {
+    "rank": 589,
+    "nl": "zon",
+    "en": "sun",
+    "pos": "noun"
+  },
+  {
+    "rank": 590,
+    "nl": "lief",
+    "en": "sweet, kind",
+    "pos": "adj"
+  },
+  {
+    "rank": 591,
+    "nl": "maan",
+    "en": "moon",
+    "pos": "noun"
+  },
+  {
+    "rank": 592,
+    "nl": "repareren",
+    "en": "to repair",
+    "pos": "verb"
+  },
+  {
+    "rank": 593,
+    "nl": "ster",
+    "en": "star",
+    "pos": "noun"
+  },
+  {
+    "rank": 594,
+    "nl": "aardig",
+    "en": "nice, kind",
+    "pos": "adj"
+  },
+  {
+    "rank": 595,
+    "nl": "hemel",
+    "en": "sky, heaven",
+    "pos": "noun"
+  },
+  {
+    "rank": 596,
+    "nl": "verwachten",
+    "en": "to expect",
+    "pos": "verb"
+  },
+  {
+    "rank": 597,
+    "nl": "helaas",
+    "en": "unfortunately",
+    "pos": "adv"
+  },
+  {
+    "rank": 598,
+    "nl": "lucht",
+    "en": "air, sky",
+    "pos": "noun"
+  },
+  {
+    "rank": 599,
+    "nl": "vriendelijk",
+    "en": "friendly",
+    "pos": "adj"
+  },
+  {
+    "rank": 600,
+    "nl": "wolk",
+    "en": "cloud",
+    "pos": "noun"
+  },
+  {
+    "rank": 601,
+    "nl": "hopen",
+    "en": "to hope",
+    "pos": "verb"
+  },
+  {
+    "rank": 602,
+    "nl": "regen",
+    "en": "rain",
+    "pos": "noun"
+  },
+  {
+    "rank": 603,
+    "nl": "sneeuw",
+    "en": "snow",
+    "pos": "noun"
+  },
+  {
+    "rank": 604,
+    "nl": "eerlijk",
+    "en": "honest",
+    "pos": "adj"
+  },
+  {
+    "rank": 605,
+    "nl": "geloven",
+    "en": "to believe",
+    "pos": "verb"
+  },
+  {
+    "rank": 606,
+    "nl": "wind",
+    "en": "wind",
+    "pos": "noun"
+  },
+  {
+    "rank": 607,
+    "nl": "storm",
+    "en": "storm",
+    "pos": "noun"
+  },
+  {
+    "rank": 608,
+    "nl": "twijfelen",
+    "en": "to doubt",
+    "pos": "verb"
+  },
+  {
+    "rank": 609,
+    "nl": "gelukkig",
+    "en": "fortunately",
+    "pos": "adv"
+  },
+  {
+    "rank": 610,
+    "nl": "dom",
+    "en": "stupid",
+    "pos": "adj"
+  },
+  {
+    "rank": 611,
+    "nl": "vuur",
+    "en": "fire",
+    "pos": "noun"
+  },
+  {
+    "rank": 612,
+    "nl": "achttien",
+    "en": "eighteen",
+    "pos": "num"
+  },
+  {
+    "rank": 613,
+    "nl": "beslissen",
+    "en": "to decide",
+    "pos": "verb"
+  },
+  {
+    "rank": 614,
+    "nl": "zee",
+    "en": "sea",
+    "pos": "noun"
+  },
+  {
+    "rank": 615,
+    "nl": "slim",
+    "en": "smart",
+    "pos": "adj"
+  },
+  {
+    "rank": 616,
+    "nl": "rivier",
+    "en": "river",
+    "pos": "noun"
+  },
+  {
+    "rank": 617,
+    "nl": "ondanks",
+    "en": "despite",
+    "pos": "prep"
+  },
+  {
+    "rank": 618,
+    "nl": "bedoelen",
+    "en": "to mean, intend",
+    "pos": "verb"
+  },
+  {
+    "rank": 619,
+    "nl": "berg",
+    "en": "mountain",
+    "pos": "noun"
+  },
+  {
+    "rank": 620,
+    "nl": "heuvel",
+    "en": "hill",
+    "pos": "noun"
+  },
+  {
+    "rank": 621,
+    "nl": "verschillend",
+    "en": "different",
+    "pos": "adj"
+  },
+  {
+    "rank": 622,
+    "nl": "voorstellen",
+    "en": "to introduce, propose",
+    "pos": "verb"
+  },
+  {
+    "rank": 623,
+    "nl": "graag",
+    "en": "gladly",
+    "pos": "adv"
+  },
+  {
+    "rank": 624,
+    "nl": "bos",
+    "en": "forest",
+    "pos": "noun"
+  },
+  {
+    "rank": 625,
+    "nl": "boom",
+    "en": "tree",
+    "pos": "noun"
+  },
+  {
+    "rank": 626,
+    "nl": "compleet",
+    "en": "complete",
+    "pos": "adj"
+  },
+  {
+    "rank": 627,
+    "nl": "herhalen",
+    "en": "to repeat",
+    "pos": "verb"
+  },
+  {
+    "rank": 628,
+    "nl": "bloem",
+    "en": "flower",
+    "pos": "noun"
+  },
+  {
+    "rank": 629,
+    "nl": "gras",
+    "en": "grass",
+    "pos": "noun"
+  },
+  {
+    "rank": 630,
+    "nl": "controleren",
+    "en": "to check",
+    "pos": "verb"
+  },
+  {
+    "rank": 631,
+    "nl": "heel",
+    "en": "whole, very",
+    "pos": "adj"
+  },
+  {
+    "rank": 632,
+    "nl": "blad",
+    "en": "leaf, page",
+    "pos": "noun"
+  },
+  {
+    "rank": 633,
+    "nl": "plant",
+    "en": "plant",
+    "pos": "noun"
+  },
+  {
+    "rank": 634,
+    "nl": "zorgen",
+    "en": "to take care, ensure",
+    "pos": "verb"
+  },
+  {
+    "rank": 635,
+    "nl": "liever",
+    "en": "rather, preferably",
+    "pos": "adv"
+  },
+  {
+    "rank": 636,
+    "nl": "half",
+    "en": "half",
+    "pos": "adj"
+  },
+  {
+    "rank": 637,
+    "nl": "steen",
+    "en": "stone",
+    "pos": "noun"
+  },
+  {
+    "rank": 638,
+    "nl": "zand",
+    "en": "sand",
+    "pos": "noun"
+  },
+  {
+    "rank": 639,
+    "nl": "redden",
+    "en": "to save, rescue",
+    "pos": "verb"
+  },
+  {
+    "rank": 640,
+    "nl": "negentien",
+    "en": "nineteen",
+    "pos": "num"
+  },
+  {
+    "rank": 641,
+    "nl": "strand",
+    "en": "beach",
+    "pos": "noun"
+  },
+  {
+    "rank": 642,
+    "nl": "enkel",
+    "en": "single, only",
+    "pos": "adj"
+  },
+  {
+    "rank": 643,
+    "nl": "beschermen",
+    "en": "to protect",
+    "pos": "verb"
+  },
+  {
+    "rank": 644,
+    "nl": "veld",
+    "en": "field",
+    "pos": "noun"
+  },
+  {
+    "rank": 645,
+    "nl": "dier",
+    "en": "animal",
+    "pos": "noun"
+  },
+  {
+    "rank": 646,
+    "nl": "dubbel",
+    "en": "double",
+    "pos": "adj"
+  },
+  {
+    "rank": 647,
+    "nl": "aanvallen",
+    "en": "to attack",
+    "pos": "verb"
+  },
+  {
+    "rank": 648,
+    "nl": "eigenlijk",
+    "en": "actually",
+    "pos": "adv"
+  },
+  {
+    "rank": 649,
+    "nl": "hond",
+    "en": "dog",
+    "pos": "noun"
+  },
+  {
+    "rank": 650,
+    "nl": "kat",
+    "en": "cat",
+    "pos": "noun"
+  },
+  {
+    "rank": 651,
+    "nl": "verdedigen",
+    "en": "to defend",
+    "pos": "verb"
+  },
+  {
+    "rank": 652,
+    "nl": "eigen",
+    "en": "own",
+    "pos": "adj"
+  },
+  {
+    "rank": 653,
+    "nl": "paard",
+    "en": "horse",
+    "pos": "noun"
+  },
+  {
+    "rank": 654,
+    "nl": "koe",
+    "en": "cow",
+    "pos": "noun"
+  },
+  {
+    "rank": 655,
+    "nl": "totdat",
+    "en": "until (conj.)",
+    "pos": "conj"
+  },
+  {
+    "rank": 656,
+    "nl": "sorry",
+    "en": "sorry",
+    "pos": "interj"
+  },
+  {
+    "rank": 657,
+    "nl": "vechten",
+    "en": "to fight",
+    "pos": "verb"
+  },
+  {
+    "rank": 658,
+    "nl": "varken",
+    "en": "pig",
+    "pos": "noun"
+  },
+  {
+    "rank": 659,
+    "nl": "laatst",
+    "en": "latest, last",
+    "pos": "adj"
+  },
+  {
+    "rank": 660,
+    "nl": "schaap",
+    "en": "sheep",
+    "pos": "noun"
+  },
+  {
+    "rank": 661,
+    "nl": "doden",
+    "en": "to kill",
+    "pos": "verb"
+  },
+  {
+    "rank": 662,
+    "nl": "trouwens",
+    "en": "by the way",
+    "pos": "adv"
+  },
+  {
+    "rank": 663,
+    "nl": "welke",
+    "en": "which",
+    "pos": "pron"
+  },
+  {
+    "rank": 664,
+    "nl": "vogel",
+    "en": "bird",
+    "pos": "noun"
+  },
+  {
+    "rank": 665,
+    "nl": "volgend",
+    "en": "next",
+    "pos": "adj"
+  },
+  {
+    "rank": 666,
+    "nl": "muis",
+    "en": "mouse",
+    "pos": "noun"
+  },
+  {
+    "rank": 667,
+    "nl": "schieten",
+    "en": "to shoot",
+    "pos": "verb"
+  },
+  {
+    "rank": 668,
+    "nl": "insect",
+    "en": "insect",
+    "pos": "noun"
+  },
+  {
+    "rank": 669,
+    "nl": "vorig",
+    "en": "previous",
+    "pos": "adj"
+  },
+  {
+    "rank": 670,
+    "nl": "twintig",
+    "en": "twenty",
+    "pos": "num"
+  },
+  {
+    "rank": 671,
+    "nl": "sommige",
+    "en": "some",
+    "pos": "det"
+  },
+  {
+    "rank": 672,
+    "nl": "raken",
+    "en": "to hit, touch",
+    "pos": "verb"
+  },
+  {
+    "rank": 673,
+    "nl": "spin",
+    "en": "spider",
+    "pos": "noun"
+  },
+  {
+    "rank": 674,
+    "nl": "stad",
+    "en": "city",
+    "pos": "noun"
+  },
+  {
+    "rank": 675,
+    "nl": "missen",
+    "en": "to miss",
+    "pos": "verb"
+  },
+  {
+    "rank": 676,
+    "nl": "bovendien",
+    "en": "moreover",
+    "pos": "adv"
+  },
+  {
+    "rank": 677,
+    "nl": "klaar",
+    "en": "ready, finished",
+    "pos": "adj"
+  },
+  {
+    "rank": 678,
+    "nl": "dorp",
+    "en": "village",
+    "pos": "noun"
+  },
+  {
+    "rank": 679,
+    "nl": "land",
+    "en": "country, land",
+    "pos": "noun"
+  },
+  {
+    "rank": 680,
+    "nl": "vangen",
+    "en": "to catch",
+    "pos": "verb"
+  },
+  {
+    "rank": 681,
+    "nl": "straat",
+    "en": "street",
+    "pos": "noun"
+  },
+  {
+    "rank": 682,
+    "nl": "vroeg",
+    "en": "early",
+    "pos": "adj"
+  },
+  {
+    "rank": 683,
+    "nl": "weg",
+    "en": "road, way",
+    "pos": "noun"
+  },
+  {
+    "rank": 684,
+    "nl": "gooien",
+    "en": "to throw",
+    "pos": "verb"
+  },
+  {
+    "rank": 685,
+    "nl": "plein",
+    "en": "square",
+    "pos": "noun"
+  },
+  {
+    "rank": 686,
+    "nl": "behalve",
+    "en": "except",
+    "pos": "prep"
+  },
+  {
+    "rank": 687,
+    "nl": "laat",
+    "en": "late",
+    "pos": "adj"
+  },
+  {
+    "rank": 688,
+    "nl": "park",
+    "en": "park",
+    "pos": "noun"
+  },
+  {
+    "rank": 689,
+    "nl": "loslaten",
+    "en": "to let go",
+    "pos": "verb"
+  },
+  {
+    "rank": 690,
+    "nl": "daarom",
+    "en": "therefore",
+    "pos": "adv"
+  },
+  {
+    "rank": 691,
+    "nl": "brug",
+    "en": "bridge",
+    "pos": "noun"
+  },
+  {
+    "rank": 692,
+    "nl": "modern",
+    "en": "modern",
+    "pos": "adj"
+  },
+  {
+    "rank": 693,
+    "nl": "plaats",
+    "en": "place",
+    "pos": "noun"
+  },
+  {
+    "rank": 694,
+    "nl": "verbergen",
+    "en": "to hide",
+    "pos": "verb"
+  },
+  {
+    "rank": 695,
+    "nl": "plek",
+    "en": "spot, place",
+    "pos": "noun"
+  },
+  {
+    "rank": 696,
+    "nl": "gebouw",
+    "en": "building",
+    "pos": "noun"
+  },
+  {
+    "rank": 697,
+    "nl": "prachtig",
+    "en": "gorgeous",
+    "pos": "adj"
+  },
+  {
+    "rank": 698,
+    "nl": "wijzen",
+    "en": "to point, indicate",
+    "pos": "verb"
+  },
+  {
+    "rank": 699,
+    "nl": "kerk",
+    "en": "church",
+    "pos": "noun"
+  },
+  {
+    "rank": 700,
+    "nl": "dertig",
+    "en": "thirty",
+    "pos": "num"
+  }
+]

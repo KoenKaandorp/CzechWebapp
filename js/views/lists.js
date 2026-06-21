@@ -1,8 +1,10 @@
+import { CONFIG } from '../lang.js';
+
 let listsCache = null;
 
 async function loadLists() {
   if (listsCache) return listsCache;
-  const r = await fetch('./data/lists.json');
+  const r = await fetch(CONFIG.lists);
   const data = await r.json();
   listsCache = data.lists;
   return listsCache;

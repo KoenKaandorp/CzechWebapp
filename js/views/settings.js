@@ -1,6 +1,7 @@
 // views/settings.js — preferences and dangerous actions.
 
 import * as db from '../db.js';
+import { LANG, setLang } from '../lang.js';
 
 export function mountSettingsView(root, { onReset } = {}) {
   root.innerHTML = `
@@ -8,10 +9,19 @@ export function mountSettingsView(root, { onReset } = {}) {
       <h1 class="settings__title">Settings</h1>
 
       <div class="panel">
+        <h2 class="panel__title">Language</h2>
+        <p class="panel__lede">Each language has its own separate progress database.</p>
+        <div class="seg-ctrl" role="group" aria-label="Language">
+          <button class="seg-ctrl__btn ${LANG === 'cz' ? 'is-active' : ''}" data-lang="cz">Czech</button>
+          <button class="seg-ctrl__btn ${LANG === 'nl' ? 'is-active' : ''}" data-lang="nl">Dutch</button>
+        </div>
+      </div>
+
+      <div class="panel">
         <h2 class="panel__title">Data</h2>
         <button class="btn btn--ghost" id="export">Export progress (JSON)</button>
         <button class="btn btn--danger" id="reset">Reset everything</button>
-        <p class="panel__lede">Reset wipes all words, reviews, and progress, then re-seeds from the starter list.</p>
+        <p class="panel__lede">Reset wipes all words, reviews, and progress for the current language, then re-seeds from the starter list.</p>
       </div>
 
       <div class="panel">
@@ -24,6 +34,10 @@ export function mountSettingsView(root, { onReset } = {}) {
       </div>
     </section>
   `;
+
+  root.querySelectorAll('[data-lang]').forEach(btn => {
+    btn.addEventListener('click', () => setLang(btn.dataset.lang));
+  });
 
   root.querySelector('#reset').addEventListener('click', async () => {
     if (!confirm('Wipe all progress and start over?')) return;
@@ -41,7 +55,7 @@ export function mountSettingsView(root, { onReset } = {}) {
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = `czech-flash-${data.exportedAt.slice(0, 10)}.json`;
+    a.download = `flash-${data.exportedAt.slice(0, 10)}.json`;
     document.body.appendChild(a); a.click(); a.remove();
     URL.revokeObjectURL(url);
   });
