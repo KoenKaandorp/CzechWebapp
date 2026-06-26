@@ -1,8 +1,8 @@
 // views/stats.js — dashboard.
 // Charts are hand-rolled SVG so the app has zero chart-library overhead.
 
-import { levelDistribution, dailyProgress, comprehensionOverTime, coverageEstimate } from '../stats.js';
-import { totalMs, formatTime } from '../timer.js';
+import { levelDistribution, dailyProgress, comprehensionOverTime, coverageEstimate, todayStats } from '../stats.js';
+import { totalMs, todayMsOnly, formatTime } from '../timer.js';
 
 const LEVEL_LABELS = ['New', 'Learning', 'Familiar', 'Known', 'Mastered'];
 
@@ -10,6 +10,11 @@ export function mountStatsView(root) {
   root.innerHTML = `
     <section class="stats">
       <h1 class="stats__title">Your progress</h1>
+
+      <div class="panel">
+        <h2 class="panel__title">Today</h2>
+        <div class="today-grid" id="today-grid"></div>
+      </div>
 
       <div class="panel">
         <h2 class="panel__title">Reading comprehension</h2>
@@ -45,14 +50,16 @@ export function mountStatsView(root) {
   return { reload: refresh };
 
   async function refresh() {
-    const [dist, daily, growth, coverage, total] = await Promise.all([
+    const [dist, daily, growth, coverage, total, today] = await Promise.all([
       levelDistribution(),
       dailyProgress(30),
       comprehensionOverTime(30),
       coverageEstimate(),
       totalMs(),
+      todayStats(),
     ]);
 
+    renderToday(root.querySelector('#today-grid'), today, todayMsOnly());
     renderCoverage(root.querySelector('#coverage'), coverage);
     renderTiers(root.querySelector('#tiers'), coverage.tiers);
     renderBars(root.querySelector('#dist-chart'), dist);
@@ -60,6 +67,26 @@ export function mountStatsView(root) {
     renderSpark(root.querySelector('#growth-chart'), growth.map(d => d.known), growth.map(d => d.date), { fill: true });
     renderTimeStats(root.querySelector('#time-stats'), total);
   }
+}
+
+function renderToday(el, stats, timeMs) {
+  const accuracy = stats.reviewed > 0
+    ? Math.round(stats.correct / stats.reviewed * 100) + '%'
+    : '—';
+  const items = [
+    { value: stats.reviewed,                          label: 'cards reviewed' },
+    { value: formatTime(timeMs) || '0s',              label: 'time today'     },
+    { value: stats.learned,                           label: 'new words'      },
+    { value: stats.levelUps,                          label: 'level-ups'      },
+    { value: accuracy,                                label: 'accuracy'       },
+    { value: stats.streak > 0 ? `${stats.streak}d` : '—', label: 'streak'   },
+  ];
+  el.innerHTML = items.map(({ value, label }) => `
+    <div class="today-stat">
+      <div class="today-stat__value">${value}</div>
+      <div class="today-stat__label">${label}</div>
+    </div>
+  `).join('');
 }
 
 function renderTimeStats(el, totalMillis) {

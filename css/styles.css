@@ -294,6 +294,31 @@ p { margin: 0; }
   margin-bottom: 20px;
 }
 
+/* ---- Today panel ---- */
+.today-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.today-stat {
+  background: var(--surface-2);
+  border-radius: calc(var(--radius) - 2px);
+  padding: 12px 14px;
+}
+.today-stat__value {
+  font-size: 1.6rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--text);
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+.today-stat__label {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 5px;
+}
+
 /* ---- Coverage panel ---- */
 .coverage__row {
   display: flex;

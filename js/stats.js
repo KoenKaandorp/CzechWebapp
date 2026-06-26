@@ -73,6 +73,55 @@ export async function comprehensionOverTime(days = 30) {
   return out;
 }
 
+function levelFromInterval(interval) {
+  if (!interval) return 1;
+  if (interval < 14) return 2;
+  if (interval < 28) return 3;
+  if (interval < 60) return 4;
+  return 5;
+}
+
+function computeStreak(sessions) {
+  const daySet = new Set(sessions.filter(s => s.reviewed > 0).map(s => s.date));
+  const today  = new Date().toISOString().slice(0, 10);
+  const d = new Date();
+  // If no reviews today yet, start streak check from yesterday.
+  if (!daySet.has(today)) d.setUTCDate(d.getUTCDate() - 1);
+  let streak = 0;
+  while (true) {
+    const key = d.toISOString().slice(0, 10);
+    if (!daySet.has(key)) break;
+    streak++;
+    d.setUTCDate(d.getUTCDate() - 1);
+  }
+  return streak;
+}
+
+export async function todayStats() {
+  const today      = new Date().toISOString().slice(0, 10);
+  const todayStart = new Date(today).getTime();
+
+  const sessions = await db.getRecentSessions();
+  const session  = sessions.find(s => s.date === today)
+    || { reviewed: 0, learned: 0, again: 0, hard: 0, good: 0, easy: 0 };
+
+  const reviews = await db.getReviewsSince(todayStart);
+  const leveledUp = new Set();
+  for (const r of reviews) {
+    if (levelFromInterval(r.newInterval) > levelFromInterval(r.prevInterval)) {
+      leveledUp.add(r.wordId);
+    }
+  }
+
+  return {
+    reviewed: session.reviewed || 0,
+    learned:  session.learned  || 0,
+    correct:  (session.good || 0) + (session.easy || 0),
+    levelUps: leveledUp.size,
+    streak:   computeStreak(sessions),
+  };
+}
+
 // Lexical coverage of "typical Czech text" — see header comment.
 // Fixed harmonic-series weight for the top ~20 000 Czech word forms.
 // Using only the seeded words as denominator inflates coverage dramatically

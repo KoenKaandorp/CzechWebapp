@@ -46,6 +46,12 @@ export function todayMs() {
   return _todayMs + unsaved + TIME_OFFSET_MS;
 }
 
+// Returns live ms for today only, without the historical offset.
+export function todayMsOnly() {
+  const unsaved = _start !== null ? Date.now() - _start : 0;
+  return _todayMs + unsaved;
+}
+
 // Sum of all persisted daily time, plus live unsaved fraction, plus the fixed offset.
 export async function totalMs() {
   const allMeta = await db.getAllMeta();
