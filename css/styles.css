@@ -3,41 +3,7 @@
    Paper white + forest green. System fonts only (offline-safe).
    ============================================================ */
 
-:root {
-  --bg:        #F4F1EC;
-  --surface:   #FFFFFF;
-  --surface-2: #EDE9E1;
-  --border:    #DCD6CB;
-  --border-strong: #C2BBAD;
-  --text:      #1F1B17;
-  --text-muted:#5F594F;
-  --text-soft: #8A8478;
-  --accent:    #2E5E4E;
-  --accent-2:  #3D7A66;
-  --warn:      #B85C3E;
-  --danger:    #A03A2C;
-
-  --lvl1: #C2BBAD;
-  --lvl2: #8FA2A9;
-  --lvl3: #5B8893;
-  --lvl4: #3D7A66;
-  --lvl5: #2E5E4E;
-
-  --radius:    14px;
-  --radius-lg: 22px;
-  --shadow-sm: 0 1px 2px rgba(20, 18, 14, 0.04);
-  --shadow:    0 4px 18px rgba(20, 18, 14, 0.08);
-
-  --t-fast: 140ms;
-  --t-med:  280ms;
-  --ease:   cubic-bezier(0.22, 0.61, 0.36, 1);
-
-  --font-serif: ui-serif, Georgia, 'Times New Roman', serif;
-  --font-sans:  system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
-
-  --tabbar-h: 64px;
-}
-
+:root { --bg: #F4F1EC; --surface: #FFFFFF; --surface-2: #EDE9E1; --border: #DCD6CB; --border-strong: #C2BBAD; --text: #1F1B17; --text-muted:#5F594F; --text-soft: #8A8478; --accent: #2E5E4E; --accent-2: #3D7A66; --warn: #B85C3E; --danger: #A03A2C; --lvl1: #C2BBAD; --lvl2: #8FA2A9; --lvl3: #5B8893; --lvl4: #3D7A66; --lvl5: #2E5E4E; --radius: 14px; --radius-lg: 22px; --shadow-sm: 0 1px 2px rgba(20, 18, 14, 0.04); --shadow: 0 4px 18px rgba(20, 18, 14, 0.08); --t-fast: 140ms; --t-med: 280ms; --ease: cubic-bezier(0.22, 0.61, 0.36, 1); --font-serif: ui-serif, Georgia, 'Times New Roman', serif; --font-sans: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; --tabbar-h: 64px; }
 @media (prefers-color-scheme: dark) {
   :root {
     --bg:        #161412;
