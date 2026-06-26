@@ -1,7 +1,7 @@
 // views/stats.js — dashboard.
 // Charts are hand-rolled SVG so the app has zero chart-library overhead.
 
-import { levelDistribution, dailyProgress, comprehensionOverTime, coverageEstimate, todayStats } from '../stats.js';
+import { levelDistribution, dailyProgress, comprehensionOverTime, coverageEstimate, todayStats, getWordsByLevel } from '../stats.js';
 import { totalMs, todayMsOnly, formatTime } from '../timer.js';
 
 const LEVEL_LABELS = ['New', 'Learning', 'Familiar', 'Known', 'Mastered'];
@@ -24,8 +24,12 @@ export function mountStatsView(root) {
       </div>
 
       <div class="panel">
-        <h2 class="panel__title">Words by level</h2>
+        <div class="dist-header">
+          <h2 class="panel__title" id="dist-title">Words by level</h2>
+          <button class="dist-back" id="dist-back" hidden>‹ Back</button>
+        </div>
         <div id="dist-chart" class="chart chart--bars"></div>
+        <div id="dist-list" hidden></div>
       </div>
 
       <div class="panel">
@@ -46,6 +50,45 @@ export function mountStatsView(root) {
     </section>
   `;
 
+  // Persistent element refs — resolved once, reused across refreshes.
+  const els = {
+    distChart: root.querySelector('#dist-chart'),
+    distList:  root.querySelector('#dist-list'),
+    distTitle: root.querySelector('#dist-title'),
+    distBack:  root.querySelector('#dist-back'),
+  };
+
+  // Click a bar → drill into that level's word list.
+  els.distChart.addEventListener('click', async e => {
+    const group = e.target.closest('[data-level]');
+    if (!group) return;
+    const level = Number(group.dataset.level);
+    const words = await getWordsByLevel(level);
+    const label = LEVEL_LABELS[level - 1];
+
+    els.distList.innerHTML = words.length ? `
+      <div class="level-word-list">
+        ${words.map(w => `
+          <div class="level-word-row">
+            <span class="level-word-row__native">${w.cz}</span>
+            <span class="level-word-row__en">${w.en}</span>
+          </div>`).join('')}
+      </div>` : `<p class="level-word-list__empty">No words at this level yet.</p>`;
+
+    els.distChart.hidden = true;
+    els.distList.hidden  = false;
+    els.distBack.hidden  = false;
+    els.distTitle.textContent = label;
+  });
+
+  // Back button → restore chart.
+  els.distBack.addEventListener('click', () => {
+    els.distList.hidden  = true;
+    els.distChart.hidden = false;
+    els.distBack.hidden  = true;
+    els.distTitle.textContent = 'Words by level';
+  });
+
   refresh();
   return { reload: refresh };
 
@@ -62,7 +105,7 @@ export function mountStatsView(root) {
     renderToday(root.querySelector('#today-grid'), today, todayMsOnly());
     renderCoverage(root.querySelector('#coverage'), coverage);
     renderTiers(root.querySelector('#tiers'), coverage.tiers);
-    renderBars(root.querySelector('#dist-chart'), dist);
+    renderBars(els.distChart, dist);
     renderSpark(root.querySelector('#daily-chart'), daily.map(d => d.reviewed), daily.map(d => d.date));
     renderSpark(root.querySelector('#growth-chart'), growth.map(d => d.known), growth.map(d => d.date), { fill: true });
     renderTimeStats(root.querySelector('#time-stats'), total);
@@ -137,7 +180,8 @@ function renderBars(el, { buckets, total, seen }) {
     const x = P + i * (innerW / buckets.length) + 6;
     const y = P + innerH - h;
     return `
-      <g>
+      <g class="bar-group" data-level="${i + 1}" style="cursor:pointer">
+        <rect x="${x}" y="${P}" width="${barW}" height="${innerH}" rx="4" fill="transparent"></rect>
         <rect x="${x}" y="${y}" width="${barW}" height="${h}" rx="4"
               class="bar bar--lvl${i + 1}"></rect>
         <text x="${x + barW / 2}" y="${y - 6}" class="bar__value">${v}</text>

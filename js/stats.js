@@ -14,6 +14,14 @@
 import * as db from './db.js';
 import { isKnown, deriveLevel } from './scheduler.js';
 
+export async function getWordsByLevel(level) {
+  const words = (await db.getAllWords())
+    .filter(w => w.pos !== 'verb-conj')
+    .filter(w => (w.level || deriveLevel(w.interval, w.repetitions)) === level)
+    .sort((a, b) => (a.frequencyRank || 9999) - (b.frequencyRank || 9999));
+  return words;
+}
+
 export async function levelDistribution() {
   const words = (await db.getAllWords()).filter(w => w.pos !== 'verb-conj');
   const buckets = [0, 0, 0, 0, 0];
