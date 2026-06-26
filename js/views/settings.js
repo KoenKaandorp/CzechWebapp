@@ -20,6 +20,8 @@ export function mountSettingsView(root, { onReset } = {}) {
       <div class="panel">
         <h2 class="panel__title">Data</h2>
         <button class="btn btn--ghost" id="export">Export progress (JSON)</button>
+        <button class="btn btn--ghost" id="import-btn">Import progress (JSON)</button>
+        <input type="file" id="import-input" accept=".json" style="display:none">
         <button class="btn btn--danger" id="reset">Reset everything</button>
         <p class="panel__lede">Reset wipes all words, reviews, and progress for the current language, then re-seeds from the starter list.</p>
       </div>
@@ -43,6 +45,29 @@ export function mountSettingsView(root, { onReset } = {}) {
     if (!confirm('Wipe all progress and start over?')) return;
     await db.wipeAll();
     onReset?.();
+  });
+
+  root.querySelector('#import-btn').addEventListener('click', () => {
+    root.querySelector('#import-input').click();
+  });
+
+  root.querySelector('#import-input').addEventListener('change', async (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+    e.target.value = '';   // reset so the same file can be re-selected
+    try {
+      const data = JSON.parse(await file.text());
+      if (!Array.isArray(data.words) || !Array.isArray(data.sessions)) {
+        alert('Invalid export file — missing words or sessions.'); return;
+      }
+      if (!confirm(`Import ${data.words.length} words and ${data.sessions.length} sessions?\nThis will replace all current progress for this language.`)) return;
+      await db.wipeAll();
+      await db.bulkPutWords(data.words);
+      await db.bulkPutSessions(data.sessions);
+      onReset?.();
+    } catch {
+      alert('Failed to import. Make sure the file is a valid export from this app.');
+    }
   });
 
   root.querySelector('#export').addEventListener('click', async () => {

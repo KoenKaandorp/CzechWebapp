@@ -189,6 +189,16 @@ export async function getRecentSessions(days = 30) {
   const db = await openDB();
   return wrap(tx(db, ['sessions']).objectStore('sessions').getAll());
 }
+export async function bulkPutSessions(sessions) {
+  const db = await openDB();
+  const t = tx(db, ['sessions'], 'readwrite');
+  const store = t.objectStore('sessions');
+  for (const s of sessions) store.put(s);
+  return new Promise((res, rej) => {
+    t.oncomplete = () => res();
+    t.onerror = () => rej(t.error);
+  });
+}
 
 // ---------- meta ----------
 export async function getMeta(key, fallback = null) {
