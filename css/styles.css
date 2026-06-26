@@ -364,6 +364,11 @@ p { margin: 0; }
 .spark__dot  { fill: var(--accent); }
 
 /* ---- Settings ---- */
+.settings .seg-ctrl {
+  width: fit-content;
+  grid-template-columns: repeat(2, auto);
+}
+
 .field { display: flex; flex-direction: column; gap: 6px; }
 .field__label { font-size: 14px; font-weight: 600; }
 .field__hint  { font-size: 13px; color: var(--text-muted); }

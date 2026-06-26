@@ -99,7 +99,7 @@ function renderTiers(el, tiers) {
   }).join('');
 }
 
-function renderBars(el, { buckets, total }) {
+function renderBars(el, { buckets, total, seen }) {
   const max = Math.max(1, ...buckets);
   const W = 320, H = 180, P = 28;
   const innerW = W - P * 2, innerH = H - P - 24;
@@ -122,7 +122,7 @@ function renderBars(el, { buckets, total }) {
     <svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Words per level">
       ${bars}
     </svg>
-    <p class="chart__caption">${total} total words tracked</p>
+    <p class="chart__caption">${total} total words tracked · ${seen} learned</p>
   `;
 }
 

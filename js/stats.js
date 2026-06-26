@@ -15,13 +15,15 @@ import * as db from './db.js';
 import { isKnown, deriveLevel } from './scheduler.js';
 
 export async function levelDistribution() {
-  const words = await db.getAllWords();
+  const words = (await db.getAllWords()).filter(w => w.pos !== 'verb-conj');
   const buckets = [0, 0, 0, 0, 0];
+  let seen = 0;
   for (const w of words) {
     const lvl = w.level || deriveLevel(w.interval, w.repetitions);
     buckets[lvl - 1] += 1;
+    if (w.repetitions > 0 || w.lastReviewedAt) seen += 1;
   }
-  return { buckets, total: words.length };
+  return { buckets, total: words.length, seen };
 }
 
 // Daily reviewed + learned for the last N days, ascending by date, filling gaps.
