@@ -2,7 +2,7 @@
 // Charts are hand-rolled SVG so the app has zero chart-library overhead.
 
 import { levelDistribution, dailyProgress, comprehensionOverTime, coverageEstimate, todayStats, getWordsByLevel } from '../stats.js';
-import { totalMs, todayMsOnly, formatTime } from '../timer.js';
+import { totalMs, todayMs, formatTime } from '../timer.js';
 
 const LEVEL_LABELS = ['New', 'Learning', 'Familiar', 'Known', 'Mastered'];
 
@@ -102,7 +102,7 @@ export function mountStatsView(root) {
       todayStats(),
     ]);
 
-    renderToday(root.querySelector('#today-grid'), today, todayMsOnly());
+    renderToday(root.querySelector('#today-grid'), today, todayMs());
     renderCoverage(root.querySelector('#coverage'), coverage);
     renderTiers(root.querySelector('#tiers'), coverage.tiers);
     renderBars(els.distChart, dist);
