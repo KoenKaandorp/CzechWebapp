@@ -16,14 +16,13 @@ import { isKnown, deriveLevel } from './scheduler.js';
 
 export async function getWordsByLevel(level) {
   const words = (await db.getAllWords())
-    .filter(w => w.pos !== 'verb-conj')
     .filter(w => (w.level || deriveLevel(w.interval, w.repetitions)) === level)
     .sort((a, b) => (a.frequencyRank || 9999) - (b.frequencyRank || 9999));
   return words;
 }
 
 export async function levelDistribution() {
-  const words = (await db.getAllWords()).filter(w => w.pos !== 'verb-conj');
+  const words = await db.getAllWords();
   const buckets = [0, 0, 0, 0, 0];
   let seen = 0;
   for (const w of words) {
@@ -146,7 +145,6 @@ export async function coverageEstimate() {
   const levelWeights = { 2: 0, 3: 0, 4: 0, 5: 0 };
 
   for (const w of words) {
-    if (w.pos === 'verb-conj') continue;
     const r = w.frequencyRank || 9999;
     const weight = 1 / r;
     const level = w.level || deriveLevel(w.interval, w.repetitions);
