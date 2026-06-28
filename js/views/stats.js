@@ -118,7 +118,7 @@ function renderToday(el, stats, timeMs) {
     : '—';
   const items = [
     { value: stats.reviewed,                          label: 'cards reviewed' },
-    { value: formatTime(timeMs) || '0s',              label: 'time today'     },
+    { value: formatTime(timeMs) || '0m',              label: 'time today'     },
     { value: stats.learned,                           label: 'new words'      },
     { value: stats.levelUps,                          label: 'level-ups'      },
     { value: accuracy,                                label: 'accuracy'       },

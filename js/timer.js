@@ -81,6 +81,5 @@ export function formatTime(ms) {
   const m = Math.floor(totalSeconds / 60);
   const h = Math.floor(m / 60);
   if (h > 0) return `${h}h ${m % 60}m`;
-  if (m > 0) return `${m}m`;
-  return `${totalSeconds}s`;
+  return `${m}m`;
 }
