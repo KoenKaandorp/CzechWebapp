@@ -64,6 +64,8 @@ export function mountSettingsView(root, { onReset } = {}) {
       await db.wipeAll();
       await db.bulkPutWords(data.words);
       await db.bulkPutSessions(data.sessions);
+      if (Array.isArray(data.reviews)) await db.bulkPutReviews(data.reviews);
+      if (Array.isArray(data.meta))    await db.bulkPutMeta(data.meta);
       onReset?.();
     } catch {
       alert('Failed to import. Make sure the file is a valid export from this app.');
@@ -75,6 +77,8 @@ export function mountSettingsView(root, { onReset } = {}) {
       exportedAt: new Date().toISOString(),
       words: await db.getAllWords(),
       sessions: await db.getRecentSessions(),
+      reviews: await db.getAllReviews(),
+      meta: await db.getAllMeta(),
     };
     const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
     const url = URL.createObjectURL(blob);

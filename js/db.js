@@ -172,6 +172,20 @@ export async function getReviewsSince(timestamp) {
   const idx = tx(db, ['reviews']).objectStore('reviews').index('by-date');
   return wrap(idx.getAll(IDBKeyRange.lowerBound(timestamp)));
 }
+export async function getAllReviews() {
+  const db = await openDB();
+  return wrap(tx(db, ['reviews']).objectStore('reviews').getAll());
+}
+export async function bulkPutReviews(reviews) {
+  const db = await openDB();
+  const t = tx(db, ['reviews'], 'readwrite');
+  const store = t.objectStore('reviews');
+  for (const r of reviews) store.put(r);
+  return new Promise((res, rej) => {
+    t.oncomplete = () => res();
+    t.onerror = () => rej(t.error);
+  });
+}
 
 // ---------- sessions ----------
 export async function bumpSession(date, patch) {
@@ -213,6 +227,16 @@ export async function setMeta(key, value) {
 export async function getAllMeta() {
   const db = await openDB();
   return wrap(tx(db, ['meta']).objectStore('meta').getAll());
+}
+export async function bulkPutMeta(entries) {
+  const db = await openDB();
+  const t = tx(db, ['meta'], 'readwrite');
+  const store = t.objectStore('meta');
+  for (const entry of entries) store.put(entry);
+  return new Promise((res, rej) => {
+    t.oncomplete = () => res();
+    t.onerror = () => rej(t.error);
+  });
 }
 
 // ---------- danger ----------
