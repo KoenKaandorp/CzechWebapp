@@ -23,6 +23,7 @@ export function mountLearnView(root, session) {
       <div class="card-stage" id="card-stage">
         <button class="card" id="card" type="button" aria-live="polite">
           <div class="card__face card__face--front">
+            <p class="card__pos" id="card-pos"></p>
             <p class="card__word" id="card-cz">—</p>
             <p class="card__hint">tap to reveal</p>
           </div>
