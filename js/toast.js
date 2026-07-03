@@ -14,12 +14,9 @@ function getContainer() {
 export function showLevelUpToast(level) {
   const el = document.createElement('div');
   el.className = `toast toast--lvl${level}`;
-  el.textContent = `Level ${level} ↑`;
+  el.innerHTML = `<span aria-hidden="true">✨</span> Level ${level}!`;
   getContainer().appendChild(el);
 
   requestAnimationFrame(() => el.classList.add('is-visible'));
-  setTimeout(() => {
-    el.classList.remove('is-visible');
-    setTimeout(() => el.remove(), 220);
-  }, 1300);
+  el.addEventListener('animationend', () => el.remove());
 }
