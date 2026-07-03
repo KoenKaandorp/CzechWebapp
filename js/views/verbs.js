@@ -330,6 +330,7 @@ export function mountVerbsView(el) {
 
     // Load or create the DB record for this conjugation, then apply SM-2
     const dbCard = await getOrCreateConjCard(current.verb, current.tense, current.pronounIndex);
+    const wasNew = dbCard.repetitions === 0 && !dbCard.lastReviewedAt;
     const updated = applyRating(dbCard, ratingObj);
     if (updated.level > dbCard.level) showLevelUpToast(updated.level);
 
@@ -342,9 +343,9 @@ export function mountVerbsView(el) {
       newInterval: updated.interval,
       prevEF: updated._diff.prev.ef,
       newEF: updated.ef,
+      wasNew,
     });
 
-    const wasNew = dbCard.repetitions === 0 && !dbCard.lastReviewedAt;
     const patch = { reviewed: 1, [ratingKey]: 1 };
     if (wasNew && ratingKey !== 'again') patch.learned = 1;
     await bumpSession(todayKey(), patch);

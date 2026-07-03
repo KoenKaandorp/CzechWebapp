@@ -68,6 +68,7 @@ export class Session {
       newInterval:  updated.interval,
       prevEF:       updated._diff.prev.ef,
       newEF:        updated.ef,
+      wasNew,
     });
 
     const patch = { reviewed: 1, [rating.id]: 1 };

@@ -115,6 +115,9 @@ export async function todayStats() {
   const reviews = await db.getReviewsSince(todayStart);
   const leveledUp = new Set();
   for (const r of reviews) {
+    // Skip a word's very first-ever review: going from "New" to "Learning"
+    // is already reflected in the `learned` stat, not a level-up.
+    if (r.wasNew) continue;
     if (levelFromInterval(r.newInterval) > levelFromInterval(r.prevInterval)) {
       leveledUp.add(r.wordId);
     }
