@@ -2,6 +2,7 @@ import { getAllWords, getWord, putWord, addReview, bumpSession } from '../db.js'
 import { applyRating, RATING } from '../scheduler.js';
 import { CONFIG } from '../lang.js';
 import { showLevelUpToast } from '../toast.js';
+import { checkStreakMilestone } from '../milestones.js';
 
 const PRONOUNS = ['já', 'ty', 'on/ona/ono', 'my', 'vy', 'oni/ony'];
 
@@ -349,6 +350,7 @@ export function mountVerbsView(el) {
     const patch = { reviewed: 1, [ratingKey]: 1 };
     if (wasNew && ratingKey !== 'again') patch.learned = 1;
     await bumpSession(todayKey(), patch);
+    await checkStreakMilestone(todayKey());
 
     if (ratingKey === 'again') {
       queue.splice(Math.min(3, queue.length), 0, current);

@@ -11,6 +11,7 @@
 import * as db from './db.js';
 import { applyRating, freshCard } from './scheduler.js';
 import { CONFIG } from './lang.js';
+import { checkMasteryMilestone, checkStreakMilestone } from './milestones.js';
 
 const DEFAULT_NEW_ALLOTTED = 10;
 const BONUS_BATCH = 5;
@@ -78,6 +79,9 @@ export class Session {
       await db.setMeta(`newCount:${this.today}`, this.newIntroducedToday);
     }
     await db.bumpSession(this.today, patch);
+
+    await checkMasteryMilestone(card.level, updated.level);
+    await checkStreakMilestone(this.today);
 
     // If lapsed (interval=0), re-insert near the front so it cycles back.
     if (updated.interval === 0) this.queue.push(updated);

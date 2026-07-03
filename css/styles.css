@@ -441,6 +441,63 @@ p { margin: 0; }
 .toast--lvl4 { background: linear-gradient(135deg, var(--accent), var(--accent-2)); }
 .toast--lvl5 { background: linear-gradient(135deg, var(--accent-2), #F2B84B); }
 
+/* ---------- Milestone burst (streaks, mastery counts) ---------- */
+.milestone-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.milestone-card {
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: #fff;
+  padding: 22px 34px;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 16px 40px -8px rgba(20, 18, 14, 0.45);
+  text-align: center;
+  opacity: 0;
+  transform: scale(0.5) translateY(10px);
+}
+.milestone-card.is-visible {
+  animation: milestone-pop 2200ms cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+@keyframes milestone-pop {
+  0%   { opacity: 0; transform: scale(0.5) translateY(10px); }
+  12%  { opacity: 1; transform: scale(1.08) translateY(0); }
+  20%  { opacity: 1; transform: scale(1)    translateY(0); }
+  85%  { opacity: 1; transform: scale(1)    translateY(0); }
+  100% { opacity: 0; transform: scale(0.94) translateY(-8px); }
+}
+.milestone-card__title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+.milestone-card__subtitle {
+  font-size: 0.9rem;
+  opacity: 0.9;
+  margin-top: 2px;
+}
+
+.confetti {
+  position: absolute;
+  top: -12px;
+  width: 8px;
+  height: 14px;
+  opacity: 0.9;
+  border-radius: 2px;
+  animation-name: confetti-fall;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+@keyframes confetti-fall {
+  0%   { transform: translateY(0) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(110vh) rotate(540deg); opacity: 0; }
+}
+
 .spark__line { stroke: var(--accent); stroke-width: 2; fill: none; stroke-linecap: round; stroke-linejoin: round; }
 .spark__area { fill: color-mix(in oklab, var(--accent) 18%, transparent); stroke: none; }
 .spark__dot  { fill: var(--accent); }

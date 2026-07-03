@@ -88,7 +88,7 @@ function levelFromInterval(interval) {
   return 5;
 }
 
-function computeStreak(sessions) {
+export function computeStreak(sessions) {
   const daySet = new Set(sessions.filter(s => s.reviewed > 0).map(s => s.date));
   const today  = new Date().toISOString().slice(0, 10);
   const d = new Date();
