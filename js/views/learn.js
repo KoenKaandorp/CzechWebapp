@@ -6,6 +6,7 @@
 //   - Card animates out; next card is fetched and shown.
 
 import { RATING } from '../scheduler.js';
+import { showLevelUpToast } from '../toast.js';
 
 const $ = (sel, root = document) => root.querySelector(sel);
 
@@ -122,8 +123,10 @@ export function mountLearnView(root, session) {
     if (!current) return;
     const rating = RATING[ratingKey];
     if (!rating) return;
+    const prevLevel = current.level;
     els.stage.classList.add('exit');
-    await session.rate(current, rating);
+    const updated = await session.rate(current, rating);
+    if (updated.level > prevLevel) showLevelUpToast(updated.level);
     setTimeout(() => {
       els.stage.classList.remove('exit');
       loadNext();

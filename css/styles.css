@@ -397,6 +397,37 @@ p { margin: 0; }
 .bar__label  { font-size: 10px; fill: var(--text-soft); text-anchor: middle; font-family: var(--font-sans); }
 .bar__value  { font-size: 11px; fill: var(--text); text-anchor: middle; font-family: var(--font-sans); font-weight: 600; }
 
+/* ---------- Level-up toast ---------- */
+.toast-stack {
+  position: fixed;
+  top: calc(env(safe-area-inset-top) + 12px);
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  z-index: 50;
+  pointer-events: none;
+}
+.toast {
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  background: var(--lvl3);
+  box-shadow: var(--shadow);
+  opacity: 0;
+  transform: translateY(-8px) scale(0.96);
+  transition: opacity var(--t-med) var(--ease), transform var(--t-med) var(--ease);
+}
+.toast.is-visible { opacity: 1; transform: translateY(0) scale(1); }
+.toast--lvl2 { background: var(--lvl2); }
+.toast--lvl3 { background: var(--lvl3); }
+.toast--lvl4 { background: var(--lvl4); }
+.toast--lvl5 { background: var(--lvl5); }
+
 .spark__line { stroke: var(--accent); stroke-width: 2; fill: none; stroke-linecap: round; stroke-linejoin: round; }
 .spark__area { fill: color-mix(in oklab, var(--accent) 18%, transparent); stroke: none; }
 .spark__dot  { fill: var(--accent); }

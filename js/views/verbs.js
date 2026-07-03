@@ -1,6 +1,7 @@
 import { getAllWords, getWord, putWord, addReview, bumpSession } from '../db.js';
 import { applyRating, RATING } from '../scheduler.js';
 import { CONFIG } from '../lang.js';
+import { showLevelUpToast } from '../toast.js';
 
 const PRONOUNS = ['já', 'ty', 'on/ona/ono', 'my', 'vy', 'oni/ony'];
 
@@ -262,6 +263,7 @@ export function mountVerbsView(el) {
     // Load or create the DB record for this conjugation, then apply SM-2
     const dbCard = await getOrCreateConjCard(current.verb, current.tense, current.pronounIndex);
     const updated = applyRating(dbCard, ratingObj);
+    if (updated.level > dbCard.level) showLevelUpToast(updated.level);
 
     await putWord(updated);
     await addReview({
