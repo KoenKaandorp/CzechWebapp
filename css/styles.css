@@ -723,6 +723,20 @@ p { margin: 0; }
   padding: 11px 0 11px 12px;
   border-bottom: 1px solid var(--border);
 }
+.list-table th {
+  text-align: left;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-soft);
+  padding: 0 8px 8px 0;
+  border-bottom: 1px solid var(--border);
+}
+.list-table__form {
+  font-size: 14px;
+  color: var(--text-muted);
+  padding: 11px 8px 11px 0;
+  border-bottom: 1px solid var(--border);
+}
 
 .lists-card__face { width: 100%; text-align: center; }
 .lists-card__cz {

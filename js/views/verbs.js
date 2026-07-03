@@ -108,31 +108,45 @@ export function mountVerbsView(el) {
   <!-- Screen 3: Tense + practice -->
   <div id="vb-practice" hidden>
     <button class="verbs__back-btn" id="vb-back-to-picker">← Back</button>
-    <div class="seg-ctrl" role="group" aria-label="Tense">
-      <button class="seg-ctrl__btn is-active" data-mode="present">Present</button>
-      <button class="seg-ctrl__btn" data-mode="past">Past</button>
-      <button class="seg-ctrl__btn" data-mode="imperative">Imperative</button>
+
+    <div class="list-mode-btns" id="vb-submode-btns" hidden>
+      <button class="list-mode-btn" id="vb-browse-btn">Browse</button>
+      <button class="list-mode-btn list-mode-btn--accent" id="vb-flash-btn">Flashcards</button>
     </div>
-    <p class="verbs__progress" id="vb-progress">&nbsp;</p>
-    <div class="card-stage" id="vb-stage">
-      <div class="card verbs-card" id="vb-card" tabindex="0" role="button" aria-label="Flashcard, tap to reveal">
-        <div class="verbs-card__face">
-          <div class="verbs-card__inf" id="vb-inf"></div>
-          <div class="verbs-card__en" id="vb-en"></div>
-          <div class="verbs-card__pronoun" id="vb-pronoun"></div>
-          <div class="verbs-card__hint" id="vb-hint">Tap to reveal</div>
-          <div class="verbs-card__answer" id="vb-answer" hidden></div>
+
+    <!-- Browse panel: full conjugation table for the selected verb -->
+    <div id="vb-browse-panel" hidden>
+      <table class="list-table" id="vb-table"></table>
+    </div>
+
+    <!-- Flashcard panel -->
+    <div id="vb-flash-panel">
+      <div class="seg-ctrl" role="group" aria-label="Tense">
+        <button class="seg-ctrl__btn is-active" data-mode="present">Present</button>
+        <button class="seg-ctrl__btn" data-mode="past">Past</button>
+        <button class="seg-ctrl__btn" data-mode="imperative">Imperative</button>
+      </div>
+      <p class="verbs__progress" id="vb-progress">&nbsp;</p>
+      <div class="card-stage" id="vb-stage">
+        <div class="card verbs-card" id="vb-card" tabindex="0" role="button" aria-label="Flashcard, tap to reveal">
+          <div class="verbs-card__face">
+            <div class="verbs-card__inf" id="vb-inf"></div>
+            <div class="verbs-card__en" id="vb-en"></div>
+            <div class="verbs-card__pronoun" id="vb-pronoun"></div>
+            <div class="verbs-card__hint" id="vb-hint">Tap to reveal</div>
+            <div class="verbs-card__answer" id="vb-answer" hidden></div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="verbs-ratings" id="vb-ratings" hidden>
-      <button class="verbs-rating verbs-rating--again" data-r="again">Again</button>
-      <button class="verbs-rating verbs-rating--good"  data-r="good">Good</button>
-      <button class="verbs-rating verbs-rating--easy"  data-r="easy">Easy</button>
-    </div>
-    <div class="verbs-empty" id="vb-empty" hidden>
-      <p class="verbs-empty__msg">All done!</p>
-      <button class="btn" id="vb-restart">Restart</button>
+      <div class="verbs-ratings" id="vb-ratings" hidden>
+        <button class="verbs-rating verbs-rating--again" data-r="again">Again</button>
+        <button class="verbs-rating verbs-rating--good"  data-r="good">Good</button>
+        <button class="verbs-rating verbs-rating--easy"  data-r="easy">Easy</button>
+      </div>
+      <div class="verbs-empty" id="vb-empty" hidden>
+        <p class="verbs-empty__msg">All done!</p>
+        <button class="btn" id="vb-restart">Restart</button>
+      </div>
     </div>
   </div>
 </div>`;
@@ -146,6 +160,12 @@ export function mountVerbsView(el) {
   const backToPickerBtn= el.querySelector('#vb-back-to-picker');
   const verbItemsEl    = el.querySelector('#vb-verb-items');
   const modeBtns       = el.querySelectorAll('.seg-ctrl__btn');
+  const submodeBtnsEl  = el.querySelector('#vb-submode-btns');
+  const browseSubBtn   = el.querySelector('#vb-browse-btn');
+  const flashSubBtn    = el.querySelector('#vb-flash-btn');
+  const browsePanelEl  = el.querySelector('#vb-browse-panel');
+  const flashPanelEl   = el.querySelector('#vb-flash-panel');
+  const vbTableEl      = el.querySelector('#vb-table');
   const card           = el.querySelector('#vb-card');
   const infEl          = el.querySelector('#vb-inf');
   const enEl           = el.querySelector('#vb-en');
@@ -183,7 +203,7 @@ export function mountVerbsView(el) {
     const data = await loadVerbs();
     selectedVerb = data.find(v => v.infinitive === btn.dataset.inf) || null;
     showScreen('practice');
-    startMode(mode);
+    enterPractice();
   });
 
   pickOneBtn.addEventListener('click', () => showVerbList());
@@ -191,6 +211,54 @@ export function mountVerbsView(el) {
   pickAllBtn.addEventListener('click', () => {
     selectedVerb = null;
     showScreen('practice');
+    enterPractice();
+  });
+
+  // Single-verb mode offers Browse (full conjugation table) vs Flashcards.
+  // "All verbs" mode goes straight to flashcards, as before.
+  function enterPractice() {
+    if (selectedVerb) {
+      submodeBtnsEl.hidden = false;
+      showSubPanel('browse');
+      renderBrowseTable();
+    } else {
+      submodeBtnsEl.hidden = true;
+      showSubPanel('flash');
+      startMode(mode);
+    }
+  }
+
+  function showSubPanel(name) {
+    browsePanelEl.hidden = name !== 'browse';
+    flashPanelEl.hidden  = name !== 'flash';
+  }
+
+  function renderBrowseTable() {
+    if (!selectedVerb) return;
+    const rows = PRONOUNS.map((p, i) => {
+      const present = selectedVerb.present?.[i] || '—';
+      const past = selectedVerb.past?.[i] || '—';
+      const imperative = selectedVerb.imperative?.[i] || '—';
+      return `<tr>
+        <td class="list-table__cz">${p}</td>
+        <td class="list-table__form">${present}</td>
+        <td class="list-table__form">${past}</td>
+        <td class="list-table__form">${imperative}</td>
+      </tr>`;
+    }).join('');
+    vbTableEl.innerHTML = `
+      <thead><tr><th></th><th>Present</th><th>Past</th><th>Imperative</th></tr></thead>
+      <tbody>${rows}</tbody>
+    `;
+  }
+
+  browseSubBtn.addEventListener('click', () => {
+    showSubPanel('browse');
+    renderBrowseTable();
+  });
+
+  flashSubBtn.addEventListener('click', () => {
+    showSubPanel('flash');
     startMode(mode);
   });
 
