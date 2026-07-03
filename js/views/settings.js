@@ -2,6 +2,7 @@
 
 import * as db from '../db.js';
 import { LANG, setLang } from '../lang.js';
+import { showLevelUpToast, showMilestoneBurst } from '../toast.js';
 
 export function mountSettingsView(root, { onReset } = {}) {
   root.innerHTML = `
@@ -24,6 +25,14 @@ export function mountSettingsView(root, { onReset } = {}) {
         <input type="file" id="import-input" accept=".json" style="display:none">
         <button class="btn btn--danger" id="reset">Reset everything</button>
         <p class="panel__lede">Reset wipes all words, reviews, and progress for the current language, then re-seeds from the starter list.</p>
+      </div>
+
+      <div class="panel">
+        <h2 class="panel__title">Test celebrations</h2>
+        <p class="panel__lede">Preview the level-up and milestone effects (including vibration, if your device supports it) without needing to actually earn them.</p>
+        <button class="btn btn--ghost" id="test-levelup">Test level-up</button>
+        <button class="btn btn--ghost" id="test-mastery">Test mastery milestone</button>
+        <button class="btn btn--ghost" id="test-streak">Test streak milestone</button>
       </div>
 
       <div class="panel">
@@ -70,6 +79,18 @@ export function mountSettingsView(root, { onReset } = {}) {
     } catch {
       alert('Failed to import. Make sure the file is a valid export from this app.');
     }
+  });
+
+  root.querySelector('#test-levelup').addEventListener('click', () => {
+    showLevelUpToast(Math.floor(Math.random() * 4) + 2); // random 2-5
+  });
+
+  root.querySelector('#test-mastery').addEventListener('click', () => {
+    showMilestoneBurst({ title: '100 words mastered!', subtitle: 'Keep going' });
+  });
+
+  root.querySelector('#test-streak').addEventListener('click', () => {
+    showMilestoneBurst({ title: '7-day streak!', subtitle: 'On fire' });
   });
 
   root.querySelector('#export').addEventListener('click', async () => {

@@ -29,8 +29,8 @@ export class Session {
     this.newAllottedToday   = await db.getMeta(`newAllotted:${this.today}`, DEFAULT_NEW_ALLOTTED);
   }
 
-  async addMoreNew() {
-    this.newAllottedToday += BONUS_BATCH;
+  async addMoreNew(count = BONUS_BATCH) {
+    this.newAllottedToday += count;
     await db.setMeta(`newAllotted:${this.today}`, this.newAllottedToday);
   }
 
@@ -54,6 +54,17 @@ export class Session {
   async refillBonus(limit = 20) {
     const todayStart = new Date(this.today).getTime();
     this.queue = await db.getBonusWords(limit, todayStart);
+  }
+
+  // Only the words first learned today (i.e. their very first-ever review
+  // happened today), for a focused "reinforce what I just picked up" pass.
+  async refillLearnedToday(limit = 50) {
+    const todayStart = new Date(this.today).getTime();
+    const reviews = await db.getReviewsSince(todayStart);
+    const ids = [...new Set(reviews.filter(r => r.wasNew).map(r => r.wordId))];
+    const words = (await Promise.all(ids.map(id => db.getWord(id))))
+      .filter(w => w && w.pos !== 'verb-conj');
+    this.queue = shuffle(words).slice(0, limit);
   }
 
   // Apply a rating, persist, update session stats. Returns the updated card.
@@ -102,6 +113,15 @@ export class Session {
 
 export function todayKey(d = new Date()) {
   return d.toISOString().slice(0, 10);   // YYYY-MM-DD (UTC; fine for daily buckets)
+}
+
+function shuffle(arr) {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
 }
 
 // Seeds any words in the language's seed file not yet in the DB (safe to call on every boot).

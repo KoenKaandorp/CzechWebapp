@@ -56,7 +56,11 @@ export function mountLearnView(root, session) {
           <input class="practice-size" id="practice-size" type="number" min="5" max="100" value="20" aria-label="Number of words to practice">
           <button class="btn btn--practice" id="practice-more" type="button">Keep practicing</button>
         </div>
-        <button class="btn btn--add-new" id="add-new" type="button">+ 5 new words</button>
+        <button class="btn btn--practice" id="practice-learned-today" type="button">Practice today's new words</button>
+        <div class="practice-row">
+          <input class="practice-size" id="add-new-size" type="number" min="1" max="50" value="5" aria-label="Number of new words to add">
+          <button class="btn btn--add-new" id="add-new" type="button">+ new words</button>
+        </div>
       </div>
     </section>
   `;
@@ -72,7 +76,9 @@ export function mountLearnView(root, session) {
     empty:        $('#empty', root),
     practiceMore: $('#practice-more', root),
     practiceSize: $('#practice-size', root),
+    practiceLearnedToday: $('#practice-learned-today', root),
     addNew:       $('#add-new', root),
+    addNewSize:   $('#add-new-size', root),
     stage:   $('#card-stage', root),
     due:     $('#learn-due', root),
     newC:    $('#learn-new', root),
@@ -147,8 +153,14 @@ export function mountLearnView(root, session) {
     loadNext();
   });
 
+  els.practiceLearnedToday.addEventListener('click', async () => {
+    await session.refillLearnedToday();
+    loadNext();
+  });
+
   els.addNew.addEventListener('click', async () => {
-    await session.addMoreNew();
+    const count = Math.min(50, Math.max(1, parseInt(els.addNewSize.value, 10) || 5));
+    await session.addMoreNew(count);
     loadNext();
   });
 
