@@ -29,12 +29,22 @@ export class Session {
     this.newAllottedToday   = await db.getMeta(`newAllotted:${this.today}`, DEFAULT_NEW_ALLOTTED);
   }
 
+  // Re-syncs to the current calendar day if the app has been left open
+  // across midnight — otherwise the daily new-word allotment never resets.
+  async _rollDayIfNeeded() {
+    const key = todayKey();
+    if (key === this.today) return;
+    this.today = key;
+    await this.init();
+  }
+
   async addMoreNew(count = BONUS_BATCH) {
     this.newAllottedToday += count;
     await db.setMeta(`newAllotted:${this.today}`, this.newAllottedToday);
   }
 
   async nextCard() {
+    await this._rollDayIfNeeded();
     if (this.queue.length === 0) await this.refill();
     return this.queue.shift() || null;
   }
@@ -69,6 +79,7 @@ export class Session {
 
   // Apply a rating, persist, update session stats. Returns the updated card.
   async rate(card, rating) {
+    await this._rollDayIfNeeded();
     const wasNew = card.repetitions === 0 && !card.lastReviewedAt;
     const updated = applyRating(card, rating);
     await db.putWord(updated);
@@ -101,6 +112,7 @@ export class Session {
   }
 
   async stats() {
+    await this._rollDayIfNeeded();
     const session = (await db.getRecentSessions()).find(s => s.date === this.today)
       || { reviewed: 0, learned: 0, again: 0, hard: 0, good: 0, easy: 0 };
     return {

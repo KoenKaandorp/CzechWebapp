@@ -13,7 +13,10 @@ function getContainer() {
 }
 
 export function vibrate(pattern) {
-  navigator.vibrate?.(pattern);
+  // Best-effort only — some browser contexts (embedded previews, permission
+  // policies) throw instead of no-op-ing, and this must never break the
+  // caller's UI update.
+  try { navigator.vibrate?.(pattern); } catch {}
 }
 
 export function showLevelUpToast(level) {
