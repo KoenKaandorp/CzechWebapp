@@ -2,6 +2,7 @@
   {
     "infinitive": "zijn",
     "en": "to be",
+    "irregular": true,
     "present":    ["ben", "bent", "is", "zijn", "zijn", "zijn"],
     "past":       ["was", "was", "was", "waren", "waren", "waren"],
     "imperative": [null, "wees", null, "laten we zijn", "wees", null]
@@ -9,6 +10,7 @@
   {
     "infinitive": "hebben",
     "en": "to have",
+    "irregular": true,
     "present":    ["heb", "hebt", "heeft", "hebben", "hebben", "hebben"],
     "past":       ["had", "had", "had", "hadden", "hadden", "hadden"],
     "imperative": [null, "heb", null, "laten we hebben", "heb", null]
@@ -16,6 +18,7 @@
   {
     "infinitive": "worden",
     "en": "to become",
+    "irregular": true,
     "present":    ["word", "wordt", "wordt", "worden", "worden", "worden"],
     "past":       ["werd", "werd", "werd", "werden", "werden", "werden"],
     "imperative": [null, "word", null, "laten we worden", "word", null]
@@ -23,6 +26,7 @@
   {
     "infinitive": "kunnen",
     "en": "to be able to / can",
+    "irregular": true,
     "present":    ["kan", "kunt", "kan", "kunnen", "kunnen", "kunnen"],
     "past":       ["kon", "kon", "kon", "konden", "konden", "konden"],
     "imperative": [null, null, null, null, null, null]
@@ -30,6 +34,7 @@
   {
     "infinitive": "moeten",
     "en": "to have to / must",
+    "irregular": true,
     "present":    ["moet", "moet", "moet", "moeten", "moeten", "moeten"],
     "past":       ["moest", "moest", "moest", "moesten", "moesten", "moesten"],
     "imperative": [null, null, null, null, null, null]
@@ -37,6 +42,7 @@
   {
     "infinitive": "zullen",
     "en": "will / shall",
+    "irregular": true,
     "present":    ["zal", "zult", "zal", "zullen", "zullen", "zullen"],
     "past":       ["zou", "zou", "zou", "zouden", "zouden", "zouden"],
     "imperative": [null, null, null, null, null, null]
@@ -44,6 +50,7 @@
   {
     "infinitive": "gaan",
     "en": "to go",
+    "irregular": true,
     "present":    ["ga", "gaat", "gaat", "gaan", "gaan", "gaan"],
     "past":       ["ging", "ging", "ging", "gingen", "gingen", "gingen"],
     "imperative": [null, "ga", null, "laten we gaan", "ga", null]
@@ -51,6 +58,7 @@
   {
     "infinitive": "komen",
     "en": "to come",
+    "irregular": true,
     "present":    ["kom", "komt", "komt", "komen", "komen", "komen"],
     "past":       ["kwam", "kwam", "kwam", "kwamen", "kwamen", "kwamen"],
     "imperative": [null, "kom", null, "laten we komen", "kom", null]
@@ -58,6 +66,7 @@
   {
     "infinitive": "doen",
     "en": "to do",
+    "irregular": true,
     "present":    ["doe", "doet", "doet", "doen", "doen", "doen"],
     "past":       ["deed", "deed", "deed", "deden", "deden", "deden"],
     "imperative": [null, "doe", null, "laten we doen", "doe", null]
@@ -65,6 +74,7 @@
   {
     "infinitive": "maken",
     "en": "to make",
+    "irregular": false,
     "present":    ["maak", "maakt", "maakt", "maken", "maken", "maken"],
     "past":       ["maakte", "maakte", "maakte", "maakten", "maakten", "maakten"],
     "imperative": [null, "maak", null, "laten we maken", "maak", null]
@@ -72,6 +82,7 @@
   {
     "infinitive": "willen",
     "en": "to want",
+    "irregular": true,
     "present":    ["wil", "wilt", "wil", "willen", "willen", "willen"],
     "past":       ["wilde", "wilde", "wilde", "wilden", "wilden", "wilden"],
     "imperative": [null, null, null, null, null, null]
@@ -79,6 +90,7 @@
   {
     "infinitive": "zien",
     "en": "to see",
+    "irregular": true,
     "present":    ["zie", "ziet", "ziet", "zien", "zien", "zien"],
     "past":       ["zag", "zag", "zag", "zagen", "zagen", "zagen"],
     "imperative": [null, "zie", null, "laten we zien", "zie", null]
@@ -86,6 +98,7 @@
   {
     "infinitive": "zeggen",
     "en": "to say",
+    "irregular": true,
     "present":    ["zeg", "zegt", "zegt", "zeggen", "zeggen", "zeggen"],
     "past":       ["zei", "zei", "zei", "zeiden", "zeiden", "zeiden"],
     "imperative": [null, "zeg", null, "laten we zeggen", "zeg", null]
@@ -93,6 +106,7 @@
   {
     "infinitive": "weten",
     "en": "to know",
+    "irregular": true,
     "present":    ["weet", "weet", "weet", "weten", "weten", "weten"],
     "past":       ["wist", "wist", "wist", "wisten", "wisten", "wisten"],
     "imperative": [null, "weet", null, "laten we weten", "weet", null]
@@ -100,6 +114,7 @@
   {
     "infinitive": "geven",
     "en": "to give",
+    "irregular": true,
     "present":    ["geef", "geeft", "geeft", "geven", "geven", "geven"],
     "past":       ["gaf", "gaf", "gaf", "gaven", "gaven", "gaven"],
     "imperative": [null, "geef", null, "laten we geven", "geef", null]
@@ -107,6 +122,7 @@
   {
     "infinitive": "nemen",
     "en": "to take",
+    "irregular": true,
     "present":    ["neem", "neemt", "neemt", "nemen", "nemen", "nemen"],
     "past":       ["nam", "nam", "nam", "namen", "namen", "namen"],
     "imperative": [null, "neem", null, "laten we nemen", "neem", null]
@@ -114,6 +130,7 @@
   {
     "infinitive": "vinden",
     "en": "to find / to think",
+    "irregular": true,
     "present":    ["vind", "vindt", "vindt", "vinden", "vinden", "vinden"],
     "past":       ["vond", "vond", "vond", "vonden", "vonden", "vonden"],
     "imperative": [null, "vind", null, "laten we vinden", "vind", null]
@@ -121,6 +138,7 @@
   {
     "infinitive": "krijgen",
     "en": "to get / receive",
+    "irregular": true,
     "present":    ["krijg", "krijgt", "krijgt", "krijgen", "krijgen", "krijgen"],
     "past":       ["kreeg", "kreeg", "kreeg", "kregen", "kregen", "kregen"],
     "imperative": [null, "krijg", null, "laten we krijgen", "krijg", null]
@@ -128,6 +146,7 @@
   {
     "infinitive": "staan",
     "en": "to stand",
+    "irregular": true,
     "present":    ["sta", "staat", "staat", "staan", "staan", "staan"],
     "past":       ["stond", "stond", "stond", "stonden", "stonden", "stonden"],
     "imperative": [null, "sta", null, "laten we staan", "sta", null]
@@ -135,6 +154,7 @@
   {
     "infinitive": "blijven",
     "en": "to stay / remain",
+    "irregular": true,
     "present":    ["blijf", "blijft", "blijft", "blijven", "blijven", "blijven"],
     "past":       ["bleef", "bleef", "bleef", "bleven", "bleven", "bleven"],
     "imperative": [null, "blijf", null, "laten we blijven", "blijf", null]

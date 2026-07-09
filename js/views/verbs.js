@@ -192,7 +192,11 @@ export function mountVerbsView(el) {
       verbItemsEl.innerHTML = '<p class="verb-list__empty">No verbs learned yet. Practice words first!</p>';
     } else {
       verbItemsEl.innerHTML = filtered
-        .map(v => `<button class="verb-list__item" data-inf="${v.infinitive}"><span class="verb-list__cz">${v.infinitive}</span><span class="verb-list__en">${v.en}</span></button>`)
+        .map(v => {
+          const tagClass = v.irregular ? 'verb-list__tag--irregular' : 'verb-list__tag--regular';
+          const tagLabel = v.irregular ? 'irregular' : 'regular';
+          return `<button class="verb-list__item" data-inf="${v.infinitive}"><span class="verb-list__cz">${v.infinitive}</span><span class="verb-list__right"><span class="verb-list__en">${v.en}</span><span class="verb-list__tag ${tagClass}">${tagLabel}</span></span></button>`;
+        })
         .join('');
     }
     showScreen('list');
