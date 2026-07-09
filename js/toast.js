@@ -29,6 +29,9 @@ export function showLevelUpToast(level) {
 
   requestAnimationFrame(() => el.classList.add('is-visible'));
   el.addEventListener('animationend', () => el.remove());
+  // Fallback: under reduced-motion the pop animation is suppressed, so
+  // `animationend` never fires — remove on a timer so the toast doesn't linger.
+  setTimeout(() => el.remove(), 2500);
 }
 
 const CONFETTI_COLORS = ['#2E5E4E', '#3D7A66', '#B85C3E', '#F2B84B', '#5B8893'];

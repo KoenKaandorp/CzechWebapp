@@ -860,4 +860,17 @@ p { margin: 0; }
 /* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+
+  /* Toasts and milestone cards rest at opacity:0 and rely on their keyframes to
+     reveal themselves — but those keyframes also END at opacity:0. Zeroing the
+     duration (above) would make them snap straight to invisible, so the user
+     never sees a level-up or milestone. Show them statically instead; JS still
+     removes them on a timer. */
+  .toast.is-visible,
+  .milestone-card.is-visible {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  .confetti { display: none !important; }
 }
